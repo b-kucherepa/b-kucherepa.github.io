@@ -1,45 +1,138 @@
 html{
-    --color-light-accent: #00ffff;
-    --color-dark-accent: #aa00ff;
+    --color-lighter-accent: #00ffff;
+    --color-darker-accent: #aa00ff;
+
+    --color-main-text-l-mode: #000020;
+    --color-main-text-d-mode: #eeeeee;
+
+    --h1-padding: 5vw;
+
+    --line-size: 0.25vw;
+
     background: fixed;
     background-size: 100vw, 100vh;
+
+    font: 'Verdana', sans-serif;
+    font-size: 6vh;
+    font-style: normal;
+    padding: 5vw;
+}
+
+header{
+    color:var(--color-main-text-dark);
+    text-align: right;
+}
+
+h1 {    
+    font-family: 'Unbounded', sans-serif;
+    font-style: bold;
+    font-size: 10vh;
+
+    text-align: left;
+
+    padding-left: var(--h1-padding);
+    position: relative;
+}
+
+h1::before {
+    background: linear-gradient(to right, var(--color-lighter-accent), var(--color-darker-accent));
+    height: var(--line-size);
+    border-radius: 0.25vh;
+
+    content: "";
+
+    position: absolute;
+
+    left: var(--h1-padding);
+    top: 10.5vh;
+    width: 100vw;
+
+    z-index: -1;
+}
+
+table{
+    border: none;
+    width: 100%;
+}
+
+td{
+    border-color: var(--color-darker-accent);
+    border-style: solid;
+    border-width: var(--line-size);
+    border-radius: 2vh;
+
+    padding-left: 1vw;
+}
+
+a:link {
+    color: var(--color-lighter-accent);
+}
+
+a:visited{
+    color: var(--color-darker-accent);
 }
 
 @media (prefers-color-scheme: light) {
     html {
         background-image: linear-gradient(to top, #eeeeee, #e0d0f0);
+        color: var(--color-main-text-l-mode);
     }
 }
 
 @media (prefers-color-scheme: dark) {
     html {
         background-image: linear-gradient(to bottom, #000000, #000020);
+        color: var(--color-main-text-d-mode);
     }
 }
 
-#opening {
-    color: transparent;
-    font-family: 'Rubik Burned', sans-serif;
+.t-category{
+    font-weight: bold;
     text-align: center;
-    font-size:5vw;
-
-    background-image: linear-gradient(1deg, var(--color-light-accent), var(--color-dark-accent));
-    background-size: 100%;
-    background-repeat: repeat;
-
-    background-clip: text;
-
-    animation: text-animation-rev 0.75s ease forwards;
-    
+    border-color: var(--color-lighter-accent);
 }
 
-#opening:hover{
+.sel-lang-icon{
+    border:var(--color-lighter-accent);
+    border-style: solid;
+    border-radius: 0.2vw;
+    border-width: 0.25vw;
+
+    height: 4vh;
+    vertical-align: middle;
+}
+
+.unsel-lang-icon{
+    height: 4vh;
+    vertical-align: middle;
+}
+
+.wide-line{
+    color: transparent;
+    background-clip:border-box;
+    background-image: linear-gradient(0deg, var(--color-lighter-accent), var(--color-darker-accent));
+    background-repeat: repeat;
+    border:none;
+    height: 5px;
+}
+
+.gradient-color {
+    background-clip: text;
+    background-image: linear-gradient(1deg, var(--color-lighter-accent) 20%, var(--color-darker-accent) 70%);
+    background-repeat: no-repeat;
+
+    color: transparent;
+
+    animation: text-animation-rev 0.75s ease forwards;
+}
+
+.gradient-color:hover{
     animation: text-animation 0.5s ease-in forwards;
 }
 
 @keyframes text-animation-rev {
     0% {
-        background-size: 500%;
+        background-size: 300%;
     }
     100% {
         background-size: 100%;
@@ -48,16 +141,17 @@ html{
 
 @keyframes text-animation {
     0% {
-        background-size: 500%;
+        background-size: 100%;
     }
     100% {
-        background-size: 650%;
+        background-size: 300%;
     }
 }
 
-h1 {
-    color: var(--color-light-accent);
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
+#opening {
+    font-family: 'Rubik Burned', sans-serif;
     text-align: center;
-    font-size:4vw;
+    font-size:5vw;
 }
+
+
