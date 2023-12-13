@@ -1,0 +1,25 @@
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg-gradient-top: #ddeeff;
+        --bg-gradient-bottom: #ffffff;
+        --color-strong-accent: #9900ff;
+        --color-mid-accent: #4488FF;
+        --color-weak-accent: #00DDFF;
+        --color-main-text: #000020;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-gradient-top: #000000;
+        --bg-gradient-bottom: #00002A;
+        --color-strong-accent: #00DDFF;
+        --color-mid-accent: #4488FF;
+        --color-weak-accent: #9900ff;
+        --color-main-text: #eeeeee;
+    }
+}
+
+.jsOnly {
+    display: none;
+}

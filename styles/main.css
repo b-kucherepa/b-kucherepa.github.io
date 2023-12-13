@@ -1,24 +1,20 @@
 /* theme-specified coloring: */
-@media (prefers-color-scheme: light) {
-    body {
-        --bg-gradient-top: #ddeeff;
-        --bg-gradient-bottom: #ffffff;
-        --color-strong-accent: #9900ff;
-        --color-mid-accent: #4488FF;
-        --color-weak-accent: #00DDFF;
-        --color-main-text: #000020;
-    }
+:root.light {
+    --bg-gradient-top: #ddeeff;
+    --bg-gradient-bottom: #ffffff;
+    --color-strong-accent: #9900ff;
+    --color-mid-accent: #4488FF;
+    --color-weak-accent: #00DDFF;
+    --color-main-text: #000020;
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        --bg-gradient-top: #000000;
-        --bg-gradient-bottom: #00002A;
-        --color-strong-accent: #00DDFF;
-        --color-mid-accent: #4488FF;
-        --color-weak-accent: #9900ff;
-        --color-main-text: #eeeeee;
-    }
+:root.dark {
+    --bg-gradient-top: #000000;
+    --bg-gradient-bottom: #00002A;
+    --color-strong-accent: #00DDFF;
+    --color-mid-accent: #4488FF;
+    --color-weak-accent: #9900ff;
+    --color-main-text: #eeeeee;
 }
 
 body {
@@ -91,6 +87,11 @@ footer{
     z-index: 1;
 }
 
+#light-theme-icon, #dark-theme-icon {
+    height: 1rem;
+    vertical-align: middle;
+}
+
 select {
     background-color: var(--bg-gradient-bottom);
     border-color: var(--color-weak-accent);
@@ -108,6 +109,22 @@ select {
 
 select:hover {
     border-color: var(--color-strong-accent);
+}
+
+/* language icons: */
+.sel-lang-icon {
+    border-color: var(--color-strong-accent);
+    border-style: solid;
+    border-width: 0.15rem;
+    border-radius: 0.2rem;
+
+    height: 1rem;
+    vertical-align: middle;
+}
+
+.unsel-lang-icon {
+    height: 1rem;
+    vertical-align: middle;
 }
 
 #copyright {
@@ -355,22 +372,6 @@ hr {
     width: 100%;
 }
 
-/* language icons: */
-.sel-lang-icon {
-    border-color: var(--color-strong-accent);
-    border-style: solid;
-    border-width: 0.15rem;
-    border-radius: 0.2rem;
-
-    height: 1rem;
-    vertical-align: middle;
-}
-
-.unsel-lang-icon {
-    height: 1rem;
-    vertical-align: middle;
-}
-
 /* used on index page: */
 .no-script-lang-icon {
     align-content: center;
@@ -381,10 +382,6 @@ hr {
 /* separator line: */
 #lang-selection {
     text-align: center;
-}
-
-.jsOnly {
-    display: none;
 }
 
 /* emphasized phrase: */
