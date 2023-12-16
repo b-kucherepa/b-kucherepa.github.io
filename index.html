@@ -5,14 +5,24 @@
     <title>Language selection</title>
     <script type="text/javascript" src="scripts/langselect.js"></script>
     <link rel="stylesheet" href="styles/main.css">
+    <noscript>
+        <link rel="stylesheet" href="styles/noscript.css">
+    </noscript>
 </head>
+
 <body>
     <noscript>
-        <h1 class="gradient-color" lang="en-EN ru-RU">Select language / выберите язык<br></h1>
         <section>
+            <h1 class="gradient-color" lang="en-EN ru-RU">Select language / выберите язык<br></h1>
             <p id="lang-selection">
-                <a href="maineng.html"><img class="no-script-lang-icon" src="icons/uk-us.png" height=256 title="Select English" alt="English" lang="en-EN"></a>
-                <a href="mainrus.html"><img class="no-script-lang-icon" src="icons/ru.png" height=256 title="Выбрать русский" alt="Русский" lang="ru-RU"></a>
+            <figure><a href="maineng.html"><img class="no-script-lang-icon" src="icons/uk-us.png" height=128
+                        title="Select English" alt="English" lang="en-EN"></a>
+                <figcaption>English</figcaption>
+            </figure>
+            <figure><a href="mainrus.html"><img class="no-script-lang-icon" src="icons/ru.png" height=128
+                        title="Выбрать русский" alt="Русский" lang="ru-RU"></a>
+                <figcaption>Русский</figcaption>
+            </figure>
             </p>
         </section>
     </noscript>

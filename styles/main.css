@@ -38,14 +38,14 @@ body {
     overflow: auto;
 }
 
-main{
+main {
     margin-top: 4rem;
     margin-bottom: 1rem;
     margin-left: 12.5%;
     margin-right: 12.5%;
 }
 
-footer{
+footer {
     margin-left: 12.5%;
     margin-right: 12.5%;
 }
@@ -66,6 +66,9 @@ footer{
 }
 
 #navigation-bar {
+    display: inline-table;
+    table-layout: fixed;
+
     background-image: linear-gradient(to bottom, var(--bg-gradient-top) 70%, transparent);
 
     color: var(--color-main-text);
@@ -87,13 +90,27 @@ footer{
     z-index: 1;
 }
 
-#light-theme-icon, #dark-theme-icon {
+.aligner {
+    text-align: center;
+    display: table-cell;
+}
+
+#light-theme-icon,
+#dark-theme-icon {
     height: 1rem;
     vertical-align: middle;
 }
 
+#light-theme-icon:hover,
+#dark-theme-icon:hover {
+    cursor: pointer;
+    filter: brightness(100);
+    filter: contrast(100);
+    filter: #ffffff;
+}
+
 select {
-    background-color: var(--bg-gradient-bottom);
+    background-color: var(--bg-gradient-top);
     border-color: var(--color-weak-accent);
     border-style: solid;
     border-width: 0.15rem;
@@ -290,52 +307,19 @@ td:nth-child(1) {
     font-weight: bold;
     text-align: center;
 
-    width: 15%;
+    max-width: 15%;
 }
 
 td:nth-child(2) {
     text-align: justify;
 
-    width: max-content;
+    max-width: max-content;
 }
 
 td:nth-child(3) {
     text-align: center;
 
-    width: 15%;
-}
-
-/* for navigation bar aligner invisible table: */
-table.aligner {
-    padding: 0;
-    margin: 0;
-    border-width: 0;
-    width: 100%;
-}
-
-td.aligner {
-    border-style: none;
-    padding-top: 0;
-    top: 0;
-}
-
-td.aligner:nth-child(1) {
-    font-weight: normal;
-    text-align: left;
-
-    width: 25%
-}
-
-td.aligner:nth-child(2) {
-    font-weight: normal;
-    text-align: center;
-}
-
-td.aligner:nth-child(3) {
-    font-weight: normal;
-    text-align: right;
-
-    width: 25%
+    max-width: 15%;
 }
 
 /* links: */
@@ -375,12 +359,15 @@ hr {
 /* used on index page: */
 .no-script-lang-icon {
     align-content: center;
-    padding: 5vw;
-    height: 20vw;
+    /*height: 20vw;*/
 }
 
-/* separator line: */
 #lang-selection {
+    text-align: center;
+}
+
+figure {
+    align-content: center;
     text-align: center;
 }
 

@@ -3,11 +3,11 @@
 
 <head lang="en-EN" charset="utf-8">
     <title>The Morning Firebird</title>
-
-    <link rel="stylesheet" href="styles/main.css">
-
     <script type="text/javascript" src="scripts/main.js"></script>
-    <noscript><link rel="stylesheet" href="styles/noscript.css"></noscript>
+    <link rel="stylesheet" href="styles/main.css">
+    <noscript>
+        <link rel="stylesheet" href="styles/noscript.css">
+    </noscript>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,33 +30,27 @@
 <body>
     <header>
         <nav id="navigation-bar">
-            <table class="aligner">
-                <tr>
-                    <td class="aligner">
-                        <div class="jsOnly">Theme: 
-                            <img id="light-theme-icon" src="" height=12 title="" alt="">
-                            <img id="dark-theme-icon" src="" height=12 title="" alt="">
-                        </div>
-                    </td>
-                    <td class="aligner">
-                        <div class="jsOnly">Navigation:
-                            <select id="section-selector">
-                                <option value="section-why">Why programming</option>
-                                <option value="section-me">About me</option>
-                                <option value="section-skills">My skills</option>
-                                <option value="section-resources">Educational content</option>
-                                <option value="section-works">My works</option>
-                            </select>
-                        </div>
-                    </td>
-                    <td class="aligner">
-                        Language:
-                        <img class="sel-lang-icon" src="icons/uk-us.png" height=12 title="English is set" alt="English  icon">
-                        <a href="mainrus.html"><img class="unsel-lang-icon" src="icons/ru.png" height=12
-                                title="Выбрать русский" alt="Значок русского" lang="ru-RU"></a>
-                    </td>
-                </tr>
-            </table>
+            <div class="aligner jsOnly">
+                Theme:
+                <img id="light-theme-icon" src="" height=12 title="" alt="">
+                <img id="dark-theme-icon" src="" height=12 title="" alt="">
+            </div>
+            <div class="aligner jsOnly">
+                Navigation:
+                <select id="section-selector">
+                    <option value="section-why">Why programming</option>
+                    <option value="section-me">About me</option>
+                    <option value="section-skills">My skills</option>
+                    <option value="section-resources">Educational resources</option>
+                    <option value="section-works">My works</option>
+                </select>
+            </div>
+            <div class="aligner">
+                Language:
+                <img class="sel-lang-icon" src="icons/uk-us.png" height=12 title="English is set" alt="English  icon">
+                <a href="mainrus.html"><img class="unsel-lang-icon" src="icons/ru.png" height=12 title="Выбрать русский"
+                        alt="Значок русского" lang="ru-RU"></a>
+            </div>
         </nav>
     </header>
 
