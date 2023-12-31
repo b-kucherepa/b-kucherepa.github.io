@@ -1,5 +1,6 @@
 window.onload = function () {
     initCopyrightYear();
+    initAge();
     initTheme();
     const sectSel = document.getElementById('section-selector');
     sectSel.addEventListener('change', loadSection);
@@ -7,10 +8,21 @@ window.onload = function () {
 
 function initCopyrightYear(){
     const estYear = 2023;
-    const curYear = new Date().getFullYear()
+    const curYear = new Date().getFullYear();
     const copyright = document.getElementById('copyright');
 
     copyright.innerHTML += (estYear===curYear)? ` ${estYear}` : ` ${estYear}-${curYear}`;
+}
+
+function initAge(){
+    const msInYear = 31536000000;
+    const birthday = new Date(96, 1, 1); //CHANGE!
+    const curDate = new Date();
+    const myAge = Math.floor((curDate-birthday)/msInYear);
+    console.log(myAge);
+    const ageLine = document.getElementById('my-age');
+
+    ageLine.innerHTML = myAge;
 }
 
 function initTheme(){
