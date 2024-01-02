@@ -4,10 +4,10 @@
     <linearGradient id="prefix__a">
       <stop offset="0" stop-color="#fff" />
       <stop offset=".333" stop-color="#fff" />
-      <stop offset=".333" stop-color="#0200cc" />
-      <stop offset=".667" stop-color="#0300cc" />
-      <stop offset=".667" stop-color="red" />
-      <stop offset="1" stop-color="red" />
+      <stop offset=".333" stop-color="#00e" />
+      <stop offset=".667" stop-color="#00e" />
+      <stop offset=".667" stop-color="#e00" />
+      <stop offset="1" stop-color="#e00" />
     </linearGradient>
     <linearGradient href="#prefix__a" id="prefix__b" x1="0" y1="0" x2="0" y2="100%" gradientUnits="userSpaceOnUse" />
   </defs>

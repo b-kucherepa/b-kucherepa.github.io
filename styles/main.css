@@ -20,13 +20,14 @@
 body {
     --standard-padding: 4%;
     --line-width: 0.15rem;
+    --rounding: 0.4rem;
     --regular-fonts: 'Jura', 'Tahoma', sans-serif;
     --header-fonts: 'Unbounded', 'Georgia', sans-serif;
 
     background-color: var(--bg-gradient-bottom);
     background-attachment: fixed;
     background-image: linear-gradient(to bottom, var(--bg-gradient-top), var(--bg-gradient-bottom));
-    background-size: 100vh;
+    background-size: 100%;
 
     color: var(--color-main-text);
 
@@ -36,19 +37,6 @@ body {
     text-align: justify;
 
     overflow: auto;
-}
-
-
-main {
-    margin-top: 4rem;
-    margin-bottom: 1rem;
-    margin-left: 12.5%;
-    margin-right: 12.5%;
-}
-
-footer {
-    margin-left: 12.5%;
-    margin-right: 12.5%;
 }
 
 ::-webkit-scrollbar {
@@ -66,55 +54,60 @@ footer {
     background-color: var(--bg-gradient-bottom);
 }
 
+main {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+
+footer {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+
 #navigation-bar {
-    display: inline-table;
-    table-layout: fixed;
+    display: inline-block;
 
     background-image: linear-gradient(to bottom, var(--bg-gradient-top) 70%, transparent);
 
     color: var(--color-main-text);
 
-    text-align: right;
+    text-align: center;
 
     position: fixed;
     top: 0;
     left: 0;
-    padding-left: 0;
-    padding-right: 0;
     padding-top: 0.5rem;
     padding-bottom: 0.75rem;
-
-    margin: 0;
 
     width: 100%;
 
     z-index: 1;
 }
 
-.aligner {
-    text-align: center;
-    display: table-cell;
+@supports(display: flex)  {
+    #navigation-bar 
+    {
+        display: flex;
+        justify-content: space-around;
+        align-content: baseline;
+        align-items: center;
+    }
 }
 
-#light-theme-icon, #dark-theme-icon {
-    height: 1rem;
+#light-theme-icon,
+#dark-theme-icon {
+    height: 1.2rem;
     vertical-align: middle;
 }
 
-#light-theme-icon:hover,
-#dark-theme-icon:hover {
-    cursor: pointer;
-    filter: brightness(100);
-    filter: contrast(100);
-    filter: #ffffff;
-}
-
 select {
-    background-color: var(--bg-gradient-top);
-    border-color: var(--color-weak-accent);
+    background-color: transparent;
+    border-color: var(--color-strong-accent);
     border-style: solid;
     border-width: 0.15rem;
-    border-radius: 0.2rem;
+    border-radius: var(--rounding);
 
     color: var(--color-main-text);
 
@@ -124,8 +117,8 @@ select {
     vertical-align: middle;
 }
 
-select:hover {
-    border-color: var(--color-strong-accent);
+option {
+    background-color: var(--bg-gradient-top);
 }
 
 /* language icons: */
@@ -133,15 +126,20 @@ select:hover {
     border-color: var(--color-strong-accent);
     border-style: solid;
     border-width: 0.15rem;
-    border-radius: 0.3rem;
+    border-radius: var(--rounding);
 
-    height: 1rem;
+    height: 1.2rem;
     vertical-align: middle;
 }
 
 .unsel-lang-icon {
-    height: 1rem;
+    height: 1.2rem;
     vertical-align: middle;
+}
+
+.highlightable:hover {
+    cursor: pointer;
+    filter: brightness(1.15);
 }
 
 #copyright {
@@ -176,7 +174,7 @@ h1:before {
             var(--color-weak-accent) 80%,
             transparent 100%);
 
-    border-radius: 0.1rem;
+    border-radius: var(--rounding);
 
     content: "";
 
@@ -276,7 +274,7 @@ th {
     border-color: var(--color-strong-accent);
     border-style: solid;
     border-width: var(--line-width);
-    border-radius: 0.5rem;
+    border-radius: var(--rounding);
 
     font-weight: bold;
     font-size: 1.5rem;
@@ -292,14 +290,13 @@ td {
     border-color: var(--color-weak-accent);
     border-style: solid;
     border-width: var(--line-width);
-    border-radius: 0.5rem;
+    border-radius: var(--rounding);
 
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
-
 
 /* sets all 3 columns specifics: */
 td:nth-child(1) {
@@ -349,7 +346,7 @@ hr {
     background-repeat: repeat;
 
     border-style: none;
-    border-radius: 0.1rem;
+    border-radius: var(--rounding);
 
     margin-left: var(--standard-padding);
 

@@ -51,18 +51,19 @@ function loadColorTheme(theme) {
     const darkIcon = document.getElementById('dark-theme-icon');
     
     if (theme === "dark") {
-        lightIcon.setAttribute('src', "icons/sun-unselected.png");
+        lightIcon.setAttribute('src', "icons/sun-unselected.svg");
         lightIcon.setAttribute('title', "Set to light theme");
         lightIcon.setAttribute('alt', "Unfilled sun icon");
-        darkIcon.setAttribute('src', "icons/moon-selected.png");
+        darkIcon.setAttribute('src', "icons/moon-selected.svg");
         darkIcon.setAttribute('title', "Dark theme is set");
         darkIcon.setAttribute('alt', "Filled moon icon");
+        darkIcon.edi
     }
     else {
-        lightIcon.setAttribute('src', "icons/sun-selected.png");
+        lightIcon.setAttribute('src', "icons/sun-selected.svg");
         lightIcon.setAttribute('title', "Light theme is set");
         lightIcon.setAttribute('alt', "Filled sun icon");
-        darkIcon.setAttribute('src', "icons/moon-unselected.png");
+        darkIcon.setAttribute('src', "icons/moon-unselected.svg");
         darkIcon.setAttribute('title', "Set to dark theme");
         darkIcon.setAttribute('alt', "Unfilled moon icon");
     }

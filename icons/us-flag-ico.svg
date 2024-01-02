@@ -3,8 +3,8 @@
   <defs />
   <defs>
     <linearGradient id="prefix__a">
-      <stop offset="0" stop-color="red" />
-      <stop offset=".5" stop-color="red" />
+      <stop offset="0" stop-color="#e00" />
+      <stop offset=".5" stop-color="#e00" />
       <stop offset=".5" stop-color="#fff" />
       <stop offset="1" stop-color="#fff" />
     </linearGradient>
@@ -12,11 +12,11 @@
       gradientUnits="userSpaceOnUse" spreadMethod="repeat" />
   </defs>
   <rect width="100%" height="100%" ry="5" fill="url(#prefix__b)" />
-  <path d="M0 25.2V4.5 S0 0 4.5 0h22.5l0 25.2" fill="#00c" />
+  <path d="M0 25.2V4.5 S0 0 4.5 0h22.5l0 25.2" fill="#00e" />
   <g>
     <path id="prefix__c"
       d="M74.398 59.769l.433.878.97.141-.702.684.166.966-.867-.456-.868.456.166-.966-.702-.684.97-.14z"
-      transform="matrix(.75425 0 0 .79306 -53.4 -46.5)" display="inline" fill="#f9f9f9" stroke="#fff" stroke-width="0"
+      transform="matrix(.75425 0 0 .79306 -53.4 -46.5)" display="inline" fill="#fff" stroke="#fff" stroke-width="0"
       stroke-linecap="butt" stroke-miterlimit="1.6" />
     <use x="0" y="0" xlink:href="#prefix__c" id="prefix__d" transform="translate(16.935)" display="inline" />
     <use x="0" y="0" xlink:href="#prefix__d" id="prefix__e" transform="translate(4.233)" display="inline" />
