@@ -36,16 +36,11 @@ body {
     font-family: var(--regular-fonts);
     font-size: 16px;
     font-weight: lighter;
+
     text-align: justify;
-
-    overflow: auto;
-
     padding: 0.5rem;
 
-    @media (min-width: 500px) {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
+    overflow: auto;
 }
 
 ::-webkit-scrollbar {
@@ -73,21 +68,18 @@ main {
     background-image: linear-gradient(to bottom, var(--bg-gradient-top) 70%, transparent);
 
     text-align: center;
-
     position: fixed;
     top: 0;
     left: 0;
-    padding-bottom: 1.2rem;
-
     width: 100%;
     z-index: 1;
+    padding-bottom: 1.2rem;
 }
 
 .nav-item {
     margin: 0.2rem;
     display: table-cell;
     text-wrap: wrap;
-    text-size-adjust: 1.5rem;
 }
 
 .menu-element {
@@ -114,9 +106,9 @@ select {
     font-family: var(--regular-fonts);
     text-overflow: ellipsis;
 
-    height: 1.5rem;
     width: 100%;
     max-width: fit-content;
+    height: 1.5rem;
     vertical-align: -0.05rem;
 }
 
@@ -156,12 +148,11 @@ h1 {
     font-family: var(--header-fonts);
     font-weight: bold;
     font-size: 1.6rem;
-    text-align: left;
 
+    text-align: left;
     position: relative;
     margin-top: 0.75em;
     margin-bottom: 0.5em;
-
 }
 
 /* h1 underline: */
@@ -177,10 +168,8 @@ h1:before {
 
     position: absolute;
     top: 1.25em;
-
-    height: var(--line-width);
     width: 100%;
-
+    height: var(--line-width);
     z-index: -1;
 }
 
@@ -189,8 +178,8 @@ h2 {
 
     font-family: var(--header-fonts);
     font-size: 1.3rem;
-    text-align: center;
 
+    text-align: center;
     margin-top: 1em;
     margin-bottom: 0.5em;
 }
@@ -201,14 +190,15 @@ h3 {
     font-family: var(--header-fonts);
     font-size: 0.9rem;
     font-weight: bold;
-    text-align: left;
 
+    text-align: left;
     margin-top: 0.4em;
     margin-bottom: 0.2em;
 }
 
 p {
     text-indent: 1.5em;
+    margin: 0.3rem;
 }
 
 cite {
@@ -227,8 +217,8 @@ hr {
     border-style: none;
     border-radius: var(--rounding);
 
-    height: var(--line-width);
     width: 100%;
+    height: var(--line-width);
 }
 
 .highlightable:hover,
@@ -250,6 +240,11 @@ a:active {
     color: var(--color-strong-accent);
 }
 
+.grid-item {
+    padding: 0.5rem;
+    margin: 0.75rem;
+}
+
 @supports(display: flex) {
     #navigation-bar {
         display: flex;
@@ -259,26 +254,36 @@ a:active {
 }
 
 @supports(display: grid) {
-    @media (min-width: calc(500px + 6rem)) {
-        .grid-container {
-            align-self: center;
-            display: grid;
-            grid-gap: 1rem;
-            grid-auto-flow: auto;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            align-items: top;
-            justify-content: center;
-            margin-top: 1rem;
-            margin-bottom: 2rem;
-        }
+    .grid-container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-auto-flow: auto;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
-        .grid-item {
-            grid-area: auto;
-            padding: 1rem;
-            border-color: var(--color-mid-accent);
-            border-style: solid;
-            border-width: var(--line-width);
-            border-radius: var(--rounding);
-        }
+        align-items: top;
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .grid-item {
+        grid-area: auto;
+        margin: 0;
+    }
+}
+
+@media (min-width: calc(500px + 6rem)) {
+    .grid-item {
+        border-color: var(--color-mid-accent);
+        border-style: solid;
+        border-width: var(--line-width);
+        border-radius: var(--rounding);
+    }
+}
+
+@media (min-width: 450px) {
+    body {
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
