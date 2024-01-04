@@ -88,18 +88,13 @@ main {
     text-wrap: no-wrap;
 }
 
-#light-theme-icon,
-#dark-theme-icon {
+.theme-icon {
     height: 1.4rem;
     vertical-align: middle;
 }
 
 select {
     background-color: transparent;
-    border: var(--color-strong-accent);
-    border-style: solid;
-    border-width: 0.15rem;
-    border-radius: var(--rounding);
 
     color: var(--color-main-text);
 
@@ -118,19 +113,16 @@ option {
 }
 
 /* language icons: */
-.sel-lang-icon {
-    border-color: var(--color-strong-accent);
-    border-style: solid;
-    border-width: 0.15rem;
-    border-radius: var(--rounding);
-
+.lang-icon {
     height: 1.2rem;
     vertical-align: middle;
 }
 
-.unsel-lang-icon {
-    height: 1.2rem;
-    vertical-align: middle;
+.str-outlined {
+    border: var(--color-strong-accent);
+    border-style: solid;
+    border-width: 0.15rem;
+    border-radius: var(--rounding);
 }
 
 #copyright {
