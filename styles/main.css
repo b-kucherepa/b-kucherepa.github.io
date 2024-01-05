@@ -132,7 +132,7 @@ option {
 
 h1 {
     background-clip: text;
-    background-image: linear-gradient(1deg, var(--color-strong-accent) 20%, var(--color-weak-accent) 60%);
+    background-image: linear-gradient(1deg, var(--color-strong-accent) 25%, var(--color-weak-accent) 60%);
     background-repeat: no-repeat;
 
     color: var(--var-support-safety);

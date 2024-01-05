@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>The Morning Firebird</title>
+    <meta name="description" content="The Morning Firebird developer's personal web page">
     <link rel="shortcut icon" type="image/icon type" href="icons/firebird-logo.svg" />
     <script type="text/javascript" src="scripts/main.js"></script>
     <link rel="stylesheet" href="styles/main.css">
@@ -24,7 +25,7 @@
 <body>
     <header>
         <nav id="navigation-bar">
-            <div class="nav-item jsOnly">
+            <label class="nav-item jsOnly">
                 Theme:
                 <div class="menu-element">
                     <img id="sel-light-theme-icon" class="theme-icon" src="icons/sun-selected.svg" height=12
@@ -36,18 +37,18 @@
                     <img id="unsel-dark-theme-icon" class="theme-icon highlightable" src="icons/moon-unselected.svg"
                         height=12 title="Set to dark theme" alt="Unfilled moon icon">
                 </div>
-            </div>
-            <div class="nav-item jsOnly">
+            </label>
+            <label class="nav-item jsOnly">
                 Navigation:
-                <select id="section-selector" class="menu-element str-outlined highlightable">
-                    <option value="section-why">Why programming</option>
+                <select id="section-selector" class="menu-element str-outlined highlightable" title="Section select" >
+                    <option value="section-why">Why IT</option>
                     <option value="section-me">About me</option>
                     <option value="section-skills">My skills</option>
-                    <option value="section-resources">Educational resources</option>
-                    <option value="section-works">Some of my works</option>
+                    <option value="section-resources">Sources</option>
+                    <option value="section-works">My works</option>
                 </select>
-            </div>
-            <div class="nav-item">
+            </label>
+            <label class="nav-item">
                 Language:
                 <div class="menu-element">
                     <img class="lang-icon str-outlined" src="icons/us-flag-ico.svg" height=12 title="English is set"
@@ -55,33 +56,38 @@
                     <a href="mainrus.html"><img class="lang-icon highlightable" src="icons/ru-flag-ico.svg" height=12
                             title="Выбрать русский" alt="Значок русского" lang="ru-RU"></a>
                 </div>
-            </div>
+            </label>
         </nav>
     </header>
 
     <main>
         <section id="section-why">
-            <h1>Why programming</h1>
+            <h1>Why IT</h1>
             <p> I often compare programming with magic. How it is so? </p>
             <p>The modern IT sorcerers use their magic altar, a
                 PC with programming software, to create grimoires, the programs, which are full of spells, code pieces,
-                to cast them in the virtual world. And not just that!</p> 
-                <p>Decades ago, programming was a
-                science more than of any application usage. But nowadays the power of this digital enchantment is so strong
+                to cast them in the virtual world. And not just that!</p>
+            <p>Decades ago, programming was a
+                science more than of any application usage. But nowadays the power of this digital enchantment is so
+                strong
                 that it affects almost every area of human life.</p>
             <p> Since my young age, I have been fascinated and inspired by the bright artificial worlds provided by
-                video games. Later, I've also got amazed an unimaginable potential of the web connecting people across the globe with almost no limits. I dreamed about
+                video games. Later, I've also got amazed an unimaginable potential of the web connecting people across
+                the globe with almost no limits. I dreamed about
                 initiating in that art of technical mages. </p>
             <p> Unfortunately, my life has turned the other way. My teen age attempts and experiments with game engines,
                 small home websites and Adobe Flash technology (ActionScript 3.0) gave place to something more real and
                 practical, like veterinary science. After getting my high education in that area, I decided to return to
                 my dream.</p>
-                <p> Combining the work and the self-education, I learned programming basis and my first language, C#. The first steps were pretty humble, but the path of learning the IT art is a
+            <p> Combining the work and the self-education, I learned programming basis and my first language, C#. The
+                first steps were pretty humble, but the path of learning the IT art is a
                 never-ending process. </p>
-            <p> Finally, I decided to change my life. It wasn't easy, taking into account the fact I don't have the specific
-                education, which fuels imposter syndrome. But I made a firm decision it shouldn't stop me on the way to what I like and have been wanting to do all along.  </p>
-                <p>Let this page be a declaration of the fresh start towards
-                    making my dream true!</p>
+            <p> Finally, I decided to change my life. It wasn't easy, taking into account the fact I don't have the
+                specific
+                education, which fuels imposter syndrome. But I made a firm decision it shouldn't stop me on the way to
+                what I like and have been wanting to do all along. </p>
+            <p>Let this page be a declaration of the fresh start towards
+                making my dream true!</p>
         </section>
 
         <section id="section-me">
@@ -94,7 +100,7 @@
                 </div>
                 <div class="grid-item">
                     <h3>Age:</h3>
-                    <dd id="my-age">late twenties.</p>
+                    <p id="my-age">late twenties.</p>
                 </div>
                 <div class="grid-item">
                     <h3>Country of birth:</h3>
@@ -281,13 +287,26 @@
                     <h3>Write code for people</h3>
                     <p><q>Any fool can write code that a computer can understand. Good programmers write code that
                             humans can understand</q>, said <cite>Martin Fowler</cite>. I value clear or at least
-                        well-commented code above all else. One can always optimize good code if needed.</p>
+                        well-commented code above all else. One can always optimize good code later if needed.</p>
+                </div>
+            </div>
+            </div>
+            <h2>Currently on</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <p>Git workflows</p>
+                </div>
+                <div class="grid-item">
+                    <p>ASP.NET</p>
+                </div>
+                <div class="grid-item">
+                    <p>AJAX</p>
                 </div>
             </div>
         </section>
 
         <section id="section-resources">
-            <h1>Educational resources</h1>
+            <h1>Sources</h1>
             <h2>Programming languages</h2>
             <div class="grid-container">
                 <div class="grid-item">
@@ -352,23 +371,10 @@
                 <div class="grid-item">
                     <p><cite>Gayle Laakmann McDowell.</cite><br> Cracking the Coding Interview.</p>
                 </div>
-            </div>
-            <h2>Currently on</h2>
-            <div class="grid-container">
-                <div class="grid-item">
-                    <p>Git workflows</p>
-                </div>
-                <div class="grid-item">
-                    <p>ASP.NET</p>
-                </div>
-                <div class="grid-item">
-                    <p>AJAX</p>
-                </div>
-            </div>
         </section>
 
         <section id="section-works">
-            <h1>Some of my works</h1>
+            <h1>My works</h1>
             <h2>C# & .NET</h2>
             <div class="grid-container">
                 <div class="grid-item">
@@ -387,7 +393,8 @@
                 <div class="grid-item">
                     <h3>Nightwrap</h3>
                     <p>A minimalistic Windows desktop service which conceals the screen with black screensaver in a
-                        specified time interval if was no input detected, without putting the PC into sleep. </p>
+                        specified time interval if was no input detected. Made for users whose PC locks, logs out, or
+                        shuts down right after screen switches off.</p>
                     <p>Supports specifying the interval, working in the system tray, and loading on Windows startup.
                     </p>
                     <p>
