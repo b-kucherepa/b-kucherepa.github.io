@@ -3,15 +3,14 @@ loadLang();
 function loadLang() {
     let lang = localStorage.getItem('lang');
     if (!lang) {
-        lang = navigator.language ? navigator.language : "en";
+        lang = navigator.language ? navigator.language : "en-EN";
     }
-    const isRu = lang.includes("ru");
-    if (isRu) {
-        localStorage.setItem('lang', "ru");
-        window.location.href = "./mainrus.html";
-    }
-    else {
-        localStorage.setItem('lang', "en");
-        window.location.href = "./maineng.html";
+
+    switch (lang.slice(0, 2)) {
+        case 'ru':
+            window.location.href = "./mainrus.html";
+            break;
+        default:
+            window.location.href = "./maineng.html";
     }
 }

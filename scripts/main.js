@@ -7,6 +7,10 @@ window.onload = function () {
     initNavSelector();
 }
 
+function saveLang() {
+    localStorage.setItem('lang', document.documentElement.lang);
+}
+
 function initCopyrightYear() {
     const estYear = 2023;
     const curYear = new Date().getFullYear();
@@ -18,20 +22,20 @@ function initAge() {
     const msInYear = 31536000000;
     const birthday = new Date(96, 1, 1); //CHANGE!
     const curDate = new Date();
-    const myAge = Math.floor((curDate - birthday) / msInYear);
+    const myAge = Math.ceil((curDate - birthday) / msInYear);
     const ageLine = document.getElementById('my-age');
     ageLine.innerHTML = myAge;
 }
 
 function initH1Animation() {
-    window.addEventListener('scroll', animateH);
+    window.addEventListener('scroll', animateH1);
 }
 
 function initTheme() {
     const lightIcon = document.getElementById('unsel-light-theme-icon');
     const darkIcon = document.getElementById('unsel-dark-theme-icon');
-    lightIcon.addEventListener('click', setLightTheme);
-    darkIcon.addEventListener('click', setDarkTheme);
+    lightIcon.addEventListener('click', () => { setTheme("light"); });
+    darkIcon.addEventListener('click', () => { setTheme("dark"); });
 
     let theme = localStorage.getItem('theme');
     if (!theme) {
@@ -39,12 +43,6 @@ function initTheme() {
         theme = (isPrefDark === true) ? "dark" : "light";
     }
     setTheme(theme);
-    loadColorTheme(theme);
-}
-
-function saveLang() {
-    console.log(document.documentElement.lang);
-    localStorage.setItem('lang', document.documentElement.lang);
 }
 
 function initNavSelector() {
@@ -52,39 +50,38 @@ function initNavSelector() {
     sectSel.addEventListener('change', loadSection);
 }
 
-function setLightTheme() { setTheme("light") };
-function setDarkTheme() { setTheme("dark") };
-
 function setTheme(theme) {
     document.documentElement.className = theme;
     localStorage.setItem('theme', theme);
-    loadColorTheme(theme);
-}
-
-function loadColorTheme(theme) {
-    const selLightIcon = document.getElementById('sel-light-theme-icon');
-    const unselLightIcon = document.getElementById('unsel-light-theme-icon');
-    const selDarkIcon = document.getElementById('sel-dark-theme-icon');
-    const unselDarkIcon = document.getElementById('unsel-dark-theme-icon');
 
     if (theme === "dark") {
-        selLightIcon.style.display = 'none';
-        unselLightIcon.style.display = 'inline-block';
-        selDarkIcon.style.display = 'inline-block';
-        unselDarkIcon.style.display = 'none';
+        removeElemById('sel-light-theme-icon');
+        restoreElemById('unsel-light-theme-icon', 'inline-block');
+        restoreElemById('sel-dark-theme-icon', 'inline-block');
+        removeElemById('unsel-dark-theme-icon');
     }
     else {
-        selLightIcon.style.display = 'inline-block';
-        unselLightIcon.style.display = 'none';
-        selDarkIcon.style.display = 'none';
-        unselDarkIcon.style.display = 'inline-block';
+        restoreElemById('sel-light-theme-icon', 'inline-block');
+        removeElemById('unsel-light-theme-icon');
+        removeElemById('sel-dark-theme-icon');
+        restoreElemById('unsel-dark-theme-icon', 'inline-block');
     }
+}
+
+function removeElemById(element) {
+    const domElem = document.getElementById(element);
+    domElem.style.display = 'none';
+}
+
+function restoreElemById(element, option) {
+    const domElem = document.getElementById(element);
+    domElem.style.display = option;
 }
 
 function loadSection() {
-    const sectYpos = getSectionY();
+    const sectScrollY = getSectionY();
     const navHeight = getNavBarHeight();
-    const scrollStep = sectYpos - navHeight;
+    const scrollStep = sectScrollY - navHeight;
     window.scroll({
         top: window.scrollY + scrollStep,
         behavior: 'smooth'
@@ -103,22 +100,19 @@ function getNavBarHeight() {
     return nav.offsetHeight;
 }
 
-function animateH() {
-    const hArray = document.getElementsByTagName('h1');
-    for (const h of hArray) {
-        const hRelY = h.getBoundingClientRect().top;
-        if (0 < hRelY && hRelY < window.innerHeight) {
-            h.animate([
+function animateH1() {
+    const h1Array = document.getElementsByTagName('h1');
+    for (const h1 of h1Array) {
+        const h1ScrollY = h1.getBoundingClientRect().top;
+        if (0 < h1ScrollY && h1ScrollY < window.innerHeight) {
+            h1.animate([
                 { backgroundSize: '100%' },
                 { backgroundSize: '400%' },
                 { backgroundSize: '200%' },
-                { backgroundSize: '100%' }
-            ],
+                { backgroundSize: '100%' }],
                 {
                     duration: 1200,
                 })
         }
     }
 }
-
-
