@@ -1,199 +1,27 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   width="211.6mm"
-   height="158.7mm"
-   viewBox="0 0 211.6 158.7"
-   version="1.1"
-   id="svg1"
-   sodipodi:docname="firebird-logo-detailed.svg"
-   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <title
-     id="title1">firebird-logo-detailed</title>
-  <sodipodi:namedview
-     id="namedview1"
-     pagecolor="#505050"
-     bordercolor="#eeeeee"
-     borderopacity="1"
-     inkscape:showpageshadow="0"
-     inkscape:pageopacity="0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#505050"
-     inkscape:document-units="mm"
-     inkscape:zoom="0.7971"
-     inkscape:cx="434.1"
-     inkscape:cy="168.7"
-     inkscape:window-width="1920"
-     inkscape:window-height="991"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
-     showgrid="false" />
-  <defs
-     id="defs1">
-    <linearGradient
-       id="linearGradient4">
-      <stop
-         style="stop-color:#00ddff;stop-opacity:1;"
-         offset="0"
-         id="stop3" />
-      <stop
-         style="stop-color:#9900ff;stop-opacity:1;"
-         offset="1"
-         id="stop4" />
-    </linearGradient>
-    <inkscape:path-effect
-       effect="bspline"
-       id="path-effect5"
-       is_visible="true"
-       lpeversion="1.3"
-       weight="33.33"
-       steps="2"
-       helper_size="0"
-       apply_no_weight="true"
-       apply_with_weight="true"
-       only_selected="false"
-       uniform="false" />
-    <inkscape:path-effect
-       effect="bspline"
-       id="path-effect4"
-       is_visible="true"
-       lpeversion="1.3"
-       weight="33.33"
-       steps="2"
-       helper_size="0"
-       apply_no_weight="true"
-       apply_with_weight="true"
-       only_selected="false"
-       uniform="false" />
-    <linearGradient
-       id="linearGradient12">
-      <stop
-         style="stop-color:#00ccff;stop-opacity:1;"
-         offset="0"
-         id="stop114" />
-      <stop
-         style="stop-color:#a800ff;stop-opacity:1;"
-         offset="1"
-         id="stop115" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient64">
-      <stop
-         style="stop-color:#00ccff;stop-opacity:1;"
-         offset="0"
-         id="stop112" />
-      <stop
-         style="stop-color:#00ccff;stop-opacity:0;"
-         offset="1"
-         id="stop113" />
-    </linearGradient>
-    <inkscape:path-effect
-       effect="bend_path"
-       id="path-effect16"
-       is_visible="true"
-       lpeversion="1"
-       bendpath="M 29.9,160.5 H 53.97"
-       prop_scale="1.4"
-       scale_y_rel="false"
-       vertical="false"
-       hide_knot="false" />
-    <inkscape:path-effect
-       effect="skeletal"
-       id="path-effect15"
-       is_visible="true"
-       lpeversion="1"
-       pattern="M 0,0 H 1"
-       copytype="single_stretched"
-       prop_scale="1"
-       scale_y_rel="false"
-       spacing="0"
-       normal_offset="0"
-       tang_offset="0"
-       prop_units="false"
-       vertical_pattern="false"
-       hide_knot="false"
-       fuse_tolerance="0" />
-    <inkscape:path-effect
-       effect="knot"
-       id="path-effect14"
-       is_visible="true"
-       lpeversion="1"
-       switcher_size="16.8"
-       interruption_width="3.6"
-       prop_to_stroke_width="true"
-       add_stroke_width="inkscape_1.0_and_up"
-       both="false"
-       inverse_width="false"
-       add_other_stroke_width="inkscape_1.0_and_up"
-       crossing_points_vector="" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient12"
-       id="linearGradient103"
-       x1="68.66"
-       y1="123"
-       x2="96.8"
-       y2="102.5"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.9421,0,0,0.9616,1.866,1.119)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient12"
-       id="linearGradient106"
-       x1="51.86"
-       y1="150.9"
-       x2="193.9"
-       y2="77.48"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.9421,0,0,0.9616,6.627,1.648)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient12"
-       id="linearGradient1"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.9421,0,0,0.9616,1.866,1.119)"
-       x1="91.09"
-       y1="120"
-       x2="116.8"
-       y2="141.6" />
-  </defs>
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-32.08,-29.66)">
-    <path
-       id="path52"
-       style="fill:none;stroke:url(#linearGradient106);stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;stroke-dasharray:none;stroke-dashoffset:37.789;paint-order:normal"
-       d="M 149.8,147.3 C 219.9,83.29 157.5,89 142.1,97.21 160.9,67.17 118.3,53.64 80.17,76.68 c -2,-27.47 43.93,-49.72 64.33,-43.72 -6.2,8.77 -8.6,11.41 -12.4,21.79 16.9,-4.78 32.2,-14.91 48.5,-14.12 -9.9,11.32 -7.5,19.98 -10.6,25.05 11.8,-4.95 48.1,-10.3 56.5,-6.02 -17.6,4.52 -26.2,17.49 -36,28.13 17.9,1.49 22.4,-4.01 43.8,-0.84 1.3,0.19 -23.7,11.17 -34.8,28.65 -2.6,4.1 23.8,-6.6 41.8,4.6 -16.6,2.9 -18.6,16.8 -46.3,24.3 11.3,5.9 18.9,8.6 29.6,24.5 5.3,8.6 -22.4,-12.5 -53.4,-2 2.6,3.8 8,10.6 25.8,18.5 -26.6,0.1 -62.5,1.2 -64.7,-24.8 6,-35.4 0.2,-62.89 -42.43,-74.66 -15.63,-0.91 -24.28,9.12 -33.17,23.76 -2.19,2.7 -2.03,6 -1.21,9.3 0,0.1 -30.91,46.4 -15.81,53.4 0.95,0.5 8.96,-13 39.22,-13 1.38,-0.2 20.38,0.3 31.7,4.8 M 72.08,141.1 v 0 c 0,0 -4.87,6.8 -18.78,11.3 -4.91,1.6 -12.56,13 -14.67,16.5"
-       sodipodi:nodetypes="cccccccccssccscccccsssccssc" />
-    <path
-       id="path1"
-       style="fill:none;stroke:url(#linearGradient1);stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;stroke-dasharray:none;stroke-dashoffset:37.789;paint-order:normal"
-       d="m 73.97,129.6 c 27.93,1.9 28.33,-17.9 28.53,-18.4 m -6.45,15.1 c 5.95,6.6 11.05,16.2 9.85,25 m -9.58,-25.2 c 7.58,6.5 23.58,2.9 26.58,2.4" />
-    <path
-       style="fill:none;stroke:url(#linearGradient103);stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;stroke-dasharray:none;stroke-dashoffset:37.789;paint-order:normal"
-       d="m 97.42,99.5 v 0 C 82.2,99 67.94,112 65.13,123.4"
-       id="path61" />
-  </g>
-  <metadata
-     id="metadata1">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:title>firebird-logo-detailed</dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
+<svg width="211.6mm" height="158.7mm" viewBox="0 0 211.6 158.7" xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg">
+   <defs />
+   <defs>
+      <linearGradient id="prefix__a">
+         <stop offset="0" stop-color="#0cf" />
+         <stop offset="1" stop-color="#a800ff" />
+      </linearGradient>
+      <linearGradient xlink:href="#prefix__a" id="prefix__d" x1="68.66" y1="123" x2="96.8" y2="102.5"
+         gradientUnits="userSpaceOnUse" gradientTransform="matrix(.9421 0 0 .9616 1.866 1.119)" />
+      <linearGradient xlink:href="#prefix__a" id="prefix__b" x1="51.86" y1="150.9" x2="193.9" y2="77.48"
+         gradientUnits="userSpaceOnUse" gradientTransform="matrix(.9421 0 0 .9616 6.627 1.648)" />
+      <linearGradient xlink:href="#prefix__a" id="prefix__c" gradientUnits="userSpaceOnUse"
+         gradientTransform="matrix(.9421 0 0 .9616 1.866 1.119)" x1="91.09" y1="120" x2="116.8" y2="141.6" />
+   </defs>
+   <g fill="none" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1"
+      stroke-dashoffset="37.789">
+      <path
+         d="M149.8 147.3c70.1-64.01 7.7-58.3-7.7-50.09 18.8-30.04-23.8-43.57-61.93-20.53-2-27.47 43.93-49.72 64.33-43.72-6.2 8.77-8.6 11.41-12.4 21.79 16.9-4.78 32.2-14.91 48.5-14.12-9.9 11.32-7.5 19.98-10.6 25.05 11.8-4.95 48.1-10.3 56.5-6.02-17.6 4.52-26.2 17.49-36 28.13 17.9 1.49 22.4-4.01 43.8-.84 1.3.19-23.7 11.17-34.8 28.65-2.6 4.1 23.8-6.6 41.8 4.6-16.6 2.9-18.6 16.8-46.3 24.3 11.3 5.9 18.9 8.6 29.6 24.5 5.3 8.6-22.4-12.5-53.4-2 2.6 3.8 8 10.6 25.8 18.5-26.6.1-62.5 1.2-64.7-24.8 6-35.4.2-62.89-42.43-74.66-15.63-.91-24.28 9.12-33.17 23.76-2.19 2.7-2.03 6-1.21 9.3 0 .1-30.91 46.4-15.81 53.4.95.5 8.96-13 39.22-13 1.38-.2 20.38.3 31.7 4.8m-38.52-23.2v0s-4.87 6.8-18.78 11.3c-4.91 1.6-12.56 13-14.67 16.5"
+         stroke="url(#prefix__b)" transform="translate(-32.08 -29.66)" />
+      <path
+         d="M73.97 129.6c27.93 1.9 28.33-17.9 28.53-18.4m-6.45 15.1c5.95 6.6 11.05 16.2 9.85 25m-9.58-25.2c7.58 6.5 23.58 2.9 26.58 2.4"
+         stroke="url(#prefix__c)" transform="translate(-32.08 -29.66)" />
+      <path d="M97.42 99.5v0C82.2 99 67.94 112 65.13 123.4" stroke="url(#prefix__d)"
+         transform="translate(-32.08 -29.66)" />
+   </g>
 </svg>
