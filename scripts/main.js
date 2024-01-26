@@ -20,9 +20,9 @@ function initCopyrightYear() {
 
 function initAge() {
     const msInYear = 31536000000;
-    const birthday = new Date(96, 1, 1); //CHANGE!
+    const birthday = new Date(96, 2, 1); //CHANGE!
     const curDate = new Date();
-    const myAge = Math.ceil((curDate - birthday) / msInYear);
+    const myAge = Math.floor((curDate - birthday) / msInYear);
     const ageLine = document.getElementById('my-age');
     ageLine.innerHTML = myAge;
 }
@@ -107,8 +107,8 @@ function animateH1() {
         if (0 < h1ScrollY && h1ScrollY < window.innerHeight) {
             h1.animate([
                 { backgroundSize: '100%' },
-                { backgroundSize: '400%' },
-                { backgroundSize: '200%' },
+                { backgroundSize: '225%' },
+                { backgroundSize: '150%' },
                 { backgroundSize: '100%' }],
                 {
                     duration: 1200,
