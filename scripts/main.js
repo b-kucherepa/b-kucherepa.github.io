@@ -107,7 +107,7 @@ function animateH1() {
         if (0 < h1ScrollY && h1ScrollY < window.innerHeight) {
             h1.animate([
                 { backgroundSize: '100%' },
-                { backgroundSize: '225%' },
+                { backgroundSize: '275%' },
                 { backgroundSize: '150%' },
                 { backgroundSize: '100%' }],
                 {
