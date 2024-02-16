@@ -1,4 +1,6 @@
 :root {
+    background-color: #00002A;
+    color: #ffffff;
     --line-width: 0.15rem;
     --rounding: 0.4rem;
     --regular-fonts: 'Jura', 'Tahoma', sans-serif;
@@ -28,7 +30,7 @@
 body {
     background-attachment: fixed;
     background-image: linear-gradient(to bottom, var(--bg-gradient-top), var(--bg-gradient-bottom));
-    background-size: 100%;
+    background-size: cover;
 
     color: var(--color-main-text);
 
@@ -38,6 +40,7 @@ body {
 
     text-align: justify;
     padding: 0.5rem;
+    margin:0;
 
     overflow: auto;
     scrollbar-width: 1vw;
