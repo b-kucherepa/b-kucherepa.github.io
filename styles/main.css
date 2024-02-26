@@ -1,296 +1,304 @@
 :root {
-    background-color: #00002A;
-    color: #ffffff;
-    --line-width: 0.15rem;
-    --rounding: 0.4rem;
-    --regular-fonts: 'Jura', 'Tahoma', sans-serif;
-    --header-fonts: 'Unbounded', 'Georgia', sans-serif;
-    --var-support-safety: transparent;
+  text-wrap: wrap;
+  background-color: #00002a;
+  color: #ffffff;
+  --line-width: 0.15rem;
+  --rounding: 0.4rem;
+  --regular-fonts: "Jura", "Tahoma", sans-serif;
+  --header-fonts: "Unbounded", "Georgia", sans-serif;
+  --var-support-safety: transparent;
 }
 
 /* theme-specified coloring: */
 :root.light {
-    --bg-gradient-top: #ddeeff;
-    --bg-gradient-bottom: #ffffff;
-    --color-strong-accent: #9900ff;
-    --color-mid-accent: #4488FF;
-    --color-weak-accent: #00DDFF;
-    --color-main-text: #000020;
+  --bg-gradient-top: #ddeeff;
+  --bg-gradient-bottom: #ffffff;
+  --color-strong-accent: #9900ff;
+  --color-mid-accent: #4488ff;
+  --color-weak-accent: #00ddff;
+  --color-main-text: #000020;
 }
 
 :root.dark {
-    --bg-gradient-top: #000000;
-    --bg-gradient-bottom: #00002A;
-    --color-strong-accent: #00DDFF;
-    --color-mid-accent: #4488FF;
-    --color-weak-accent: #9900ff;
-    --color-main-text: #eeeeee;
+  --bg-gradient-top: #000000;
+  --bg-gradient-bottom: #00002a;
+  --color-strong-accent: #00ddff;
+  --color-mid-accent: #4488ff;
+  --color-weak-accent: #9900ff;
+  --color-main-text: #eeeeee;
 }
 
 body {
-    background-attachment: fixed;
-    background-image: linear-gradient(to bottom, var(--bg-gradient-top), var(--bg-gradient-bottom));
-    background-size: cover;
+  background-attachment: fixed;
+  background-image: linear-gradient(
+    to bottom,
+    var(--bg-gradient-top),
+    var(--bg-gradient-bottom)
+  );
+  background-size: cover;
 
-    color: var(--color-main-text);
+  color: var(--color-main-text);
 
-    font-family: var(--regular-fonts);
-    font-size: 16px;
-    font-weight: lighter;
+  font-family: var(--regular-fonts);
+  font-size: 16px;
+  font-weight: lighter;
 
-    text-align: justify;
-    padding: 0.5rem;
-    margin:0;
+  text-align: justify;
+  padding: 0.5rem;
+  margin: 0;
 
-    overflow: auto;
-    scrollbar-width: 1vw;
-    scrollbar-color: var(--color-mid-accent);
+  overflow: auto;
+  scrollbar-width: 1vw;
+  scrollbar-color: var(--color-mid-accent);
 }
 
 main {
-    margin-top: 2.5rem;
-    margin-bottom: 2rem;
+  margin: 2.5rem 0;
 }
 
 #copyright {
-    text-align: center;
-    padding: 0.75rem;
+  text-align: center;
+  padding: 0.75rem;
 }
 
 ::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 1vw;
-    height: 1vw;
-    background-color: var(--bg-gradient-bottom);
+  -webkit-appearance: none;
+  width: 1vw;
+  height: 1vw;
+  background-color: var(--bg-gradient-bottom);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--color-mid-accent);
-    border-radius: var(--rounding);
+  background-color: var(--color-mid-accent);
+  border-radius: var(--rounding);
 }
 
 ::-webkit-scrollbar-corner {
-    background-color: var(--bg-gradient-bottom);
+  background-color: var(--bg-gradient-bottom);
 }
 
 #navigation-bar {
-    display: table;
-    background-image: linear-gradient(to bottom,
-            var(--bg-gradient-top) 70%,
-            transparent);
+  display: table;
+  background-image: linear-gradient(
+    to bottom,
+    var(--bg-gradient-top) 70%,
+    transparent
+  );
 
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-    padding-bottom: 1.2rem;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  padding-bottom: 1.2rem;
 }
 
 /*labelled container which takes its place in the nav bar "grid"*/
 .nav-item {
-    display: table-cell;
-    text-wrap: wrap;
-    margin: 0.2rem;
+  display: table-cell;
+  margin: 0.2rem;
 }
 
 /*interactive content container which composes a single GUI element*/
 .menu-element {
-    display: inline-block;
-    text-wrap: no-wrap;
-    margin-top: 0.2rem;
+  display: inline-block;
+  text-wrap: nowrap;
+  margin-top: 0.2rem;
 }
 
 /*page theme icons*/
 .theme-icon {
-    display: none;
-    height: 1.4rem;
-    vertical-align: middle;
+  display: none;
+  height: 1.4rem;
+  vertical-align: middle;
 }
 
 /*section selector*/
 select {
-    background-color: transparent;
+  background-color: transparent;
 
-    color: var(--color-main-text);
+  color: var(--color-main-text);
 
-    font-family: var(--regular-fonts);
-    text-overflow: ellipsis;
+  font-family: var(--regular-fonts);
+  text-overflow: ellipsis;
 
-    width: 100%;
-    max-width: fit-content;
-    height: 1.5rem;
-    vertical-align: -0.05rem;
+  width: 100%;
+  max-width: fit-content;
+  height: 1.5rem;
+  vertical-align: -0.05rem;
 }
 
 option {
-    background-color: var(--bg-gradient-top);
-    text-overflow: ellipsis;
+  background-color: var(--bg-gradient-top);
+  text-overflow: ellipsis;
 }
 
 /* language icons: */
 .lang-icon {
-    height: 1.2rem;
-    vertical-align: middle;
+  height: 1.2rem;
+  vertical-align: middle;
 }
 
 h1 {
-    background-clip: text;
-    background-image: linear-gradient(1deg,
-            var(--color-strong-accent) 25%,
-            var(--color-weak-accent) 50%);
-    background-size: contain;
+  background-clip: text;
+  background-image: linear-gradient(
+    1deg,
+    var(--color-strong-accent) 25%,
+    var(--color-weak-accent) 50%
+  );
+  background-size: contain;
 
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
 
-    color: var(--var-support-safety);
+  color: var(--var-support-safety);
 
-    font-family: var(--header-fonts);
-    font-weight: bold;
-    font-size: 1.6rem;
+  font-family: var(--header-fonts);
+  font-weight: bold;
+  font-size: 1.6rem;
 
-    text-align: left;
-    position: relative;
-    margin-top: 2em;
-    margin-bottom: 0.75em;
+  text-align: start;
+  position: relative;
+  margin-top: 2em;
+  margin-bottom: 0.75em;
 }
 
 /* h1 underline: */
 h1:before {
-    background-image: linear-gradient(to right,
-            var(--color-strong-accent) 0%,
-            var(--color-weak-accent) 80%,
-            transparent 100%);
+  background-image: linear-gradient(
+    to right,
+    var(--color-strong-accent) 0%,
+    var(--color-weak-accent) 80%,
+    transparent 100%
+  );
 
-    border-radius: var(--rounding);
+  border-radius: var(--rounding);
 
-    content: "";
+  content: "";
 
-    position: absolute;
-    top: 1.25em;
-    width: 100%;
-    height: var(--line-width);
+  position: absolute;
+  top: 1.25em;
+  width: 100%;
+  height: var(--line-width);
 }
 
 h2 {
-    color: var(--color-strong-accent);
+  color: var(--color-strong-accent);
 
-    font-family: var(--header-fonts);
-    font-size: 1.3rem;
+  font-family: var(--header-fonts);
+  font-size: 1.3rem;
 
-    text-align: center;
-    margin-top: 1.5em;
-    margin-bottom: 0.75em;
+  text-align: center;
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
 }
 
 h3 {
-    color: var(--color-weak-accent);
+  color: var(--color-weak-accent);
 
-    font-family: var(--header-fonts);
-    font-size: 0.9rem;
-    font-weight: bold;
+  font-family: var(--header-fonts);
+  font-size: 0.9rem;
+  font-weight: bold;
 
-    text-align: left;
-    margin-top: 0.4em;
-    margin-bottom: 0.2em;
+  text-align: start;
+  margin-top: 0.4em;
+  margin-bottom: 0.2em;
 }
 
 p {
-    text-indent: 1.5em;
-    margin: 0.3rem;
+  text-indent: 1.5em;
+  margin: 0.3rem;
 }
 
 cite {
-    font-weight: bold;
-    font-style: italic;
+  font-weight: bold;
+  font-style: italic;
 }
 
 hr {
-    background-clip: border-box;
-    background-image: linear-gradient(to right,
-            var(--color-strong-accent) 0%,
-            var(--color-weak-accent) 80%,
-            transparent 100%);
-    background-repeat: repeat;
+  background-clip: border-box;
+  background-image: linear-gradient(
+    to right,
+    var(--color-strong-accent) 0%,
+    var(--color-weak-accent) 80%,
+    transparent 100%
+  );
+  background-repeat: repeat;
 
-    border-style: none;
-    border-radius: var(--rounding);
+  border-style: none;
+  border-radius: var(--rounding);
 
-    width: 100%;
-    height: var(--line-width);
+  width: 100%;
+  height: var(--line-width);
 }
 
 .str-outlined {
-    border: var(--color-strong-accent);
-    border-style: solid;
-    border-width: 0.15rem;
-    border-radius: var(--rounding);
+  border: var(--color-strong-accent);
+  border-style: solid;
+  border-width: 0.15rem;
+  border-radius: var(--rounding);
 }
 
 .highlightable:hover,
 a:hover {
-    cursor: pointer;
-    filter: brightness(1.4);
+  cursor: pointer;
+  filter: brightness(1.4);
 }
 
 /* links: */
 a:link {
-    color: var(--color-mid-accent);
+  color: var(--color-mid-accent);
 }
 
 a:visited {
-    color: var(--color-weak-accent);
+  color: var(--color-weak-accent);
 }
 
 a:active {
-    color: var(--color-strong-accent);
+  color: var(--color-strong-accent);
 }
 
 .grid-item {
-    padding: 0;
-    margin: 0.75rem;
+  padding: 0;
+  margin: 0.75rem;
 }
 
-@supports(display: flex) {
-    #navigation-bar {
-        display: flex;
-        justify-content: space-around;
-        align-content: bottom;
-    }
+@supports (display: flex) {
+  #navigation-bar {
+    display: flex;
+    place-content: center space-around;
+  }
 }
 
-@supports(display: grid) {
-    .grid-container {
-        display: grid;
-        grid-gap: 1rem;
-        grid-auto-flow: auto;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+@supports (display: grid) {
+  .grid-container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-auto-flow: auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
-        justify-content: center;
-        align-items: top;
-        margin-top: 1rem;
-    }
+    place-content: center top;
+    margin-top: 1rem;
+  }
 
-    .grid-item {
-        grid-area: auto;
-        margin: 0;
-    }
+  .grid-item {
+    grid-area: auto;
+    margin: 0;
+  }
 }
 
 @media (min-width: calc(500px + 6rem)) {
-    .grid-item {
-        border-color: var(--color-mid-accent);
-        border-style: solid;
-        border-width: var(--line-width);
-        border-radius: var(--rounding);
-        padding: 0.75rem;
-    }
+  .grid-item {
+    border-color: var(--color-mid-accent);
+    border-style: solid;
+    border-width: var(--line-width);
+    border-radius: var(--rounding);
+    padding: 0.75rem;
+  }
 }
 
 @media (min-width: 450px) {
-    body {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
+  body {
+    padding: 0.75rem 10%;
+  }
 }
