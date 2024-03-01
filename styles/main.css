@@ -77,7 +77,7 @@ main {
   background-color: var(--bg-gradient-bottom);
 }
 
-#navigation-bar {
+#nav-bar {
   display: table;
   background-image: linear-gradient(
     to bottom,
@@ -87,6 +87,7 @@ main {
 
   text-align: center;
   position: fixed;
+  box-sizing: border-box;
   top: 0;
   left: 0;
   width: 100%;
@@ -207,7 +208,7 @@ h3 {
 
 p {
   text-indent: 1.5em;
-  margin: 0.3rem;
+  margin: 0.5em;
 }
 
 cite {
@@ -264,7 +265,7 @@ a:active {
 }
 
 @supports (display: flex) {
-  #navigation-bar {
+  #nav-bar {
     display: flex;
     place-content: center space-around;
   }
