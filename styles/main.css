@@ -288,7 +288,7 @@ a:active {
   }
 }
 
-@media (min-width: calc(500px + 6rem)) {
+@media (min-width: calc(500px + 9rem)) {
   .grid-item {
     border-color: var(--color-mid-accent);
     border-style: solid;
