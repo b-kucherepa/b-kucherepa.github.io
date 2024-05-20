@@ -1,5 +1,8 @@
 {
   "langs": ["en", "ru"],
+  "links": {
+    "gitHub": "https://github.com/b-kucherepa"
+  },
   "head": {
     "title": {
       "en": "Boris",
@@ -10,7 +13,173 @@
       "ru": "Персональная веб-страница разработчика Бориса Кучерепа"
     }
   },
-  "nav": {},
-  "footer": {},
-  "body": {}
+  "nav": {
+    "themes": {
+      "label": {
+        "en": "",
+        "ru": ""
+      },
+      "lightIcon": {
+        "set": {
+          "title": {
+            "en": "",
+            "ru": ""
+          },
+          "alt": {
+            "en": "",
+            "ru": ""
+          }
+        },
+        "unset": {
+          "title": {
+            "en": "",
+            "ru": ""
+          },
+          "alt": {
+            "en": "",
+            "ru": ""
+          }
+        }
+      },
+      "darkIcon": {
+        "set": {
+          "title": {
+            "en": "",
+            "ru": ""
+          },
+          "alt": {
+            "en": "",
+            "ru": ""
+          }
+        },
+        "unset": {
+          "title": {
+            "en": "",
+            "ru": ""
+          },
+          "alt": {
+            "en": "",
+            "ru": ""
+          }
+        }
+      }
+    },
+    "navigation": {
+      "label": {
+        "en": "",
+        "ru": ""
+      },
+      "title": {
+        "en": "",
+        "ru": ""
+      }
+    },
+    "language": {
+      "label": {
+        "en": "",
+        "ru": ""
+      },
+      "title": {
+        "selected": {
+          "en": "",
+          "ru": ""
+        },
+        "unselected": {
+          "en": "",
+          "ru": ""
+        }
+      },
+      "alt": {
+        "selected": {
+          "en": "",
+          "ru": ""
+        },
+        "unselected": {
+          "en": "",
+          "ru": ""
+        }
+      }
+    }
+  },
+  "copyright": {
+    "en": "",
+    "ru": ""
+  },
+  "sections": [
+    {
+      "id": "why",
+      "type": "t",
+      "title": {
+        "en": "",
+        "ru": ""
+      },
+      "elements": [
+        {
+          "type": "p",
+          "en": "",
+          "ru": ""
+        }
+      ]
+    },
+    {
+      "id": "me",
+      "type": "g",
+      "title": {
+        "en": "",
+        "ru": ""
+      },
+      "elements": [
+        {
+          "type": "h",
+          "en": "",
+          "ru": ""
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "type": "g",
+      "title": {
+        "en": "",
+        "ru": ""
+      },
+      "elements": [
+        {
+          "type": "h",
+          "en": "",
+          "ru": ""
+        }
+      ]
+    },
+    {
+      "id": "resources",
+      "type": "r",
+      "title": {
+        "en": "",
+        "ru": ""
+      },
+      "elements": [
+        {
+          "type": "h",
+          "en": "",
+          "ru": ""
+        }
+      ]
+    },
+    {
+      "id": "works",
+      "type": "g",
+      "title": {
+        "en": "",
+        "ru": ""
+      },
+      "elements": [
+        {
+          "type": "h",
+          "en": "",
+          "ru": ""
+        }
+      ]
+    }
+  ]
 }
