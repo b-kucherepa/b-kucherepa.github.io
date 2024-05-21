@@ -1,3 +1,4 @@
+import Copyright from "./Copyright.js";
 import Head from "./Head.js";
 import IconLink from "./IconLink.js";
 import Jumper from "./Jumper.js";
@@ -51,6 +52,28 @@ const parseLanguageIcons = (
     );
   });
 
+/*const parseSections = (sections: any[], lang: string): React.ReactNode[] => {
+  enum sectionType {
+    t, //text
+    r, //resources
+    g, //grid
+  }
+  return sections.map((s)=> {
+
+  });
+};
+
+const parseSegments = (segment: any) => {
+  enum segmentType {
+    s, //section header
+    h, //header
+    p, //paragraph
+    l, //link {text, url}
+    q, //quote {text. author}
+    a, //age (interactive)
+  }
+};*/
+
 function Page(props: any) {
   const l = props.lang;
   const data = props.data;
@@ -89,44 +112,13 @@ function Page(props: any) {
             </nav>
           </header>
           <main></main>
-          <footer></footer>
+          <footer>
+            <Copyright author={data.copyright[l]} />
+          </footer>
         </body>
       </html>
     </>
   );
 }
 
-const displaySegments = (segment: any) => {};
-
-/*
-t - text
-r - resources
-g - grid
-------
-s - section header
-h - header
-p - paragraph
-l - link {text, url}
-q - quote {text. author}
-a - age (interactive)
-*/
-
 export default Page;
-
-/* <a href="maineng.html">
-<img
-  className="lang-icon highlightable"
-  src="icons/themes/us-flag-ico.svg"
-  height={12}
-  title="Switch to English"
-  alt="English icon"
-/>
-</a>
-<img
-className="lang-icon str-outlined"
-src="icons/themes/ru-flag-ico.svg"
-height={12}
-title="Выбран русский"
-alt="Значок русского"
-lang="ru-RU"
-/>*/
