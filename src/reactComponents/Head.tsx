@@ -8,7 +8,7 @@ function Head(props: any) {
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
   <link rel="shortcut icon" type="image/icon type" href="icons/firebird-logo.svg" />
-  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="build/scripts/main.js"></script>
 
   <noscript>
       <link rel="stylesheet" href="styles/noscript.css"/>
