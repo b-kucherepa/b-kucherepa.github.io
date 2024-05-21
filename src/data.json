@@ -1,7 +1,9 @@
 {
+  "pageFilePrefix": "GENERATED_",
   "langs": ["en", "ru"],
   "links": {
     "themeIcons": "icons/themes/",
+    "langIcons": "icons/lang/",
     "gitHub": "https://github.com/b-kucherepa"
   },
   "head": {
@@ -79,37 +81,57 @@
     "jumper": {
       "label": {
         "en": "Navigation:",
-        "ru": ""
+        "ru": "Навигация:"
       },
       "selectTitle": {
         "en": "Section select",
-        "ru": ""
+        "ru": "Выбор раздела"
       }
     },
-    "language": {
+    "languages": {
       "label": {
         "en": "Language:",
-        "ru": ""
+        "ru": "Язык:"
       },
-      "title": {
-        "selected": {
-          "en": "English is set",
-          "ru": ""
+      "icons": [
+        {
+          "lang": "en",
+          "class": {
+            "sel": "lang-icon str-outlined",
+            "unsel": "lang-icon highlightable"
+          },
+          "file": "us-flag.svg",
+          "title": {
+            "sel": "English is set",
+            "unsel": "Set to English"
+          },
+          "alt": {
+            "en": "English icon",
+            "ru": "Значок английского"
+          }
         },
-        "unselected": {
-          "en": "Select English",
-          "ru": ""
+        {
+          "lang": "ru",
+          "class": {
+            "sel": "lang-icon str-outlined",
+            "unsel": "lang-icon highlightable"
+          },
+          "file": "ru-flag.svg",
+          "title": {
+            "sel": "Выбран русский",
+            "unsel": "Выбрать русский"
+          },
+          "alt": {
+            "en": "Russian icon",
+            "ru": "Значок русского"
+          }
         }
-      },
-      "alt": {
-        "en": "English icon",
-        "ru": ""
-      }
+      ]
     }
   },
   "copyright": {
     "en": "Boris Kucherepa / The Morning Firebird",
-    "ru": ""
+    "ru": "Борис Кучерепа / The Morning Firebird"
   },
   "sections": [
     {

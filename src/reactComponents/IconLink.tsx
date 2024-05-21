@@ -1,5 +1,7 @@
+import { ReactNode } from "react";
+
 function IconLink(props: any) {
-  return (
+  const image: ReactNode = (
     <img
       id={props.id}
       className={props.class}
@@ -8,7 +10,8 @@ function IconLink(props: any) {
       title={props.title}
       alt={props.alt}
     />
-  )
+  );
+  return props.href ? (<a href={props.href}>{image}</a>) : (<>{image}</>);
 }
 
 export default IconLink;
