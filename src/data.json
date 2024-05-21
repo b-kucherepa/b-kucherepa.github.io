@@ -1,108 +1,114 @@
 {
   "langs": ["en", "ru"],
   "links": {
+    "themeIcons": "icons/themes/",
     "gitHub": "https://github.com/b-kucherepa"
   },
   "head": {
     "title": {
-      "en": "Boris",
+      "en": "Boris Kucherepa - Personal page",
       "ru": "Борис Кучерепа - Персональная страница"
     },
     "description": {
-      "en": "yup",
+      "en": "Boris Kuckerepa's developer personal web page",
       "ru": "Персональная веб-страница разработчика Бориса Кучерепа"
     }
   },
   "nav": {
+    "iconHeight": 12,
     "themes": {
       "label": {
-        "en": "",
-        "ru": ""
+        "en": "Theme:",
+        "ru": "Тема:"
       },
-      "lightIcon": {
-        "set": {
+      "icons": [
+        {
+          "id": "sel-light-theme-icon",
+          "class": "theme-icon",
+          "file": "sun-selected.svg",
           "title": {
-            "en": "",
-            "ru": ""
+            "en": "Light theme is set",
+            "ru": "Выбрана светлая тема"
           },
           "alt": {
-            "en": "",
-            "ru": ""
+            "en": "Иконка закрашенного солнца",
+            "ru": "Filled sun icon"
           }
         },
-        "unset": {
+        {
+          "id": "unsel-light-theme-icon",
+          "class": "theme-icon highlightable",
+          "file": "sun-unselected.svg",
           "title": {
-            "en": "",
-            "ru": ""
+            "en": "Set to light theme",
+            "ru": "Выбрать светлую тему"
           },
           "alt": {
-            "en": "",
-            "ru": ""
-          }
-        }
-      },
-      "darkIcon": {
-        "set": {
-          "title": {
-            "en": "",
-            "ru": ""
-          },
-          "alt": {
-            "en": "",
-            "ru": ""
+            "en": "Unfilled sun icon",
+            "ru": "Иконка незакрашенного солнца"
           }
         },
-        "unset": {
+        {
+          "id": "sel-dark-theme-icon",
+          "class": "theme-icon",
+          "file": "moon-selected.svg",
           "title": {
-            "en": "",
-            "ru": ""
+            "en": "Dark theme is set",
+            "ru": "Выбрана темная тема"
           },
           "alt": {
-            "en": "",
-            "ru": ""
+            "en": "Filled crescent moon icon",
+            "ru": "Иконка закрашенного полумесяца"
+          }
+        },
+        {
+          "id": "unsel-dark-theme-icon",
+          "class": "theme-icon highlightable",
+          "file": "moon-unselected.svg",
+          "title": {
+            "en": "Set to dark theme",
+            "ru": "Выбрать темную тему"
+          },
+          "alt": {
+            "en": "Unfilled crescent moon icon",
+            "ru": "Иконка незакрашенного полумесяца"
           }
         }
-      }
+      ]
     },
-    "navigation": {
+    "jumper": {
       "label": {
-        "en": "",
+        "en": "Navigation:",
         "ru": ""
       },
-      "title": {
-        "en": "",
+      "selectTitle": {
+        "en": "Section select",
         "ru": ""
       }
     },
     "language": {
       "label": {
-        "en": "",
+        "en": "Language:",
         "ru": ""
       },
       "title": {
         "selected": {
-          "en": "",
+          "en": "English is set",
           "ru": ""
         },
         "unselected": {
-          "en": "",
+          "en": "Select English",
           "ru": ""
         }
       },
       "alt": {
-        "selected": {
-          "en": "",
-          "ru": ""
-        },
-        "unselected": {
-          "en": "",
-          "ru": ""
-        }
+        "en": "English icon",
+        "ru": ""
       }
     }
   },
   "copyright": {
-    "en": "",
+    "en": "Boris Kucherepa / The Morning Firebird",
     "ru": ""
   },
   "sections": [
@@ -110,13 +116,48 @@
       "id": "why",
       "type": "t",
       "title": {
-        "en": "",
+        "en": "Why IT",
         "ru": ""
       },
       "elements": [
         {
           "type": "p",
-          "en": "",
+          "en": "I often compare programming to magic. How so?",
+          "ru": ""
+        },
+        {
+          "type": "p",
+          "en": "Modern IT sorcerers use their magic altars, PCs with programming software, to create grimoires, the programs, which are full of spells, code pieces, to cast them in the virtual world. And not just that!",
+          "ru": ""
+        },
+        {
+          "type": "p",
+          "en": "Decades ago, programming was more of a science than any practical application. But nowadays, the power of this digital enchantment is so strong that it affects almost every area of human life.",
+          "ru": ""
+        },
+        {
+          "type": "p",
+          "en": "Since my young age, I have been fascinated and inspired by the bright artificial worlds video games provided. Later, I also was amazed by the unimaginable potential of the web, connecting people across the globe with almost no limits. So it's only natural I dreamed about initiating in that art of technical mages.",
+          "ru": ""
+        },
+        {
+          "type": "p",
+          "en": "Unfortunately, my life has turned the other way. My teenage attempts and experiments with game engines, small home websites, and Adobe Flash technology (ActionScript 3.0) gave way to something more real and practical, like, say, veterinary science. After I got a high education in that area, I decided to return to my dream.",
+          "ru": ""
+        },
+        {
+          "type": "p",
+          "en": "Combining work and self-education, I learned programming basics and my first language, C#. The first steps were pretty humble, but the path of learning the IT art is a never-ending process.",
+          "ru": ""
+        },
+        {
+          "type": "p",
+          "en": "Finally, I decided to change my life. It wasn't easy, taking into account the fact I don't have the specific education, which fuels imposter syndrome. But I made a firm decision it shouldn't stop me on the way to what I like, and what I have been wanting to do all along.",
+          "ru": ""
+        },
+        {
+          "type": "p",
+          "en": "Let this page be a declaration of a fresh start towards making my dream come true!",
           "ru": ""
         }
       ]
@@ -125,13 +166,118 @@
       "id": "me",
       "type": "g",
       "title": {
-        "en": "",
+        "en": "About me",
         "ru": ""
       },
       "elements": [
         {
+          "type": "s",
+          "en": "Bio",
+          "ru": ""
+        },
+        {
           "type": "h",
-          "en": "",
+          "en": "Nickname:",
+          "ru": ""
+        },
+        {
+          "type": "p",
+          "en": "The Morning Firebird",
+          "ru": ""
+        },
+        {
+          "type": "h",
+          "en": "Age:",
+          "ru": ""
+        },
+        {
+          "type": "a",
+          "en": "late twenties.",
+          "ru": ""
+        },
+        {
+          "type": "h",
+          "en": "Country of birth:",
+          "ru": ""
+        },
+        {
+          "type": "p",
+          "en": "Russia",
+          "ru": ""
+        },
+        {
+          "type": "h",
+          "en": "School education:",
+          "ru": ""
+        },
+        {
+          "type": "p",
+          "en": "upper secondary education",
+          "ru": ""
+        },
+        {
+          "type": "h",
+          "en": "Higher education:",
+          "ru": ""
+        },
+        {
+          "type": "p",
+          "en": "veterinary sanitary expertise",
+          "ru": ""
+        },
+        {
+          "type": "h",
+          "en": "Current location:",
+          "ru": ""
+        },
+        {
+          "type": "p",
+          "en": "Armenia, Yerevan",
+          "ru": ""
+        },
+        {
+          "type": "h",
+          "en": "Occupation:",
+          "ru": ""
+        },
+        {
+          "type": "p",
+          "en": "opened to your offers :)",
+          "ru": ""
+        },
+        {
+          "type": "s",
+          "en": "Work experience",
+          "ru": ""
+        },
+        {
+          "type": "h",
+          "en": "Veterinary doctor of poultry farm",
+          "ru": ""
+        },
+        {
+          "type": "p",
+          "en": "That job taught me how to resist stress, how to work in hard conditions demanding both physical and mental stamina in terms of time and difficulty, and helped me develop skills in people and time management.",
+          "ru": ""
+        },
+        {
+          "type": "h",
+          "en": "Production laboratory assistant",
+          "ru": ""
+        },
+        {
+          "type": "p",
+          "en": "I have mastered time management and algorithmic thinking, as well as heightened my attention to detail.",
+          "ru": ""
+        },
+        {
+          "type": "h",
+          "en": "Chemical engineer (production laboratory administrator)",
+          "ru": ""
+        },
+        {
+          "type": "p",
+          "en": "In this position, I developed my leadership skills, learned how to take responsibility, manage personnel, maintain documentation, and ensure smooth workflow. Additionally, I gained experience in audition passing.",
           "ru": ""
         }
       ]
@@ -140,12 +286,77 @@
       "id": "skills",
       "type": "g",
       "title": {
-        "en": "",
+        "en": "My skills",
         "ru": ""
       },
       "elements": [
         {
+          "type": "s",
+          "en": "General-purpose programming languages",
+          "ru": ""
+        },
+        {
           "type": "h",
+          "en": "C#",
+          "ru": "C#"
+        },
+        {
+          "type": "p",
+          "en": "The first (and primary) programming language I learned and use extensively, so I have a decent level of proficiency in it. However, the true magic lies in the APIs, doesn't it?",
+          "ru": ""
+        },
+        {
+          "type": "h",
+          "en": "JavaScript",
+          "ru": "JavaScript"
+        },
+        {
+          "type": "p",
+          "en": "The second programming language I learned relatively recently.",
+          "ru": ""
+        },
+        {
+          "type": "h",
+          "en": "TypeScript",
+          "ru": "TypeScript"
+        },
+        {
+          "type": "p",
+          "en": "What happens if one breeds C# and JavaScript? Here is the answer!",
+          "ru": ""
+        },
+        {
+          "type": "s",
+          "en": "Special-purpose programming languages",
+          "ru": ""
+        },
+        {
+          "type": "h",
+          "en": "",
+          "ru": ""
+        },
+        {
+          "type": "p",
+          "en": "",
+          "ru": ""
+        },
+        {
+          "type": "h",
+          "en": "",
+          "ru": ""
+        },
+        {
+          "type": "p",
+          "en": "",
+          "ru": ""
+        },
+        {
+          "type": "h",
+          "en": "",
+          "ru": ""
+        },
+        {
+          "type": "p",
           "en": "",
           "ru": ""
         }
