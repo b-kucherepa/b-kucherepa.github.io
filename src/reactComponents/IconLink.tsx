@@ -6,7 +6,7 @@ function IconLink(props: any) {
       key={props.id}
       id={props.id}
       className={props.class}
-      src={props.source}
+      src={props.src}
       height={props.height}
       title={props.title}
       alt={props.alt}
