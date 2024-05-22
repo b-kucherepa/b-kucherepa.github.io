@@ -135,282 +135,99 @@
   },
   "sections": [
     {
-      "id": "why",
-      "type": "t",
-      "title": {
+      "id": "section-why",
+      "header": {
         "en": "Why IT",
         "ru": ""
       },
-      "elements": [
+      "segments": [
         {
-          "type": "p",
-          "en": "I often compare programming to magic. How so?",
-          "ru": ""
-        },
-        {
-          "type": "p",
-          "en": "Modern IT sorcerers use their magic altars, PCs with programming software, to create grimoires, the programs, which are full of spells, code pieces, to cast them in the virtual world. And not just that!",
-          "ru": ""
-        },
-        {
-          "type": "p",
-          "en": "Decades ago, programming was more of a science than any practical application. But nowadays, the power of this digital enchantment is so strong that it affects almost every area of human life.",
-          "ru": ""
-        },
-        {
-          "type": "p",
-          "en": "Since my young age, I have been fascinated and inspired by the bright artificial worlds video games provided. Later, I also was amazed by the unimaginable potential of the web, connecting people across the globe with almost no limits. So it's only natural I dreamed about initiating in that art of technical mages.",
-          "ru": ""
-        },
-        {
-          "type": "p",
-          "en": "Unfortunately, my life has turned the other way. My teenage attempts and experiments with game engines, small home websites, and Adobe Flash technology (ActionScript 3.0) gave way to something more real and practical, like, say, veterinary science. After I got a high education in that area, I decided to return to my dream.",
-          "ru": ""
-        },
-        {
-          "type": "p",
-          "en": "Combining work and self-education, I learned programming basics and my first language, C#. The first steps were pretty humble, but the path of learning the IT art is a never-ending process.",
-          "ru": ""
-        },
-        {
-          "type": "p",
-          "en": "Finally, I decided to change my life. It wasn't easy, taking into account the fact I don't have the specific education, which fuels imposter syndrome. But I made a firm decision it shouldn't stop me on the way to what I like, and what I have been wanting to do all along.",
-          "ru": ""
-        },
-        {
-          "type": "p",
-          "en": "Let this page be a declaration of a fresh start towards making my dream come true!",
-          "ru": ""
+          "type": "empty",
+          "elements": [
+            {
+              "type": "paragraph",
+              "id": null,
+              "class": null,
+              "text": {
+                "en": "I often compare programming to magic. How so?",
+                "ru": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "text": {
+                "en": "Modern IT sorcerers use their magic altars, PCs with programming software, to create grimoires, the programs, which are full of spells, code pieces, to cast them in the virtual world. And not just that!",
+                "ru": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "text": {
+                "en": "Decades ago, programming was more of a science than any practical application. But nowadays, the power of this digital enchantment is so strong that it affects almost every area of human life.",
+                "ru": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "text": {
+                "en": "Since my young age, I have been fascinated and inspired by the bright artificial worlds video games provided. Later, I also was amazed by the unimaginable potential of the web, connecting people across the globe with almost no limits. So it's only natural I dreamed about initiating in that art of technical mages.",
+                "ru": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "text": {
+                "en": "Unfortunately, my life has turned the other way. My teenage attempts and experiments with game engines, small home websites, and Adobe Flash technology (ActionScript 3.0) gave way to something more real and practical, like, say, veterinary science. After I got a high education in that area, I decided to return to my dream.",
+                "ru": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "text": {
+                "en": "Combining work and self-education, I learned programming basics and my first language, C#. The first steps were pretty humble, but the path of learning the IT art is a never-ending process.",
+                "ru": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "text": {
+                "en": "Finally, I decided to change my life. It wasn't easy, taking into account the fact I don't have the specific education, which fuels imposter syndrome. But I made a firm decision it shouldn't stop me on the way to what I like, and what I have been wanting to do all along.",
+                "ru": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "text": {
+                "en": "Let this page be a declaration of a fresh start towards making my dream come true!",
+                "ru": ""
+              }
+            }
+          ]
         }
       ]
     },
     {
-      "id": "me",
-      "type": "g",
-      "title": {
+      "id": "section-me",
+      "header": {
         "en": "About me",
         "ru": ""
       },
-      "elements": [
+      "segments": [
         {
-          "type": "s",
-          "en": "Bio",
-          "ru": ""
-        },
-        {
-          "type": "h",
-          "en": "Nickname:",
-          "ru": ""
-        },
-        {
-          "type": "p",
-          "en": "The Morning Firebird",
-          "ru": ""
-        },
-        {
-          "type": "h",
-          "en": "Age:",
-          "ru": ""
-        },
-        {
-          "type": "a",
-          "en": "late twenties.",
-          "ru": ""
-        },
-        {
-          "type": "h",
-          "en": "Country of birth:",
-          "ru": ""
-        },
-        {
-          "type": "p",
-          "en": "Russia",
-          "ru": ""
-        },
-        {
-          "type": "h",
-          "en": "School education:",
-          "ru": ""
-        },
-        {
-          "type": "p",
-          "en": "upper secondary education",
-          "ru": ""
-        },
-        {
-          "type": "h",
-          "en": "Higher education:",
-          "ru": ""
-        },
-        {
-          "type": "p",
-          "en": "veterinary sanitary expertise",
-          "ru": ""
-        },
-        {
-          "type": "h",
-          "en": "Current location:",
-          "ru": ""
-        },
-        {
-          "type": "p",
-          "en": "Armenia, Yerevan",
-          "ru": ""
-        },
-        {
-          "type": "h",
-          "en": "Occupation:",
-          "ru": ""
-        },
-        {
-          "type": "p",
-          "en": "opened to your offers :)",
-          "ru": ""
-        },
-        {
-          "type": "s",
-          "en": "Work experience",
-          "ru": ""
-        },
-        {
-          "type": "h",
-          "en": "Veterinary doctor of poultry farm",
-          "ru": ""
-        },
-        {
-          "type": "p",
-          "en": "That job taught me how to resist stress, how to work in hard conditions demanding both physical and mental stamina in terms of time and difficulty, and helped me develop skills in people and time management.",
-          "ru": ""
-        },
-        {
-          "type": "h",
-          "en": "Production laboratory assistant",
-          "ru": ""
-        },
-        {
-          "type": "p",
-          "en": "I have mastered time management and algorithmic thinking, as well as heightened my attention to detail.",
-          "ru": ""
-        },
-        {
-          "type": "h",
-          "en": "Chemical engineer (production laboratory administrator)",
-          "ru": ""
-        },
-        {
-          "type": "p",
-          "en": "In this position, I developed my leadership skills, learned how to take responsibility, manage personnel, maintain documentation, and ensure smooth workflow. Additionally, I gained experience in audition passing.",
-          "ru": ""
-        }
-      ]
-    },
-    {
-      "id": "skills",
-      "type": "g",
-      "title": {
-        "en": "My skills",
-        "ru": ""
-      },
-      "elements": [
-        {
-          "type": "s",
-          "en": "General-purpose programming languages",
-          "ru": ""
-        },
-        {
-          "type": "h",
-          "en": "C#",
-          "ru": "C#"
-        },
-        {
-          "type": "p",
-          "en": "The first (and primary) programming language I learned and use extensively, so I have a decent level of proficiency in it. However, the true magic lies in the APIs, doesn't it?",
-          "ru": ""
-        },
-        {
-          "type": "h",
-          "en": "JavaScript",
-          "ru": "JavaScript"
-        },
-        {
-          "type": "p",
-          "en": "The second programming language I learned relatively recently.",
-          "ru": ""
-        },
-        {
-          "type": "h",
-          "en": "TypeScript",
-          "ru": "TypeScript"
-        },
-        {
-          "type": "p",
-          "en": "What happens if one breeds C# and JavaScript? Here is the answer!",
-          "ru": ""
-        },
-        {
-          "type": "s",
-          "en": "Special-purpose programming languages",
-          "ru": ""
-        },
-        {
-          "type": "h",
-          "en": "",
-          "ru": ""
-        },
-        {
-          "type": "p",
-          "en": "",
-          "ru": ""
-        },
-        {
-          "type": "h",
-          "en": "",
-          "ru": ""
-        },
-        {
-          "type": "p",
-          "en": "",
-          "ru": ""
-        },
-        {
-          "type": "h",
-          "en": "",
-          "ru": ""
-        },
-        {
-          "type": "p",
-          "en": "",
-          "ru": ""
-        }
-      ]
-    },
-    {
-      "id": "resources",
-      "type": "r",
-      "title": {
-        "en": "",
-        "ru": ""
-      },
-      "elements": [
-        {
-          "type": "h",
-          "en": "",
-          "ru": ""
-        }
-      ]
-    },
-    {
-      "id": "works",
-      "type": "g",
-      "title": {
-        "en": "",
-        "ru": ""
-      },
-      "elements": [
-        {
-          "type": "h",
-          "en": "",
-          "ru": ""
+          "type": "general",
+          "header": {
+            "en": "Bio",
+            "ru": "Биография"
+          },
+          "elements": [
+            {
+              "type": "paragraph",
+              "text": {
+                "en": "Let this page be a declaration of a fresh start towards making my dream come true!",
+                "ru": ""
+              }
+            }
+          ]
         }
       ]
     }

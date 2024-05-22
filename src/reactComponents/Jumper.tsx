@@ -9,7 +9,7 @@ function Jumper(props: any) {
       >
         {props.anchors.map((anchor: [value: string, text: string]) =>
         (
-          <option key={`option-${anchor[0]}`} value={anchor[1]}>{anchor[1]}</option>
+          <option key={`option-${anchor[0]}`} value={anchor[0]}>{anchor[1]}</option>
         ))}
       </select>
     </label>
