@@ -15,28 +15,17 @@ function Cell(props: any) {
       );
       break;
     default:
-      throw "No such cell type!";
+      throw `No such cell type: ${props.type}`;
   }
 
-  let a: ReactElement = <></>;
-  if (props.data.link) {
-    const domain = new URL(props.data.link.url).hostname;
+  function getLinkIconClass(link: string): string {
+    const domain = new URL(link).hostname;
 
     switch (domain) {
       case "github.com":
-        a = (
-          <a href={props.data.link.url} target="_blank">
-            <i className="fa fa-github"></i>Репозиторий GitHub
-          </a>
-        );
-        break;
+        return "fa fa-github fa-fw";
       default:
-        a = (
-          <a href={props.data.link.url} target="_blank">
-            <i className="fa fa-link"></i>Ссылка
-          </a>
-        );
-        break;
+        return "fa fa-link fa-fw";
     }
   }
 
@@ -44,10 +33,23 @@ function Cell(props: any) {
     <div id={props.data.id} className="grid-item">
       {header}
       {props.data.text.map((t: any) => {
-        const innerHTMLString = { __html: t[props.lang] };
-        return <p dangerouslySetInnerHTML={innerHTMLString}></p>;
+        const innerHtmlString = {
+          __html: t[props.lang],
+        };
+        const a: ReactElement = t.link ? (
+          <a href={t.link} target="_blank">
+            <i className={getLinkIconClass(t.link)}></i>
+          </a>
+        ) : (
+          <></>
+        );
+        return (
+          <p>
+            <span dangerouslySetInnerHTML={innerHtmlString}></span>
+            {a}
+          </p>
+        );
       })}
-      {a}
     </div>
   );
 }

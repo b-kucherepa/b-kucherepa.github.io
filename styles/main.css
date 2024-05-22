@@ -266,6 +266,10 @@ a:active {
   margin: 0.75rem;
 }
 
+.fa {
+  margin-left: -1rem;
+}
+
 @supports (display: flex) {
   #nav-bar {
     display: flex;
