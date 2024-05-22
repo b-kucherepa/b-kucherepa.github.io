@@ -1,9 +1,7 @@
 {
-  "pageFilePrefix": "GENERATED_",
+  "pagePrefix": "main",
   "langs": ["en", "ru"],
   "links": {
-    "themeIcons": "icons/themes/",
-    "langIcons": "icons/lang/",
     "gitHub": "https://github.com/b-kucherepa"
   },
   "head": {
@@ -17,16 +15,16 @@
     }
   },
   "nav": {
-    "iconHeight": 12,
     "themes": {
       "label": {
         "en": "Theme:",
         "ru": "Тема:"
       },
+      "iconDir": "icons/themes/",
       "icons": [
         {
           "id": "sel-light-theme-icon",
-          "class": "theme-icon",
+          "selected": true,
           "file": "sun-selected.svg",
           "title": {
             "en": "Light theme is set",
@@ -39,7 +37,7 @@
         },
         {
           "id": "unsel-light-theme-icon",
-          "class": "theme-icon highlightable",
+          "selected": false,
           "file": "sun-unselected.svg",
           "title": {
             "en": "Set to light theme",
@@ -52,7 +50,7 @@
         },
         {
           "id": "sel-dark-theme-icon",
-          "class": "theme-icon",
+          "selected": true,
           "file": "moon-selected.svg",
           "title": {
             "en": "Dark theme is set",
@@ -65,7 +63,7 @@
         },
         {
           "id": "unsel-dark-theme-icon",
-          "class": "theme-icon highlightable",
+          "selected": false,
           "file": "moon-unselected.svg",
           "title": {
             "en": "Set to dark theme",
@@ -93,6 +91,7 @@
         "en": "Language:",
         "ru": "Язык:"
       },
+      "iconDir": "icons/lang/",
       "icons": [
         {
           "lang": "en",
@@ -142,61 +141,51 @@
       },
       "segments": [
         {
-          "type": "empty",
+          "type": "text",
           "elements": [
             {
-              "type": "paragraph",
-              "id": null,
-              "class": null,
               "text": {
                 "en": "I often compare programming to magic. How so?",
                 "ru": ""
               }
             },
             {
-              "type": "paragraph",
               "text": {
                 "en": "Modern IT sorcerers use their magic altars, PCs with programming software, to create grimoires, the programs, which are full of spells, code pieces, to cast them in the virtual world. And not just that!",
                 "ru": ""
               }
             },
             {
-              "type": "paragraph",
               "text": {
                 "en": "Decades ago, programming was more of a science than any practical application. But nowadays, the power of this digital enchantment is so strong that it affects almost every area of human life.",
                 "ru": ""
               }
             },
             {
-              "type": "paragraph",
               "text": {
                 "en": "Since my young age, I have been fascinated and inspired by the bright artificial worlds video games provided. Later, I also was amazed by the unimaginable potential of the web, connecting people across the globe with almost no limits. So it's only natural I dreamed about initiating in that art of technical mages.",
                 "ru": ""
               }
             },
             {
-              "type": "paragraph",
               "text": {
                 "en": "Unfortunately, my life has turned the other way. My teenage attempts and experiments with game engines, small home websites, and Adobe Flash technology (ActionScript 3.0) gave way to something more real and practical, like, say, veterinary science. After I got a high education in that area, I decided to return to my dream.",
                 "ru": ""
               }
             },
             {
-              "type": "paragraph",
               "text": {
                 "en": "Combining work and self-education, I learned programming basics and my first language, C#. The first steps were pretty humble, but the path of learning the IT art is a never-ending process.",
                 "ru": ""
               }
             },
             {
-              "type": "paragraph",
               "text": {
                 "en": "Finally, I decided to change my life. It wasn't easy, taking into account the fact I don't have the specific education, which fuels imposter syndrome. But I made a firm decision it shouldn't stop me on the way to what I like, and what I have been wanting to do all along.",
                 "ru": ""
               }
             },
             {
-              "type": "paragraph",
               "text": {
                 "en": "Let this page be a declaration of a fresh start towards making my dream come true!",
                 "ru": ""
@@ -210,23 +199,316 @@
       "id": "section-me",
       "header": {
         "en": "About me",
-        "ru": ""
+        "ru": "Обо мне"
       },
       "segments": [
         {
-          "type": "general",
+          "type": "infoGrid",
           "header": {
             "en": "Bio",
             "ru": "Биография"
           },
           "elements": [
             {
-              "type": "paragraph",
-              "text": {
-                "en": "Let this page be a declaration of a fresh start towards making my dream come true!",
+              "header": {
+                "en": "Nickname:",
+                "ru": "Биография:"
+              },
+              "text": [
+                {
+                  "en": "The Morning Firebird",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "id": "my-age",
+              "header": {
+                "en": "Age:",
+                "ru": "Возраст:"
+              },
+              "text": [
+                {
+                  "en": "late twenties.",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Country of birth:",
                 "ru": ""
-              }
+              },
+              "text": [
+                {
+                  "en": "Russia",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "School education:",
+                "ru": ""
+              },
+              "text": [
+                {
+                  "en": "upper secondary education",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Higher education:",
+                "ru": ""
+              },
+              "text": [
+                {
+                  "en": "veterinary sanitary expertise",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Current location:",
+                "ru": ""
+              },
+              "text": [
+                {
+                  "en": "Armenia, Yerevan",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Occupation:",
+                "ru": ""
+              },
+              "text": [
+                {
+                  "en": "opened to your offers :)",
+                  "ru": ""
+                }
+              ]
             }
+          ]
+        },
+        {
+          "type": "infoGrid",
+          "header": {
+            "en": "Work experience",
+            "ru": ""
+          },
+          "elements": [
+            {
+              "header": {
+                "en": "Veterinary doctor of poultry farm",
+                "ru": ""
+              },
+              "text": [
+                {
+                  "en": "That job taught me how to resist stress, how to work in hard conditions demanding both physical and mental stamina in terms of time and difficulty, and helped me develop skills in people and time management.",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Production laboratory assistant",
+                "ru": ""
+              },
+              "text": [
+                {
+                  "en": "I have mastered time management and algorithmic thinking, as well as heightened my attention to detail.",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Chemical engineer (production laboratory administrator)",
+                "ru": ""
+              },
+              "text": [
+                {
+                  "en": "In this position, I developed my leadership skills, learned how to take responsibility, manage personnel, maintain documentation, and ensure smooth workflow. Additionally, I gained experience in audition passing.",
+                  "ru": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-skills",
+      "header": {
+        "en": "My skills",
+        "ru": ""
+      },
+      "segments": [
+        {
+          "type": "infoGrid",
+          "header": {
+            "en": "General-purpose programming languages",
+            "ru": ""
+          },
+          "elements": [
+            {
+              "header": {
+                "en": "C#",
+                "ru": "C#"
+              },
+              "text": [
+                {
+                  "en": "The first (and primary) programming language I learned and use extensively, so I have a decent level of proficiency in it. However, the true magic lies in the APIs, doesn't it?",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "JavaScript",
+                "ru": "JavaScript"
+              },
+              "text": [
+                {
+                  "en": "The second programming language I learned relatively recently.",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "TypeScript",
+                "ru": "TypeScript"
+              },
+              "text": [
+                {
+                  "en": "What happens if one breeds C# and JavaScript? Here is the answer!",
+                  "ru": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "infoGrid",
+          "header": {
+            "en": "Special-purpose programming languages",
+            "ru": ""
+          },
+          "elements": [
+            {
+              "header": {
+                "en": "SQL (MySQL)",
+                "ru": "SQL (MySQL)"
+              },
+              "text": [
+                {
+                  "en": "Databases are wonderful. The ability to store and provide information in such an effective manner is fascinating.",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "HTML5",
+                "ru": "HTML5"
+              },
+              "text": [
+                {
+                  "en": "The bone of every website, and the base of modern net. Thank you, Sir Timothy Berners-Lee!",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "CSS3",
+                "ru": "CSS3"
+              },
+              "text": [
+                {
+                  "en": "Who knows if beauty will save the world, but it definitely saves websites.",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "SVG",
+                "ru": "SVG"
+              },
+              "text": [
+                {
+                  "en": "Mathematically defined indefinitely-scaled graphics can truly blow one's mind. I've been into SVG since my teens.",
+                  "ru": ""
+                }
+              ]
+            }
+            
+          ]
+        },
+        {
+          "type": "infoGrid",
+          "header": {
+            "en": "Frameworks and libraries",
+            "ru": ""
+          },
+          "elements": [
+            {
+              "header": {
+                "en": ".NET",
+                "ru": ".NET"
+              },
+              "text": [
+                {
+                  "en": "Where there's C#, there's .NET.",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Node.js",
+                "ru": "Node.js"
+              },
+              "text": [
+                {
+                  "en": "It opens the world of servers (and even desktop!) for JavaScript.",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "jQuery",
+                "ru": "jQuery"
+              },
+              "text": [
+                {
+                  "en": "Old, but not obsolete. Still simple and effective (sometimes).",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "React/Redux",
+                "ru": "React/Redux"
+              },
+              "text": [
+                {
+                  "en": "Hooks and pulls web applications ahead!",
+                  "ru": ""
+                }
+              ]
+            }
+            
           ]
         }
       ]
