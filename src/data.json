@@ -1,0 +1,902 @@
+{
+  "pagePrefix": "main",
+  "langs": ["en", "ru"],
+  "links": { "gitHub": "https://github.com/b-kucherepa" },
+  "head": {
+    "title": {
+      "en": "Boris Kucherepa - Personal page",
+      "ru": "Борис Кучерепа - Персональная страница"
+    },
+    "description": {
+      "en": "Boris Kuckerepa's developer personal web page",
+      "ru": "Персональная веб-страница разработчика Бориса Кучерепа"
+    }
+  },
+  "nav": {
+    "themes": {
+      "label": { "en": "Theme:", "ru": "Тема:" },
+      "iconDir": "icons/themes/",
+      "icons": [
+        {
+          "id": "sel-light-theme-icon",
+          "selected": true,
+          "file": "sun-selected.svg",
+          "title": { "en": "Light theme is set", "ru": "Выбрана светлая тема" },
+          "alt": { "en": "Иконка закрашенного солнца", "ru": "Filled sun icon" }
+        },
+        {
+          "id": "unsel-light-theme-icon",
+          "selected": false,
+          "file": "sun-unselected.svg",
+          "title": { "en": "Set to light theme", "ru": "Выбрать светлую тему" },
+          "alt": {
+            "en": "Unfilled sun icon",
+            "ru": "Иконка незакрашенного солнца"
+          }
+        },
+        {
+          "id": "sel-dark-theme-icon",
+          "selected": true,
+          "file": "moon-selected.svg",
+          "title": { "en": "Dark theme is set", "ru": "Выбрана темная тема" },
+          "alt": {
+            "en": "Filled crescent moon icon",
+            "ru": "Иконка закрашенного полумесяца"
+          }
+        },
+        {
+          "id": "unsel-dark-theme-icon",
+          "selected": false,
+          "file": "moon-unselected.svg",
+          "title": { "en": "Set to dark theme", "ru": "Выбрать темную тему" },
+          "alt": {
+            "en": "Unfilled crescent moon icon",
+            "ru": "Иконка незакрашенного полумесяца"
+          }
+        }
+      ]
+    },
+    "jumper": {
+      "label": { "en": "Navigation:", "ru": "Навигация:" },
+      "selectTitle": { "en": "Section select", "ru": "Выбор раздела" }
+    },
+    "languages": {
+      "label": { "en": "Language:", "ru": "Язык:" },
+      "iconDir": "icons/lang/",
+      "icons": [
+        {
+          "lang": "en",
+          "class": {
+            "sel": "lang-icon str-outlined",
+            "unsel": "lang-icon highlightable"
+          },
+          "file": "us-flag.svg",
+          "title": { "sel": "English is set", "unsel": "Set to English" },
+          "alt": { "en": "English icon", "ru": "Значок английского" }
+        },
+        {
+          "lang": "ru",
+          "class": {
+            "sel": "lang-icon str-outlined",
+            "unsel": "lang-icon highlightable"
+          },
+          "file": "ru-flag.svg",
+          "title": { "sel": "Выбран русский", "unsel": "Выбрать русский" },
+          "alt": { "en": "Russian icon", "ru": "Значок русского" }
+        }
+      ]
+    }
+  },
+  "copyright": {
+    "en": "Boris Kucherepa / The Morning Firebird",
+    "ru": "Борис Кучерепа / The Morning Firebird"
+  },
+  "sections": [
+    {
+      "id": "section-why",
+      "header": { "en": "Why IT", "ru": "Почему IT" },
+      "segments": [
+        {
+          "type": "text",
+          "elements": [
+            {
+              "text": [
+                {
+                  "en": "I often compare programming to magic. How so?",
+                  "ru": "Я часто сравниваю программирование с магией. Отчего так?"
+                },
+                {
+                  "en": "Modern IT sorcerers use their magic altars, PCs with programming software, to create grimoires, the programs, which are full of spells, code pieces, to cast them in the virtual world. And not just that!",
+                  "ru": "Современные волшебники от IT используют свои магические алтари, ПК с программным обеспечением, чтобы создать гримуары-программы, полные заклинаний - кусков кода, и накладывать их на виртуальный мир. И не только!"
+                },
+                {
+                  "en": "Decades ago, programming was more of a science than any practical application. But nowadays, the power of this digital enchantment is so strong that it affects almost every area of human life.",
+                  "ru": "Десятилетия назад, программирование было больше наукой, чем имело какое-то практическое значение. Но в наши дни могущество этих цифровых заклятий столь сильно, что затрагивает практически каждую область человеческой жизни."
+                },
+                {
+                  "en": "Since my young age, I have been fascinated and inspired by the bright artificial worlds video games provided. Later, I also was amazed by the unimaginable potential of the web, connecting people across the globe with almost no limits. So it's only natural I dreamed about initiating in that art of technical mages.",
+                  "ru": "С юных лет я восхищался и вдохновлялся яркими рукотворными мирами, которые открывали видеоигры. Позднее, меня поразил и невообразимый потенциал сети, объединяющих людей по всему миру практически без ограничений. Разумеется, я мечтал быть посвящен в это искусство техномагов."
+                },
+                {
+                  "en": "Unfortunately, my life has turned the other way. My teenage attempts and experiments with game engines, small home websites, and Adobe Flash technology (ActionScript 3.0) gave way to something more real and practical, like, say, veterinary science. After I got a high education in that area, I decided to return to my dream.",
+                  "ru": "К сожалению, моя жизнь повернулась иначе. Мои подростковые попытки и эксперименты с игровыми движками, небольшими домашними веб-сайтами и технологией Adobe Flash (ActionScript 3.0) уступили место кое-чему более реальному и практичному, как, скажем, ветеринарной медицине. После получения высшего образования в этой области, я решил вернуться к своей мечте."
+                },
+                {
+                  "en": "Combining work and self-education, I learned programming basics and my first language, C#. The first steps were pretty humble, but the path of learning the IT art is a never-ending process.",
+                  "ru": "Сочетая работу и самообразование, я изучил основы программирования и свой первый язык, C#. Первые попытки были весьма скромными, но путь обучения искусству ИТ - это процесс нескончаемый."
+                },
+                {
+                  "en": "Finally, I decided to change my life. It wasn't easy, taking into account the fact I don't have the specific education, which fuels imposter syndrome. But I made a firm decision it shouldn't stop me on the way to what I like, and what I have been wanting to do all along.",
+                  "ru": "В конце концов, я решил изменить свою жизнь. Это не было просто, принимая во внимание тот факт, что у меня нет профильного образования, что подпитывает синдром самозванца. Но я принял твердое решение, что это не должно останавливать меня на пути к тому, что мне нравится, и чем я хотел заниматься всё это время."
+                },
+                {
+                  "en": "Let this page be a declaration of a fresh start towards making my dream come true!",
+                  "ru": "Пусть же эта страница будет объявлением свежего начала на пути к осуществлению моей мечты!"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-me",
+      "header": { "en": "About me", "ru": "Обо мне" },
+      "segments": [
+        {
+          "type": "snippetGrid",
+          "header": { "en": "Bio", "ru": "Биография" },
+          "elements": [
+            {
+              "header": { "en": "Nickname:", "ru": "Никнейм:" },
+              "text": [
+                { "en": "The Morning Firebird", "ru": "The Morning Firebird" }
+              ]
+            },
+            {
+              "id": "my-age",
+              "header": { "en": "Age:", "ru": "Возраст:" },
+              "text": [{ "en": "late twenties.", "ru": "поздние 20." }]
+            },
+            {
+              "header": { "en": "Country of birth:", "ru": "Страна рождения:" },
+              "text": [{ "en": "Russia", "ru": "Россия" }]
+            },
+            {
+              "header": {
+                "en": "School education:",
+                "ru": "Школьное образование:"
+              },
+              "text": [
+                {
+                  "en": "upper secondary education",
+                  "ru": "полное общее образование"
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Higher education:",
+                "ru": "Высшее образование:"
+              },
+              "text": [
+                {
+                  "en": "veterinary sanitary expertise",
+                  "ru": "ветеринарно-санитарная экспертиза"
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Current location:",
+                "ru": "Текущее местоположение:"
+              },
+              "text": [{ "en": "Armenia, Yerevan", "ru": "Армения, Ереван" }]
+            },
+            {
+              "header": { "en": "Occupation:", "ru": "Работа:" },
+              "text": [
+                {
+                  "en": "opened to your offers :)",
+                  "ru": "открыт вашим предложениям :)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "articleGrid",
+          "header": { "en": "Work experience", "ru": "Опыт работы" },
+          "elements": [
+            {
+              "header": {
+                "en": "Veterinary doctor of poultry farm",
+                "ru": "Ветеринарный врач на птицефабрике"
+              },
+              "text": [
+                {
+                  "en": "That job taught me how to resist stress, how to work in hard conditions demanding both physical and mental stamina in terms of time and difficulty, and helped me develop skills in people and time management.",
+                  "ru": "Эта работа научила меня стрессоустойчивости, работе в тяжелых условиях как в плане времени, так и в плане сложности, требовательной физически и психологически,а также помогла мне развить навыки управления людьми и временем."
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Production laboratory assistant",
+                "ru": "Лаборант производственной лаборатории"
+              },
+              "text": [
+                {
+                  "en": "I have mastered time management and algorithmic thinking, as well as heightened my attention to detail.",
+                  "ru": " отточил навыки управления временем и алгоритмического мышления, а также повысил уровень внимательности к деталям."
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Chemical engineer (production laboratory administrator)",
+                "ru": "Инженер-химик (руководитель производственной лаборатории)"
+              },
+              "text": [
+                {
+                  "en": "In this position, I developed my leadership skills, learned how to take responsibility, manage personnel, maintain documentation, and ensure smooth workflow. Additionally, I gained experience in audition passing.",
+                  "ru": "На этой должности я развил навыки лидера, научился брать на себя ответственность, управлять персоналом, вести документацию, поддерживать рабочий процесс, а также получил опыт прохождения аудитов."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-skills",
+      "header": { "en": "My skills", "ru": "Мои навыки" },
+      "segments": [
+        {
+          "type": "articleGrid",
+          "header": {
+            "en": "General-purpose programming languages",
+            "ru": "Универсальные языки програм\u00ADмирования"
+          },
+          "elements": [
+            {
+              "header": { "en": "C#", "ru": "C#" },
+              "text": [
+                {
+                  "en": "The first (and primary) programming language I learned and use extensively, so I have a decent level of proficiency in it. However, the true magic lies in the APIs, doesn't it?",
+                  "ru": "Первый (и основной) язык программирования, который я выучил и использовал больше шире всего, так что я хорошо им владею. Но ведь вся магия в API, не так ли?"
+                }
+              ]
+            },
+            {
+              "header": { "en": "JavaScript", "ru": "JavaScript" },
+              "text": [
+                {
+                  "en": "The second programming language I learned. No other language has so many <code>this</code> keyword meanings!",
+                  "ru": "Второй язык программирования, который я постиг. Ни в одном другом языке нет столько значений у <code>this</code>!"
+                }
+              ]
+            },
+            {
+              "header": { "en": "TypeScript", "ru": "TypeScript" },
+              "text": [
+                {
+                  "en": "What happens if one breeds C# and JavaScript? Here is the answer!",
+                  "ru": "Что случится, если скрестить С№ и JavaScript? Вот ответ!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "articleGrid",
+          "header": {
+            "en": "Special-purpose programming languages",
+            "ru": "Специальные языки програм\u00ADмирования"
+          },
+          "elements": [
+            {
+              "header": { "en": "SQL (MySQL)", "ru": "SQL (MySQL)" },
+              "text": [
+                {
+                  "en": "Databases are wonderful. The ability to store and provide information in such an effective manner is fascinating.",
+                  "ru": "Базы данных восхитительны. Возможности хранения и вывода информации таким эффективным способом поражают."
+                }
+              ]
+            },
+            {
+              "header": { "en": "HTML5", "ru": "HTML5" },
+              "text": [
+                {
+                  "en": "The bone of every website, and the base of modern net. Thank you, Sir Timothy Berners-Lee!",
+                  "ru": "Костяк любого вебсайта и основа современного интернета. Спасибо, сэр Тимоти Бернерс-Ли!"
+                }
+              ]
+            },
+            {
+              "header": { "en": "CSS3", "ru": "CSS3" },
+              "text": [
+                {
+                  "en": "Who knows if beauty will save the world, but it definitely saves websites.",
+                  "ru": "Кто знает, спасет ли красота мир, но вот веб-сайты она точно спасает."
+                }
+              ]
+            },
+            {
+              "header": { "en": "SVG", "ru": "SVG" },
+              "text": [
+                {
+                  "en": "Mathematically defined indefinitely-scaled graphics can truly blow one's mind. I've been into SVG since my teens.",
+                  "ru": "Математически заданная графика с возможностью неограниченного масштабирования поражает. Я увлечен SVG c подросткового возраста."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "articleGrid",
+          "header": {
+            "en": "Frameworks and libraries",
+            "ru": "Фреймворки и библиотеки"
+          },
+          "elements": [
+            {
+              "header": { "en": ".NET", "ru": ".NET" },
+              "text": [
+                {
+                  "en": "Where there's C#, there's .NET.",
+                  "ru": "Где C#, там и .NET."
+                }
+              ]
+            },
+            {
+              "header": { "en": "Node.js", "ru": "Node.js" },
+              "text": [
+                {
+                  "en": "It opens the world of servers (and even desktop!) for JavaScript.",
+                  "ru": "Открывает мир серверов (и даже десктопа!) для JavaScript."
+                }
+              ]
+            },
+            {
+              "header": { "en": "jQuery", "ru": "jQuery" },
+              "text": [
+                {
+                  "en": "Old, but not obsolete. Still simple and effective (sometimes).",
+                  "ru": "Старый, но не бесполезный. Всё так же прост и эффективен (временами)."
+                }
+              ]
+            },
+            {
+              "header": { "en": "React/Redux", "ru": "React/Redux" },
+              "text": [
+                {
+                  "en": "Hooks and pulls web applications ahead!",
+                  "ru": "Хукает и вытягивает веб-приложения!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "articleGrid",
+          "header": {
+            "en": "Version control technologies",
+            "ru": "Технологии контроля версий"
+          },
+          "elements": [
+            {
+              "header": { "en": "git (GitHub)", "ru": "git (GitHub)" },
+              "text": [
+                {
+                  "en": "Although I haven't had direct experience with collaborative development, I am familiar with the basic functionality of Git: creating repositories, fetching, pushing, pulling, syncing, merging, amending commits, and reverting commits in case something went wrong :)",
+                  "ru": "Пусть у меня и не было опыта совместной разработки,я владею базововым функционалом git: созданием репозиториев, что делают <code>fetch, push, pull, sync, merge и amend</code>, и как отменить коммиты, если что-то пошло не по плану :)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "articleGrid",
+          "header": {
+            "en": "IDEs and code editors",
+            "ru": "IDE и редакторы кода"
+          },
+          "elements": [
+            {
+              "header": { "en": "Visual Studio", "ru": "Visual Studio" },
+              "text": [
+                {
+                  "en": "The main IDE I am using for C# and other compiled languages for its great reflection capabilities.",
+                  "ru": "Основная IDE, которую я использую для C# и других компилируемых языков за её хорошую рефлексию."
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Visual Studio Code",
+                "ru": "Visual Studio Code"
+              },
+              "text": [
+                {
+                  "en": "I use it for small projects and web development. For example, this page has been created from scratch using it.",
+                  "ru": "Я использую его для маленьких проектов и веб-разработки, например, эта страница была создана в нём с нуля."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "articleGrid",
+          "header": {
+            "en": "Other software",
+            "ru": "Прочее программное обеспечение"
+          },
+          "elements": [
+            {
+              "header": { "en": "Unity", "ru": "Unity" },
+              "text": [
+                {
+                  "en": "I have had experience making video games using the engine.",
+                  "ru": "У меня был опыт создания видеоигр с использованием этого движка."
+                }
+              ]
+            },
+            {
+              "header": { "en": "Blender", "ru": "Blender" },
+              "text": [
+                {
+                  "en": "I used it for designing a number of low-poly and some mid-poly models.",
+                  "ru": "Я использовал его для создания множества низкополигональных и нескольких среднеполигональных моделей."
+                }
+              ]
+            },
+            {
+              "header": { "en": "FL Studio", "ru": "FL Studio" },
+              "text": [
+                {
+                  "en": "How could one live without some good music? It's a secondary skill, but it can be very handy when creating assets.",
+                  "ru": "Как можно жить без хорошей музыки? Это совершенно второстепенный навык, но может быть полезен для создания ресурсов."
+                }
+              ]
+            },
+            {
+              "header": { "en": "Microsoft Excel", "ru": "Microsoft Excel" },
+              "text": [
+                {
+                  "en": "The Atlas holding the entire economic system on his shoulders. Also, it serves as a good trainer for algorithmic thinking using visual programming. I have gained vast experience in working with it and automation during my last job.",
+                  "ru": "Атлас, что держит всю мировую экономическую систему на плечах своих. А также отличный тренажер алгоритмического мышления с применением визуального программирования. Я получил богатый опыт работы и автоматизации с его использованием на моей последней работе."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "articleGrid",
+          "header": { "en": "Languages", "ru": "Языки" },
+          "elements": [
+            {
+              "header": { "en": "English", "ru": "Английский" },
+              "text": [
+                {
+                  "en": "A C1-C2 level, including free speaking. Sometimes I prefer it over my native language.",
+                  "ru": "Уровень C1-2, включая свободную речь. Временами я предпочитаю его своему родному языку."
+                }
+              ]
+            },
+            {
+              "header": { "en": "Russian", "ru": "Русский" },
+              "text": [
+                {
+                  "en": "A C2 level. My native language: that's it.",
+                  "ru": "Уровень C2. Мой родной язык, добавить тут нечего."
+                }
+              ]
+            },
+            {
+              "header": { "en": "German", "ru": "Немецкий" },
+              "text": [
+                {
+                  "en": "An A1-2 level. Not something to be proud of, but I have some basic knowledge that I'm improving, which can come in handy.",
+                  "ru": "Уровень A1-2. Не повод для гордости, но у меня есть базовые знания, которые я развиваю и которые могут пригодиться."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "articleGrid",
+          "header": { "en": "Soft skills", "ru": "Личностные навыки" },
+          "elements": [
+            {
+              "header": { "en": "Crave for knowledge", "ru": "Тяга к знаниям" },
+              "text": [
+                {
+                  "en": "I do love to learn new things, and I can process large amounts of data.",
+                  "ru": "Я действительно люблю изучать новое, и способен обрабатывать большие объемы информации."
+                }
+              ]
+            },
+            {
+              "header": { "en": "Code diver", "ru": "Погружение в код" },
+              "text": [
+                {
+                  "en": "When I write or debug code, time passes instantly. Someone should remind me to take breaks! By the way, what time is it?",
+                  "ru": "Когда я пишу или отлаживаю код, время летит мгновенно. Кто-нибудь должен напоминать мне делать перерывы! Кстати, а который час?"
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Plans and schedules",
+                "ru": "Планы и распорядки"
+              },
+              "text": [
+                {
+                  "en": "I'm a fan of to-do lists, Kanban boards, and roadmap flowcharts. What can be more pleasant than striking out, removing, or marking another good deed as completed?",
+                  "ru": "Я фанат составления список дел, досок канбан и путевых блок-схем. Что может быть приятнее, чем вычеркнуть, удалить или пометить завершенным ещё одно благое дело?"
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Can take responsibility",
+                "ru": "Способность брать ответственность"
+              },
+              "text": [
+                {
+                  "en": "My experience in administrative work has taught me not to be afraid of organizing workspaces and leading people.",
+                  "ru": "Опыт административной работы научил меня не бояться организовывать рабочее пространство и руководить людьми."
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Non-conflicting personality",
+                "ru": "Неконфликтность"
+              },
+              "text": [
+                {
+                  "en": "Cooperation is the key to productivity, as well as preserving neural cells. I prefer a healthy and trusting working atmosphere, where discussing and listening to opinions to find reasonable compromises are valued.",
+                  "ru": "Сотрудничество - ключ к продуктивности, равно как и к сбережению нервных клеток. Я предпочитаю здоровую и доверительную рабочую атмосферу, равно как и обсуждение и выслушивание мнений для поиска разумного компромисса."
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Write code for people",
+                "ru": "Код для людей"
+              },
+              "text": [
+                {
+                  "en": "<q>Any fool can write code that a computer can understand. Good programmers write code that humans can understand</q>, said Martin Fowler. I value clear, or at least well-commented, code above all else. One can always optimize good code later if needed.",
+                  "ru": "<q>Любой дурак может написать программу, которую поймёт компьютер. Хорошие программисты пишут программы, которые смогут понять другие программисты</q>, сказал Мартин Фаулер. Я ценю ясный или хотя бы хорошо закомментированный код превыше всего. Всегда можно оптимизировать хороший код позднее, если потребуется."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "resourceGrid",
+          "header": { "en": "Currently on", "ru": "Сейчас занимаюсь" },
+          "elements": [
+            {
+              "header": { "en": "Git workflows", "ru": "Git workflows" },
+              "text": [{ "en": "", "ru": "" }]
+            },
+            {
+              "header": { "en": "ASP.NET", "ru": "ASP.NET" },
+              "text": [{ "en": "", "ru": "" }]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-resources",
+      "header": { "en": "Sources", "ru": "Источники" },
+      "segments": [
+        {
+          "type": "resourceGrid",
+          "header": {
+            "en": "Programming languages",
+            "ru": "Языки програм\u00ADмирования"
+          },
+          "elements": [
+            {
+              "header": { "en": "Microsoft Learn", "ru": "Microsoft Learn" },
+              "text": [
+                {
+                  "en": "C# documentation",
+                  "ru": "Документация по C#",
+                  "link": "https://learn.microsoft.com/en-us/dotnet/csharp"
+                }
+              ]
+            },
+            {
+              "header": { "en": "Metanit.com", "ru": "Metanit.com" },
+              "text": [
+                { "en": "C#", "ru": "C#", "link": "https://metanit.com/sharp" },
+                {
+                  "en": "JavaScript",
+                  "ru": "JavaScript",
+                  "link": "https://metanit.com/web/javascript/"
+                },
+                {
+                  "en": "TypeScript",
+                  "ru": "TypeScript",
+                  "link": "https://metanit.com/web/typescript/"
+                }
+              ]
+            },
+            {
+              "header": { "en": "edX", "ru": "edX" },
+              "text": [
+                {
+                  "en": "W3Cx JS.0x - JavaScript Introduction",
+                  "ru": "W3Cx JS.0x - JavaScript Introduction",
+                  "link": "https://learning.edx.org/course/course-v1:W3Cx+JS.0x+2T2022/home"
+                }
+              ]
+            },
+            {
+              "header": { "en": "SQL academy", "ru": "SQL academy" },
+              "text": [
+                {
+                  "en": "Guide",
+                  "ru": "Интерактивный курс по SQL",
+                  "link": "https://sql-academy.org/en/guide"
+                }
+              ]
+            },
+            {
+              "header": { "en": "MDN web docs", "ru": "MDN web docs" },
+              "text": [
+                {
+                  "en": "Guides",
+                  "ru": "Руководства",
+                  "link": "https://developer.mozilla.org/en-US/docs/Learn"
+                }
+              ]
+            },
+            {
+              "header": { "en": "Ben Frain", "ru": "Бен Фрейн" },
+              "text": [
+                {
+                  "en": "Responsive Web Design with HTML5 and CSS",
+                  "ru": "Отзывчивый дизайн на HTML5 и CSS3 для любых устройств",
+                  "link": "https://rwd.education"
+                }
+              ]
+            },
+            {
+              "header": { "en": "Codepip", "ru": "Codepip" },
+              "text": [
+                {
+                  "en": "Flexbox Froggy",
+                  "ru": "Flexbox Froggy",
+                  "link": "https://flexboxfroggy.com"
+                },
+                {
+                  "en": "(it's so cute I couldn't resist to include it in the list!)",
+                  "ru": "(слишком милая игра, я не мог её не включить в список!)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "resourceGrid",
+          "header": { "en": "Algorithms", "ru": "Алгоритмы" },
+          "elements": [
+            {
+              "header": {
+                "en": "Jeffrey J. McConnell",
+                "ru": "Джоффри Дж. Макконнелл"
+              },
+              "text": [
+                {
+                  "en": "Analysis of Algorithms: An Active Learning Approach",
+                  "ru": "Основы современных алгоритмов",
+                  "link": "https://www.amazon.com/Analysis-Algorithms-Jeffrey-McConnell/dp/0763707821"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "resourceGrid",
+          "header": { "en": "Hardware and architecture", "ru": "" },
+          "elements": [
+            {
+              "header": { "en": "Charles Petzold", "ru": "Чарльз Петцольд" },
+              "text": [
+                {
+                  "en": "Code: The Hidden Language of Computer Hardware and Software",
+                  "ru": "Код: тайный язык информатики",
+                  "link": "https://www.amazon.com/Code-Language-Computer-Hardware-Software/dp/0735611319"
+                }
+              ]
+            },
+            {
+              "header": { "en": "NandGame", "ru": "NandGame" },
+              "text": [
+                {
+                  "en": "Hardware (relays), hardware (CMOS), software, multitasking levels",
+                  "ru": "Hardware (relays), hardware (CMOS), software, multitasking levels",
+                  "link": "https://nandgame.com"
+                },
+                {
+                  "en": "My solutions",
+                  "ru": "Мои решения",
+                  "link": "https://github.com/b-kucherepa/NandGame-solutions"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "resourceGrid",
+          "header": {
+            "en": "Coding style and refactoring",
+            "ru": "Стиль програм\u00ADмирования и рефакторинг"
+          },
+          "elements": [
+            {
+              "header": { "en": "Steve McConnell", "ru": "Стив Макконелл" },
+              "text": [
+                {
+                  "en": "Code Complete: A Practical Handbook of Software Construction",
+                  "ru": "Совершенный код",
+                  "link": "https://www.amazon.com/gp/product/0735619670/"
+                }
+              ]
+            },
+            {
+              "header": { "en": "Martin Fowler", "ru": "Мартин Фаулер" },
+              "text": [
+                {
+                  "en": "Refactoring. Improving the Design of Existing Code",
+                  "ru": "Рефакторинг кода на JavaScript: улучшение проекта существующего кода.",
+                  "link": "https://martinfowler.com/books/refactoring.html"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "resourceGrid",
+          "header": { "en": "Soft skills", "ru": "Личностные навыки" },
+          "elements": [
+            {
+              "header": { "en": "John Sonmez", "ru": "Джон Сомнез" },
+              "text": [
+                {
+                  "en": "Soft Skills: The software developer's life manual",
+                  "ru": "Путь программиста",
+                  "link": "https://www.amazon.com/Soft-Skills-software-developers-manual/dp/1617292397"
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Gayle Laakmann McDowell",
+                "ru": "Гэйл Лакман Макдауэлл"
+              },
+              "text": [
+                {
+                  "en": "Cracking the Coding Interview",
+                  "ru": "Карьера программиста",
+                  "link": "https://www.crackingthecodinginterview.com/"
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "J. J. Sutherland",
+                "ru": "Джей Джей Сазерленд"
+              },
+              "text": [
+                {
+                  "en": "The Scrum Fieldbook: A Master Class on Accelerating Performance, Getting Results, and Defining the Future",
+                  "ru": "Scrum на практике. Высокая продуктивность и результаты – прямо сейчас",
+                  "link": "https://www.scruminc.com/the-scrum-fieldbook-master-class"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-works",
+      "header": { "en": "My works", "ru": "Мои работы" },
+      "segments": [
+        {
+          "type": "articleGrid",
+          "header": { "en": "C# & .NET", "ru": "C# & .NET" },
+          "elements": [
+            {
+              "header": { "en": "Testing tasks", "ru": "Тестовые задачи" },
+              "text": [
+                {
+                  "en": "This small project accumulates the code I've been writing on my educational journey. It includes various algorithms, such as sorting, searching, and polynomial calculations, enriched with extensive commentaries. Additionally, it showcases handmade class implementations and task solutions, all combined in a console menu.",
+                  "ru": "Этот небольшой проект - сборник кода, который я создавал в процессе своего обучения. Он представляет различные алгоритмы вроде сортировки, поиска или вычисления многочленов, сдобренные множеством комментариев, а также некоторые самодельные реализации классов и тестовые решения, которые были собраны в консольном меню."
+                },
+                {
+                  "en": "Each implementation is accompanied by simple yet demonstrable testing interfaces.",
+                  "ru": "Каждая реализация сопровождается простыми, но наглядными интерфейсами тестирования."
+                },
+                {
+                  "en": "GitHub repository:",
+                  "ru": "Репозиторий GitHub:",
+                  "link": "https://github.com/b.kucherepa/TestTasks"
+                }
+              ]
+            },
+            {
+              "header": { "en": "Nightwrap", "ru": "Nightwrap" },
+              "text": [
+                {
+                  "en": "A minimalistic Windows desktop service that conceals the screen with a black screensaver at a specified time interval if no input is detected. Designed for users whose PC locks, logs out, or shuts down immediately after the screen switches off.",
+                  "ru": "Минималистичная десктопная служба для Windows, которая скрывает экран c помощью черного скринсейвера через установленный интервал времени, если не было зафиксировано ввода. Создано для тех, у кого ПК блокирует или выходит из учетной записи либо погружается в режим сна сразу после отключения экрана."
+                },
+                {
+                  "en": "The service supports specifying the interval, operates in the system tray, and can be set to load on Windows startup",
+                  "ru": "Поддерживает установку интервала, работу в системном трее, и автозагрузку при запуске системы."
+                },
+                {
+                  "en": "GitHub repository:",
+                  "ru": "Репозиторий GitHub:",
+                  "link": "https://github.com/b.kucherepa/Nightwrap"
+                }
+              ]
+            },
+            {
+              "header": { "en": "ReaderX", "ru": "ReaderX" },
+              "text": [
+                {
+                  "en": "A Windows desktop app designed to display text over changeable background images dynamically loaded from a specified folder. It combines reader and slideshow functions.",
+                  "ru": "Декстопное приложения для Windows, разработанное для отображения текста поверх сменяемых фоновых изображений, которые динамически загружаются из указанной папки. Таким образом, приложение объединяет функции \"читалки\" и слайдшоу."
+                },
+                {
+                  "en": "The app also provides font formatting, options to set random or sequential order of the slideshow with adjustable intervals, selection of specific backgrounds from a list, and support for hotkeys.",
+                  "ru": "Также позволяет менять форматирование текста, устанавливать случайный или последовательный порядок слайдшоу с настраиваемым интервалом, выбирать определенный фон из списка, и использовать горячие клавиши."
+                },
+                {
+                  "en": "GitHub repository:",
+                  "ru": "Репозиторий GitHub:",
+                  "link": "https://github.com/b.kucherepa/ReaderX"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "articleGrid",
+          "header": { "en": "JavaScript & web", "ru": "JavaScript & web" },
+          "elements": [
+            {
+              "header": {
+                "en": "This very page!",
+                "ru": "Эта самая страница!"
+              },
+              "text": [
+                { "en": "Why not? :)", "ru": "А почему бы и нет? :)" },
+                {
+                  "en": "It has made a long way from a single page project written with vanilla HTML, CSS and JavaScript to a React-based JSON-parsing page compilator. See for yourself:",
+                  "ru": "Она проделала долгий путь от одностраничного проекта, написанного на чистых TML, CSS и JavaScript, до написанного на React компилятора страниц, который парсит JSON-файл. Смотрите сами:"
+                },
+                {
+                  "en": "GitHub repository:",
+                  "ru": "Репозиторий GitHub:",
+                  "link": "https://github.com/b.kucherepa/b-kucherepa.github.io"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

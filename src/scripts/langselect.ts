@@ -8,9 +8,9 @@ function loadLang(): void {
 
     switch (lang.slice(0, 2)) {
         case 'ru':
-            window.location.href = "./mainrus.html";
+            window.location.href = "./mainru.html";
             break;
         default:
-            window.location.href = "./maineng.html";
+            window.location.href = "./mainen.html";
     }
 }

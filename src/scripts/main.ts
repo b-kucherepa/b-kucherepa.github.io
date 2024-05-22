@@ -27,10 +27,10 @@ function initAge(): void {
   const birthday: number = new Date(96, 2, 1).getTime(); //CHANGE!
   const curDate: number = new Date().getTime();
   const myAge: number = Math.floor((curDate - birthday) / msInYear);
-  const ageLine: HTMLElement | null = document.getElementById("my-age");
+  const ageCell: HTMLElement | null = document.getElementById("my-age");
 
-  if (ageLine) {
-    ageLine.innerHTML = myAge.toString();
+  if (ageCell) {
+    ageCell.getElementsByTagName("p")[0].innerHTML = myAge.toString();
   }
 }
 
