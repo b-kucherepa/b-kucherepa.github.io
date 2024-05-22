@@ -204,18 +204,23 @@ h3 {
   font-weight: bold;
 
   text-align: start;
-  margin-top: 0.4em;
-  margin-bottom: 0.2em;
+  margin: 0.75em 0em;
 }
 
-p {
+.indent {
   text-indent: 1.5em;
-  margin: 0.5em;
+  margin: 0.75em 1.5em;
 }
 
-cite {
+.no-indent {
+  text-indent: 0;
+  margin: 0em 1.5em;
+}
+
+.author {
   font-weight: bold;
   font-style: italic;
+  color: inherit;
 }
 
 hr {
@@ -267,7 +272,7 @@ a:active {
 }
 
 .fa {
-  margin-left: -1rem;
+  margin-left: 0.5rem;
 }
 
 @supports (display: flex) {
@@ -282,7 +287,7 @@ a:active {
     display: grid;
     grid-gap: 1rem;
     grid-auto-flow: auto;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
 
     place-content: center top;
     margin-top: 1rem;
@@ -294,13 +299,13 @@ a:active {
   }
 }
 
-@media (min-width: calc(500px + 9rem)) {
+@media (min-width: calc(550px + 10rem)) {
   .grid-item {
     border-color: var(--color-mid-accent);
     border-style: solid;
     border-width: var(--line-width);
     border-radius: var(--rounding);
-    padding: 0.75rem;
+    padding: 0.75rem 1.5rem;
   }
 }
 
