@@ -190,6 +190,7 @@ h2 {
 
   font-family: var(--header-fonts);
   font-size: 1.3rem;
+  line-height: 2;
 
   text-align: center;
   margin-top: 1.5em;
@@ -202,19 +203,23 @@ h3 {
   font-family: var(--header-fonts);
   font-size: 0.9rem;
   font-weight: bold;
+  line-height: 2;
 
   text-align: start;
   margin: 0.75em 0em;
 }
 
+p{
+  line-height: 1.5;
+  margin: 1em 1.5em;
+}
+
 .indent {
   text-indent: 1.5em;
-  margin: 0.75em 1.5em;
 }
 
 .no-indent {
   text-indent: 0;
-  margin: 0em 1.5em;
 }
 
 .author {
