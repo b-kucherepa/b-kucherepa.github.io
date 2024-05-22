@@ -24,9 +24,9 @@ function initAge() {
     const birthday = new Date(96, 2, 1).getTime(); //CHANGE!
     const curDate = new Date().getTime();
     const myAge = Math.floor((curDate - birthday) / msInYear);
-    const ageLine = document.getElementById("my-age");
-    if (ageLine) {
-        ageLine.innerHTML = myAge.toString();
+    const ageCell = document.getElementById("my-age");
+    if (ageCell) {
+        ageCell.getElementsByTagName("p")[0].innerHTML = myAge.toString();
     }
 }
 function initH1Animation() {
