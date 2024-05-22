@@ -698,7 +698,7 @@
                 {
                   "en": "Analysis of Algorithms: An Active Learning Approach",
                   "ru": "Основы современных алгоритмов",
-                  "link": "https://books.google.am/books/about/Analysis_of_Algorithms.html?id=FmQA5Ewd5NAC&redir_esc=y"
+                  "link": "https://www.amazon.com/Analysis-Algorithms-Jeffrey-McConnell/dp/0763707821"
                 }
               ]
             }
@@ -714,7 +714,7 @@
                 {
                   "en": "Code: The Hidden Language of Computer Hardware and Software",
                   "ru": "Код: тайный язык информатики",
-                  "link": ""
+                  "link": "https://www.amazon.com/Code-Language-Computer-Hardware-Software/dp/0735611319"
                 }
               ]
             },
@@ -748,7 +748,7 @@
                 {
                   "en": "Code Complete: A Practical Handbook of Software Construction",
                   "ru": "Совершенный код",
-                  "link": ""
+                  "link": "https://www.amazon.com/gp/product/0735619670/"
                 }
               ]
             },
@@ -758,7 +758,7 @@
                 {
                   "en": "Refactoring. Improving the Design of Existing Code",
                   "ru": "Рефакторинг кода на JavaScript: улучшение проекта существующего кода.",
-                  "link": ""
+                  "link": "https://martinfowler.com/books/refactoring.html"
                 }
               ]
             }
@@ -774,7 +774,7 @@
                 {
                   "en": "Soft Skills: The software developer's life manual",
                   "ru": "Путь программиста",
-                  "link": ""
+                  "link": "https://www.amazon.com/Soft-Skills-software-developers-manual/dp/1617292397"
                 }
               ]
             },
@@ -787,7 +787,7 @@
                 {
                   "en": "Cracking the Coding Interview",
                   "ru": "Карьера программиста",
-                  "link": ""
+                  "link": "https://www.crackingthecodinginterview.com/"
                 }
               ]
             },
@@ -800,7 +800,7 @@
                 {
                   "en": "The Scrum Fieldbook: A Master Class on Accelerating Performance, Getting Results, and Defining the Future",
                   "ru": "Scrum на практике. Высокая продуктивность и результаты – прямо сейчас",
-                  "link": ""
+                  "link": "https://www.scruminc.com/the-scrum-fieldbook-master-class"
                 }
               ]
             }
