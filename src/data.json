@@ -144,52 +144,40 @@
           "type": "text",
           "elements": [
             {
-              "text": {
-                "en": "I often compare programming to magic. How so?",
-                "ru": ""
-              }
-            },
-            {
-              "text": {
-                "en": "Modern IT sorcerers use their magic altars, PCs with programming software, to create grimoires, the programs, which are full of spells, code pieces, to cast them in the virtual world. And not just that!",
-                "ru": ""
-              }
-            },
-            {
-              "text": {
-                "en": "Decades ago, programming was more of a science than any practical application. But nowadays, the power of this digital enchantment is so strong that it affects almost every area of human life.",
-                "ru": ""
-              }
-            },
-            {
-              "text": {
-                "en": "Since my young age, I have been fascinated and inspired by the bright artificial worlds video games provided. Later, I also was amazed by the unimaginable potential of the web, connecting people across the globe with almost no limits. So it's only natural I dreamed about initiating in that art of technical mages.",
-                "ru": ""
-              }
-            },
-            {
-              "text": {
-                "en": "Unfortunately, my life has turned the other way. My teenage attempts and experiments with game engines, small home websites, and Adobe Flash technology (ActionScript 3.0) gave way to something more real and practical, like, say, veterinary science. After I got a high education in that area, I decided to return to my dream.",
-                "ru": ""
-              }
-            },
-            {
-              "text": {
-                "en": "Combining work and self-education, I learned programming basics and my first language, C#. The first steps were pretty humble, but the path of learning the IT art is a never-ending process.",
-                "ru": ""
-              }
-            },
-            {
-              "text": {
-                "en": "Finally, I decided to change my life. It wasn't easy, taking into account the fact I don't have the specific education, which fuels imposter syndrome. But I made a firm decision it shouldn't stop me on the way to what I like, and what I have been wanting to do all along.",
-                "ru": ""
-              }
-            },
-            {
-              "text": {
-                "en": "Let this page be a declaration of a fresh start towards making my dream come true!",
-                "ru": ""
-              }
+              "text": [
+                {
+                  "en": "I often compare programming to magic. How so?",
+                  "ru": ""
+                },
+                {
+                  "en": "Modern IT sorcerers use their magic altars, PCs with programming software, to create grimoires, the programs, which are full of spells, code pieces, to cast them in the virtual world. And not just that!",
+                  "ru": ""
+                },
+                {
+                  "en": "Decades ago, programming was more of a science than any practical application. But nowadays, the power of this digital enchantment is so strong that it affects almost every area of human life.",
+                  "ru": ""
+                },
+                {
+                  "en": "Since my young age, I have been fascinated and inspired by the bright artificial worlds video games provided. Later, I also was amazed by the unimaginable potential of the web, connecting people across the globe with almost no limits. So it's only natural I dreamed about initiating in that art of technical mages.",
+                  "ru": ""
+                },
+                {
+                  "en": "Unfortunately, my life has turned the other way. My teenage attempts and experiments with game engines, small home websites, and Adobe Flash technology (ActionScript 3.0) gave way to something more real and practical, like, say, veterinary science. After I got a high education in that area, I decided to return to my dream.",
+                  "ru": ""
+                },
+                {
+                  "en": "Combining work and self-education, I learned programming basics and my first language, C#. The first steps were pretty humble, but the path of learning the IT art is a never-ending process.",
+                  "ru": ""
+                },
+                {
+                  "en": "Finally, I decided to change my life. It wasn't easy, taking into account the fact I don't have the specific education, which fuels imposter syndrome. But I made a firm decision it shouldn't stop me on the way to what I like, and what I have been wanting to do all along.",
+                  "ru": ""
+                },
+                {
+                  "en": "Let this page be a declaration of a fresh start towards making my dream come true!",
+                  "ru": ""
+                }
+              ]
             }
           ]
         }
@@ -203,7 +191,7 @@
       },
       "segments": [
         {
-          "type": "infoGrid",
+          "type": "snippetGrid",
           "header": {
             "en": "Bio",
             "ru": "Биография"
@@ -297,7 +285,7 @@
           ]
         },
         {
-          "type": "infoGrid",
+          "type": "articleGrid",
           "header": {
             "en": "Work experience",
             "ru": ""
@@ -351,7 +339,7 @@
       },
       "segments": [
         {
-          "type": "infoGrid",
+          "type": "articleGrid",
           "header": {
             "en": "General-purpose programming languages",
             "ru": ""
@@ -396,7 +384,7 @@
           ]
         },
         {
-          "type": "infoGrid",
+          "type": "articleGrid",
           "header": {
             "en": "Special-purpose programming languages",
             "ru": ""
@@ -453,7 +441,7 @@
           ]
         },
         {
-          "type": "infoGrid",
+          "type": "articleGrid",
           "header": {
             "en": "Frameworks and libraries",
             "ru": ""
@@ -510,7 +498,7 @@
           ]
         },
         {
-          "type": "infoGrid",
+          "type": "articleGrid",
           "header": {
             "en": "Version control technologies",
             "ru": ""
@@ -531,7 +519,7 @@
           ]
         },
         {
-          "type": "infoGrid",
+          "type": "articleGrid",
           "header": {
             "en": "IDEs and code editors",
             "ru": ""
@@ -564,7 +552,7 @@
           ]
         },
         {
-          "type": "infoGrid",
+          "type": "articleGrid",
           "header": {
             "en": "Other software",
             "ru": ""
@@ -621,7 +609,7 @@
           ]
         },
         {
-          "type": "infoGrid",
+          "type": "articleGrid",
           "header": {
             "en": "Languages",
             "ru": ""
@@ -666,7 +654,7 @@
           ]
         },
         {
-          "type": "infoGrid",
+          "type": "articleGrid",
           "header": {
             "en": "Soft skills",
             "ru": ""
@@ -739,7 +727,7 @@
               },
               "text": [
                 {
-                  "en": "<q>Any fool can write code that a computer can understand. Good programmers write code that humans can understand</q>, said <cite>Martin Fowler</cite>. I value clear, or at least well-commented, code above all else. One can always optimize good code later if needed.",
+                  "en": "<q>Any fool can write code that a computer can understand. Good programmers write code that humans can understand</q>, said Martin Fowler. I value clear, or at least well-commented, code above all else. One can always optimize good code later if needed.",
                   "ru": ""
                 }
               ]
@@ -747,7 +735,7 @@
           ]
         },
         {
-          "type": "infoGrid",
+          "type": "articleGrid",
           "header": {
             "en": "Currently on",
             "ru": ""
@@ -774,6 +762,385 @@
                 {
                   "en": "",
                   "ru": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-resources",
+      "header": {
+        "en": "Sources",
+        "ru": ""
+      },
+      "segments": [
+        {
+          "type": "resourceGrid",
+          "header": {
+            "en": "Programming languages",
+            "ru": ""
+          },
+          "elements": [
+            {
+              "header": {
+                "en": "Microsoft Learn",
+                "ru": "Microsoft Learn"
+              },
+              "text": [
+                {
+                  "en": "C# documentation",
+                  "ru": "",
+                  "link": "https://learn.microsoft.com/en-us/dotnet/csharp"
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Metanit.com",
+                "ru": "Metanit.com"
+              },
+              "text": [
+                {
+                  "en": "C#",
+                  "ru": "C#",
+                  "link": "https://metanit.com/sharp"
+                },
+                {
+                  "en": "JavaScript",
+                  "ru": "JavaScript",
+                  "link": "https://metanit.com/web/javascript/"
+                },
+                {
+                  "en": "TypeScript",
+                  "ru": "TypeScript",
+                  "link": "https://metanit.com/web/typescript/"
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "edX",
+                "ru": "edX"
+              },
+              "text": [
+                {
+                  "en": "W3Cx JS.0x - JavaScript Introduction",
+                  "ru": "W3Cx JS.0x - JavaScript Introduction",
+                  "link": "https://learning.edx.org/course/course-v1:W3Cx+JS.0x+2T2022/home"
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "SQL academy",
+                "ru": "SQL academy"
+              },
+              "text": [
+                {
+                  "en": "Guide",
+                  "ru": "",
+                  "link": "https://sql-academy.org/en/guide"
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "MDN web docs",
+                "ru": "MDN web docs"
+              },
+              "text": [
+                {
+                  "en": "Guides",
+                  "ru": "",
+                  "link": "https://developer.mozilla.org/en-US/docs/Learn"
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Ben Frain",
+                "ru": ""
+              },
+              "text": [
+                {
+                  "en": "Responsive Web Design with HTML5 and CSS",
+                  "ru": "",
+                  "link": "https://rwd.education"
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Codepip",
+                "ru": ""
+              },
+              "text": [
+                {
+                  "en": "Flexbox Froggy",
+                  "ru": "",
+                  "link": "https://flexboxfroggy.com"
+                },
+                {
+                  "en": "(it's so cute I couldn't resist to include it in the list!)",
+                  "ru": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "resourceGrid",
+          "header": {
+            "en": "Algorithms",
+            "ru": ""
+          },
+          "elements": [
+            {
+              "header": {
+                "en": "Jeffrey J. McConnell",
+                "ru": ""
+              },
+              "text": [
+                {
+                  "en": "Analysis of Algorithms: An Active Learning Approach",
+                  "ru": "",
+                  "link": "https://books.google.am/books/about/Analysis_of_Algorithms.html?id=FmQA5Ewd5NAC&redir_esc=y"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "resourceGrid",
+          "header": {
+            "en": "Hardware and architecture",
+            "ru": ""
+          },
+          "elements": [
+            {
+              "header": {
+                "en": "Charles Petzold",
+                "ru": ""
+              },
+              "text": [
+                {
+                  "en": "Code: The Hidden Language of Computer Hardware and Software",
+                  "ru": "",
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "NandGame",
+                "ru": ""
+              },
+              "text": [
+                {
+                  "en": "Hardware (relays), hardware (CMOS), software, multitasking levels",
+                  "ru": "",
+                  "link": "https://nandgame.com"
+                },
+                {
+                  "en": "My solutions",
+                  "ru": "",
+                  "link": "https://github.com/b-kucherepa/NandGame-solutions"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "resourceGrid",
+          "header": {
+            "en": "Coding style and refactoring",
+            "ru": ""
+          },
+          "elements": [
+            {
+              "header": {
+                "en": "Steve McConnell",
+                "ru": ""
+              },
+              "text": [
+                {
+                  "en": "Code Complete: A Practical Handbook of Software Construction",
+                  "ru": "",
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Martin Fowler",
+                "ru": ""
+              },
+              "text": [
+                {
+                  "en": "Refactoring. Improving the Design of Existing Code",
+                  "ru": "",
+                  "link": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "resourceGrid",
+          "header": {
+            "en": "Soft skills",
+            "ru": ""
+          },
+          "elements": [
+            {
+              "header": {
+                "en": "John Sonmez",
+                "ru": ""
+              },
+              "text": [
+                {
+                  "en": "Soft Skills: The software developer's life manual",
+                  "ru": "",
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Gayle Laakmann McDowell",
+                "ru": ""
+              },
+              "text": [
+                {
+                  "en": "Cracking the Coding Interview",
+                  "ru": "",
+                  "link": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "J. J. Sutherland",
+                "ru": ""
+              },
+              "text": [
+                {
+                  "en": "The Scrum Fieldbook: A Master Class on Accelerating Performance, Getting Results, and Defining the Future",
+                  "ru": "",
+                  "link": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-resources",
+      "header": {
+        "en": "Sources",
+        "ru": ""
+      },
+      "segments": [
+        {
+          "type": "articleGrid",
+          "header": {
+            "en": "C# & .NET",
+            "ru": "C# & .NET"
+          },
+          "elements": [
+            {
+              "header": {
+                "en": "Testing tasks",
+                "ru": "C#"
+              },
+              "text": [
+                {
+                  "en": "This small project accumulates the code I've been writing on my educational journey. It includes various algorithms, such as sorting, searching, and polynomial calculations, enriched with extensive commentaries. Additionally, it showcases handmade class implementations and task solutions, all combined in a console menu.",
+                  "ru": ""
+                },
+                {
+                  "en": "Each implementation is accompanied by simple yet demonstrable testing interfaces.",
+                  "ru": ""
+                },
+                {
+                  "en": "GitHub repository: ",
+                  "ru": "",
+                  "link": "https://github.com/b.kucherepa/TestTasks"
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Nightwrap",
+                "ru": ""
+              },
+              "text": [
+                {
+                  "en": "A minimalistic Windows desktop service that conceals the screen with a black screensaver at a specified time interval if no input is detected. Designed for users whose PC locks, logs out, or shuts down immediately after the screen switches off.",
+                  "ru": ""
+                },
+                {
+                  "en": "The service supports specifying the interval, operates in the system tray, and can be set to load on Windows startup",
+                  "ru": ""
+                },
+                {
+                  "en": "GitHub repository: ",
+                  "ru": "",
+                  "link": "https://github.com/b.kucherepa/Nightwrap"
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "ReaderX",
+                "ru": ""
+              },
+              "text": [
+                {
+                  "en": "A Windows desktop app designed to display text over changeable background images dynamically loaded from a specified folder. It combines reader and slideshow functions.",
+                  "ru": ""
+                },
+                {
+                  "en": "The app also provides font formatting, options to set random or sequential order of the slideshow with adjustable intervals, selection of specific backgrounds from a list, and support for hotkeys.",
+                  "ru": ""
+                },
+                {
+                  "en": "GitHub repository: ",
+                  "ru": "",
+                  "link": "https://github.com/b.kucherepa/ReaderX"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "articleGrid",
+          "header": {
+            "en": "JavaScript & web",
+            "ru": "JavaScript & web"
+          },
+          "elements": [
+            {
+              "header": {
+                "en": "This very page!",
+                "ru": ""
+              },
+              "text": [
+                {
+                  "en": "Why not? :)",
+                  "ru": ""
+                },
+                {
+                  "en": "It has made a long way from a single page project written with vanilla HTML, CSS and JavaScript to a React-based JSON-parsing page compilator. See for yourself:",
+                  "ru": ""
+                },
+                {
+                  "en": "GitHub repository: ",
+                  "ru": "",
+                  "link": "https://github.com/b.kucherepa/b-kucherepa.github.io"
                 }
               ]
             }
