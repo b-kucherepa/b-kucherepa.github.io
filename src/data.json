@@ -450,7 +450,6 @@
                 }
               ]
             }
-            
           ]
         },
         {
@@ -508,7 +507,276 @@
                 }
               ]
             }
-            
+          ]
+        },
+        {
+          "type": "infoGrid",
+          "header": {
+            "en": "Version control technologies",
+            "ru": ""
+          },
+          "elements": [
+            {
+              "header": {
+                "en": "git (GitHub)",
+                "ru": "git (GitHub)"
+              },
+              "text": [
+                {
+                  "en": "Although I haven't had direct experience with collaborative development, I am familiar with the basic functionality of Git: creating repositories, fetching, pushing, pulling, syncing, merging, amending commits, and reverting commits in case something went wrong :)",
+                  "ru": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "infoGrid",
+          "header": {
+            "en": "IDEs and code editors",
+            "ru": ""
+          },
+          "elements": [
+            {
+              "header": {
+                "en": "Visual Studio",
+                "ru": "Visual Studio"
+              },
+              "text": [
+                {
+                  "en": "The main IDE I am using for C# and other compiled languages for its great reflection capabilities.",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Visual Studio Code",
+                "ru": "Visual Studio Code"
+              },
+              "text": [
+                {
+                  "en": "I use it for small projects and web development. For example, this page has been created from scratch using it.",
+                  "ru": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "infoGrid",
+          "header": {
+            "en": "Other software",
+            "ru": ""
+          },
+          "elements": [
+            {
+              "header": {
+                "en": "Unity",
+                "ru": "Unity"
+              },
+              "text": [
+                {
+                  "en": "I have had experience making video games using the engine.",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Blender",
+                "ru": "Blender"
+              },
+              "text": [
+                {
+                  "en": "I used it for designing a number of low-poly and some mid-poly models.",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "FL Studio",
+                "ru": "FL Studio"
+              },
+              "text": [
+                {
+                  "en": "How could one live without some good music? It's a secondary skill, but it can be very handy when creating assets.",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Microsoft Excel",
+                "ru": "Microsoft Excel"
+              },
+              "text": [
+                {
+                  "en": "The Atlas holding the entire economic system on his shoulders. Also, it serves as a good trainer for algorithmic thinking using visual programming. I have gained vast experience in working with it and automation during my last job.",
+                  "ru": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "infoGrid",
+          "header": {
+            "en": "Languages",
+            "ru": ""
+          },
+          "elements": [
+            {
+              "header": {
+                "en": "English",
+                "ru": " "
+              },
+              "text": [
+                {
+                  "en": "A C1-C2 level, including free speaking. Sometimes I prefer it over my native language.",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Russian",
+                "ru": " "
+              },
+              "text": [
+                {
+                  "en": "A C2 level. My native language: that's it.",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "German",
+                "ru": " "
+              },
+              "text": [
+                {
+                  "en": "An A1-2 level. Not something to be proud of, but I have some basic knowledge that I'm improving, which can come in handy.",
+                  "ru": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "infoGrid",
+          "header": {
+            "en": "Soft skills",
+            "ru": ""
+          },
+          "elements": [
+            {
+              "header": {
+                "en": "Crave for knowledge",
+                "ru": " "
+              },
+              "text": [
+                {
+                  "en": "I do love to learn new things, and I can process large amounts of data.",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Code diver",
+                "ru": " "
+              },
+              "text": [
+                {
+                  "en": "When I write or debug code, time passes instantly. Someone should remind me to take breaks!",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Plans and schedules",
+                "ru": " "
+              },
+              "text": [
+                {
+                  "en": "I'm a fan of to-do lists, Kanban boards, and roadmap flowcharts. What can be more pleasant than striking out, removing, or marking another good deed as completed?",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Can take responsibility",
+                "ru": " "
+              },
+              "text": [
+                {
+                  "en": "My experience in administrative work has taught me not to be afraid of organizing workspaces and leading people.",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Non-conflicting personality",
+                "ru": " "
+              },
+              "text": [
+                {
+                  "en": "Cooperation is the key to productivity, as well as preserving neural cells. I prefer a healthy and trusting working atmosphere, where discussing and listening to opinions to find reasonable compromises are valued.",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Write code for people",
+                "ru": " "
+              },
+              "text": [
+                {
+                  "en": "<q>Any fool can write code that a computer can understand. Good programmers write code that humans can understand</q>, said <cite>Martin Fowler</cite>. I value clear, or at least well-commented, code above all else. One can always optimize good code later if needed.",
+                  "ru": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "infoGrid",
+          "header": {
+            "en": "Currently on",
+            "ru": ""
+          },
+          "elements": [
+            {
+              "header": {
+                "en": "Git workflows",
+                "ru": " "
+              },
+              "text": [
+                {
+                  "en": "",
+                  "ru": ""
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "ASP.NET",
+                "ru": " "
+              },
+              "text": [
+                {
+                  "en": "",
+                  "ru": ""
+                }
+              ]
+            }
           ]
         }
       ]
