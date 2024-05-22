@@ -12,7 +12,7 @@ function generateFiles (data: any): void {
     );
   }
 };
-
+ 
 readFile("src/data.json")
   .then((json) => JSON.parse(json.toString()))
   .then((data) => generateFiles(data));
