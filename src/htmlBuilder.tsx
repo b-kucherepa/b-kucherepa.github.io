@@ -4,10 +4,10 @@ import Page from "./reactComponents/Page.js";
 
 const DOCTYPE = "<!DOCTYPE html>";
 
-const generateFiles = (data: any): void => {
+function generateFiles (data: any): void {
   for (let lang of data.langs) {
     writeFile(
-      `${data.pageFilePrefix}${lang}.html`,
+      `${data.pagePrefix}${lang}.html`,
       DOCTYPE + renderToString(<Page data={data} lang={lang}/>)
     );
   }

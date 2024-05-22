@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-function IconLink(props: any) {
+function IconLink(props: {id?: string, class?: string, src: string, height: number, title: string, alt: string, href?: string}) {
   const image: ReactNode = (
     <img
       key={props.id}

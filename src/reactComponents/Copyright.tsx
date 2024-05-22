@@ -1,8 +1,8 @@
-function Copyright(props: any) {
+function Copyright (props: any) {
   return (
     <>
     <hr />
-    <div id="copyright">{props.author} (c)</div>
+    <div id="copyright">{props.data[props.lang]} (c)</div>
   </>
   )
 }

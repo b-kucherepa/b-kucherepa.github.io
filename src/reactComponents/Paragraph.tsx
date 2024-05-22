@@ -1,8 +1,12 @@
 function Paragraph(props: any) {
+  const innerHTMLString = { __html: props.data.text[props.lang] };
   return (
-    <p key={props.id} id={props.id} className={props.class}>
-      {props.text}
-      {props.children}
+    <p
+      key={props.data.id}
+      id={props.data.id}
+      className={props.data.class}
+      dangerouslySetInnerHTML={innerHTMLString}
+    >
     </p>
   );
 }
