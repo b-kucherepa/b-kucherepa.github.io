@@ -1,16 +1,8 @@
-loadLang();
-
 function loadLang(): void {
-    let lang: string | null = localStorage.getItem('lang');
-    if (!lang) {
-        lang = navigator.language ? navigator.language : "en-EN";
-    }
+  let lang: string | null = localStorage.getItem("lang") ?? "en-EN";
 
-    switch (lang.slice(0, 2)) {
-        case 'ru':
-            window.location.href = "./mainru.html";
-            break;
-        default:
-            window.location.href = "./mainen.html";
-    }
+  const langPrefix: string = lang.slice(0, 2);
+  window.location.href = `./${langPrefix}.html`;
 }
+
+loadLang();
