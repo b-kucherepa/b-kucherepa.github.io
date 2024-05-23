@@ -1,14 +1,20 @@
 import { renderToString } from "react-dom/server";
 import { readFile, writeFile } from "fs/promises";
-import Page from "./reactComponents/Page.js";
+import DataPage from "./reactComponents/DataPage.js";
+import IndexPage from "./reactComponents/IndexPage.js";
 
 const DOCTYPE = "<!DOCTYPE html>";
 
 function generateFiles(data: any): void {
+  writeFile(
+    "index.html",
+    DOCTYPE + renderToString(<IndexPage data={data} />)
+  );
+
   for (let lang of data.langs) {
     writeFile(
       `${data.pagePrefix}${lang}.html`,
-      DOCTYPE + renderToString(<Page data={data} lang={lang} />)
+      DOCTYPE + renderToString(<DataPage data={data} lang={lang} />)
     );
   }
 }

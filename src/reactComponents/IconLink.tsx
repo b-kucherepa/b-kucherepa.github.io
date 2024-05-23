@@ -4,7 +4,7 @@ function IconLink(props: {
   id?: string;
   class?: string;
   src: string;
-  height: number;
+  height?: number;
   title: string;
   alt: string;
   href?: string;

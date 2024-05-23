@@ -3,7 +3,7 @@ import Head from "./Head.js";
 import NavBar from "./NavBar.js";
 import Section from "./Section.js";
 
-function Page(props: { data: any; lang: string }): JSX.Element {
+function DataPage(props: { data: any; lang: string }): JSX.Element {
   return (
     <>
       <html lang={props.lang}>
@@ -35,4 +35,4 @@ function Page(props: { data: any; lang: string }): JSX.Element {
   );
 }
 
-export default Page;
+export default DataPage;
