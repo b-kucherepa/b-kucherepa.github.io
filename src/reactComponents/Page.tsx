@@ -3,32 +3,31 @@ import Head from "./Head.js";
 import NavBar from "./NavBar.js";
 import Section from "./Section.js";
 
-function Page(props: any) {
-  const lang = props.lang;
-  const data = props.data;
+function Page(props: { data: any; lang: string }): JSX.Element {
   return (
     <>
       <html lang={props.lang}>
-        <Head
-          title={data.head.title[lang]}
-          description={data.head.description[lang]}
-        />
+        <Head data={props.data.head} lang={props.lang} />
         <body>
           <header>
             <NavBar
-              data={data.nav}
-              lang={lang}
-              sections={data.sections}
-              pagePrefix={data.pagePrefix}
+              data={props.data.nav}
+              lang={props.lang}
+              sections={props.data.sections}
+              pagePrefix={props.data.pagePrefix}
             />
           </header>
           <main>
-            {data.sections.map((s: any) => (
-              <Section data={s} lang={lang} />
+            {props.data.sections.map((section: any) => (
+              <Section
+                key={`section-${section.id}`}
+                data={section}
+                lang={props.lang}
+              />
             ))}
           </main>
           <footer>
-            <Copyright data={data.copyright} lang={lang} />
+            <Copyright data={props.data.copyright} lang={props.lang} />
           </footer>
         </body>
       </html>

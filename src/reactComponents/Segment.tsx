@@ -1,57 +1,47 @@
+import { ReactElement } from "react";
 import Element from "./Element.js";
 
-function Segment(props: any) {
-  const children: any[] = props.data.elements.map((e: any) => {
-    const classes = { element: "", header: "", text: "" };
-    switch (props.data.type) {
+function Segment(props: {data: any, lang: string}): JSX.Element {
+  function defineStyleClasses(type: string): {
+    element: string;
+    header: string;
+    text: string;
+  } {
+    switch (type) {
       case "text":
-        classes.text = "indent";
-        break;
+        return { element: "indent", header: "", text: "" };
       case "snippetGrid":
-        classes.element = "grid-item";
-        classes.text = "no-indent";
-        break;
+        return { element: "grid-item", header: "", text: "no-indent" };
       case "articleGrid":
-        classes.element = "grid-item";
-        classes.text = "indent";
-        break;
+        return { element: "grid-item", header: "", text: "indent" };
       case "resourceGrid":
-        classes.element = "grid-item";
-        classes.header = "author";
-        classes.text = "no-indent";
-        break;
+        return { element: "grid-item", header: "author", text: "no-indent" };
       default:
-        throw `No such segment type: ${props.data.type}`;
+        throw `No such segment type: ${type}`;
     }
+  }
 
-    return (
-      <Element
-        data={e}
-        lang={props.lang}
-        elementClass={classes.element}
-        headerClass={classes.header}
-        textClass={classes.text}
-      />
-    );
-  });
+  const children: ReactElement[] = props.data.elements.map(
+    (element: any, index: number) => {
+      const classes = defineStyleClasses(props.data.type);
+      return (
+        <Element
+          key={`element-${index}`}
+          data={element}
+          lang={props.lang}
+          elementClass={classes.element}
+          headerClass={classes.header}
+          textClass={classes.text}
+        />
+      );
+    }
+  );
 
   switch (props.data.type) {
     case "text":
       return <div>{children}</div>;
     case "snippetGrid":
-      return (
-        <>
-          <h2>{props.data.header[props.lang]}</h2>
-          <div className="grid-container">{children}</div>
-        </>
-      );
     case "articleGrid":
-      return (
-        <>
-          <h2>{props.data.header[props.lang]}</h2>
-          <div className="grid-container">{children}</div>
-        </>
-      );
     case "resourceGrid":
       return (
         <>

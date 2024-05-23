@@ -1,6 +1,6 @@
 import IconLink from "./IconLink.js";
 
-function Themes(props: { data: any; lang: string; iconHeight: number }) {
+function Themes(props: { data: any; lang: string; iconHeight: number }): JSX.Element {
   const SEL_CLASS: string = "theme-icon";
   const UNSEL_CLASS: string = "theme-icon highlightable";
 
@@ -8,14 +8,15 @@ function Themes(props: { data: any; lang: string; iconHeight: number }) {
     <label className="nav-item jsOnly">
       {props.data.label[props.lang] + " "}
       <div className="menu-element">
-        {props.data.icons.map((i: any) => (
+        {props.data.icons.map((icon: any, index: number) => (
           <IconLink
-            id={i.id}
-            class={i.selected ? SEL_CLASS : UNSEL_CLASS}
-            src={props.data.iconDir + i.file}
+            key={`${icon.lang}-icon-${index}`}
+            id={icon.id}
+            class={icon.selected ? SEL_CLASS : UNSEL_CLASS}
+            src={props.data.iconDir + icon.file}
             height={props.iconHeight}
-            title={i.title[props.lang]}
-            alt={i.alt[props.lang]}
+            title={icon.title[props.lang]}
+            alt={icon.alt[props.lang]}
           />
         ))}
       </div>

@@ -1,14 +1,15 @@
 import { ReactElement } from "react";
 
 function Element(props: {
+  key: string;
   data: any;
   lang: string;
   elementClass?: string;
   headerClass?: string;
   textClass?: string;
-}) {
+}): JSX.Element {
   function getLinkIconClass(link: string): string {
-    const domain = new URL(link).hostname;
+    const domain: string = new URL(link).hostname;
 
     switch (domain) {
       case "github.com":
@@ -19,22 +20,20 @@ function Element(props: {
   }
 
   function parseTextLines() {
-    return props.data.text.map((l: any) => {
-      const innerHtmlString = {
-        __html: l[props.lang],
-      };
+    return props.data.text.map((line: any, index: number) => {
+      const innerHtml = { __html: line[props.lang] };
 
-      const a: ReactElement = l.link ? (
-        <a href={l.link} target="_blank">
-          <i className={getLinkIconClass(l.link)}></i>
+      const a: ReactElement = line.link ? (
+        <a href={line.link} target="_blank">
+          <i className={getLinkIconClass(line.link)}></i>
         </a>
       ) : (
         <></>
       );
 
       return (
-        <p className={props.textClass}>
-          <span dangerouslySetInnerHTML={innerHtmlString}></span>
+        <p key={`line-${index}`} className={props.textClass}>
+          <span dangerouslySetInnerHTML={innerHtml}></span>
           {a}
         </p>
       );
