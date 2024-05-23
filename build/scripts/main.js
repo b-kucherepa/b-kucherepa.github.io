@@ -32,25 +32,21 @@ function initAge() {
 function initH1Animation() {
     window.addEventListener("scroll", animateH1);
 }
-function initTheme() {
-    const lightIcon = document.getElementById("unsel-light-theme-icon");
-    const darkIcon = document.getElementById("unsel-dark-theme-icon");
-    lightIcon === null || lightIcon === void 0 ? void 0 : lightIcon.addEventListener("click", () => {
-        setTheme("light");
-    });
-    darkIcon === null || darkIcon === void 0 ? void 0 : darkIcon.addEventListener("click", () => {
-        setTheme("dark");
-    });
-    let theme = localStorage.getItem("theme");
-    if (!theme) {
-        const isPrefDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        theme = isPrefDark === true ? "dark" : "light";
-    }
-    setTheme(theme);
-}
 function initNavSelector() {
     const sectSel = document.getElementById("section-selector");
     sectSel === null || sectSel === void 0 ? void 0 : sectSel.addEventListener("change", loadSection);
+}
+function removeElemById(element) {
+    const domElem = document.getElementById(element);
+    if (domElem) {
+        domElem.style.display = "none";
+    }
+}
+function restoreElemById(element, displayAs) {
+    const domElem = document.getElementById(element);
+    if (domElem) {
+        domElem.style.display = displayAs;
+    }
 }
 function setTheme(theme) {
     document.documentElement.className = theme;
@@ -68,26 +64,21 @@ function setTheme(theme) {
         restoreElemById("unsel-dark-theme-icon", "inline-block");
     }
 }
-function removeElemById(element) {
-    const domElem = document.getElementById(element);
-    if (domElem) {
-        domElem.style.display = "none";
-    }
-}
-function restoreElemById(element, displayAs) {
-    const domElem = document.getElementById(element);
-    if (domElem) {
-        domElem.style.display = displayAs;
-    }
-}
-function loadSection() {
-    const sectScrollY = getSectionY();
-    const navHeight = getNavBarHeight();
-    const scrollStep = sectScrollY - navHeight;
-    window.scroll({
-        top: window.scrollY + scrollStep,
-        behavior: "smooth",
+function initTheme() {
+    const lightIcon = document.getElementById("unsel-light-theme-icon");
+    const darkIcon = document.getElementById("unsel-dark-theme-icon");
+    lightIcon === null || lightIcon === void 0 ? void 0 : lightIcon.addEventListener("click", () => {
+        setTheme("light");
     });
+    darkIcon === null || darkIcon === void 0 ? void 0 : darkIcon.addEventListener("click", () => {
+        setTheme("dark");
+    });
+    let theme = localStorage.getItem("theme");
+    if (!theme) {
+        const isPrefDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        theme = isPrefDark ? "dark" : "light";
+    }
+    setTheme(theme);
 }
 function getSectionY() {
     const sectSel = document.getElementById("section-selector");
@@ -102,10 +93,16 @@ function getSectionY() {
 }
 function getNavBarHeight() {
     const nav = document.getElementById("nav-bar");
-    if (nav) {
-        return nav.offsetHeight;
-    }
-    return 0;
+    return nav ? nav.offsetHeight : 0;
+}
+function loadSection() {
+    const sectScrollY = getSectionY();
+    const navHeight = getNavBarHeight();
+    const scrollStep = sectScrollY - navHeight;
+    window.scroll({
+        top: window.scrollY + scrollStep,
+        behavior: "smooth",
+    });
 }
 function animateH1() {
     const h1Collection = document.getElementsByTagName("h1");

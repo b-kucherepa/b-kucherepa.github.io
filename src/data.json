@@ -1,5 +1,5 @@
 {
-  "pagePrefix": "main",
+  "pagePrefix": "",
   "langs": ["en", "ru"],
   "links": { "gitHub": "https://github.com/b-kucherepa" },
   "head": {
