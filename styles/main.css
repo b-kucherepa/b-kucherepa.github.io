@@ -209,7 +209,7 @@ h3 {
   margin: 0.75em 0em;
 }
 
-p{
+p {
   line-height: 1.5;
   margin: 1em 1.5em;
 }
@@ -225,7 +225,7 @@ p{
 .author {
   font-weight: bold;
   font-style: italic;
-  color: inherit;
+  color: var(--color-main-text);
 }
 
 hr {
@@ -272,8 +272,8 @@ a:active {
 }
 
 .grid-item {
-  padding: 0;
-  margin: 0.75rem;
+  padding: 0.75rem 0;
+  margin: 0;
 }
 
 .fa {
@@ -288,30 +288,30 @@ a:active {
   }
 }
 
-@supports (display: grid) {
+@supports (display: flex) {
   .grid-container {
-    display: grid;
-    grid-gap: 1rem;
-    grid-auto-flow: auto;
-    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1.5rem;
     place-content: center top;
-    margin-top: 1rem;
   }
 
   .grid-item {
-    grid-area: auto;
-    margin: 0;
+    flex-grow: 4;
+    flex-basis: 100%;
   }
-}
 
-@media (min-width: calc(550px + 10rem)) {
-  .grid-item {
-    border-color: var(--color-mid-accent);
-    border-style: solid;
-    border-width: var(--line-width);
-    border-radius: var(--rounding);
-    padding: 0.75rem 1.5rem;
+  @media (min-width: 745px) {
+    .grid-item {
+      border-color: var(--color-mid-accent);
+      border-style: solid;
+      border-width: var(--line-width);
+      border-radius: var(--rounding);
+      padding: 0.75rem 1.5rem;
+      flex-basis: 230px;
+      min-width: 230px;
+    }
   }
 }
 
