@@ -289,7 +289,7 @@
           },
           "elements": [
             {
-              "header": { "en": "SQL (MySQL)", "ru": "SQL (MySQL)" },
+              "header": { "en": "SQL", "ru": "SQL" },
               "text": [
                 {
                   "en": "Databases are wonderful. The ability to store and provide information in such an effective manner is fascinating.",
@@ -323,6 +323,24 @@
                   "ru": "Математически заданная графика с возможностью неограниченного масштабирования поражает. Я увлечен SVG c подросткового возраста."
                 }
               ]
+            },
+            {
+              "header": { "en": "XML", "ru": "XML" },
+              "text": [
+                {
+                  "en": "Tags, tags everywhere!",
+                  "ru": "Тэги. Тэги повсюду!"
+                }
+              ]
+            },
+            {
+              "header": { "en": "JSON (+BSON)", "ru": "JSON (+BSON)" },
+              "text": [
+                {
+                  "en": "BSON is for machines, JSON is for meat bags.",
+                  "ru": "BSON для машин, JSON - для кожаных мешков."
+                }
+              ]
             }
           ]
         },
@@ -334,20 +352,20 @@
           },
           "elements": [
             {
-              "header": { "en": ".NET", "ru": ".NET" },
-              "text": [
-                {
-                  "en": "Where there's C#, there's .NET.",
-                  "ru": "Где C#, там и .NET."
-                }
-              ]
-            },
-            {
               "header": { "en": "Node.js", "ru": "Node.js" },
               "text": [
                 {
                   "en": "It opens the world of servers (and even desktop!) for JavaScript.",
                   "ru": "Открывает мир серверов (и даже десктопа!) для JavaScript."
+                }
+              ]
+            },
+            {
+              "header": { "en": "React/Redux", "ru": "React/Redux" },
+              "text": [
+                {
+                  "en": "Hooks and pulls web applications ahead!",
+                  "ru": "Хукает и вытягивает веб-приложения!"
                 }
               ]
             },
@@ -361,11 +379,38 @@
               ]
             },
             {
-              "header": { "en": "React/Redux", "ru": "React/Redux" },
+              "header": { "en": "SASS", "ru": "SASS" },
               "text": [
                 {
-                  "en": "Hooks and pulls web applications ahead!",
-                  "ru": "Хукает и вытягивает веб-приложения!"
+                  "en": "Makes the beauty calculated.",
+                  "ru": "Делает красоту просчитанной."
+                }
+              ]
+            },
+            {
+              "header": { "en": "MySQL", "ru": "MySQL" },
+              "text": [
+                {
+                  "en": "Neat, widely supported, and open-source. Everything you need in a SQL database management system.",
+                  "ru": "Аккуратная, с широкой поддержкой и открытым исходным кодом. Всё, что нужно от SQL СУБД."
+                }
+              ]
+            },
+            {
+              "header": { "en": "MongoDB", "ru": "MongoDB" },
+              "text": [
+                {
+                  "en": "Non-relational (NoSQL) databases are a relatively new concept in the database world. A document store? That sounds interesting and convenient",
+                  "ru": "Нереляционные (NoSQL) СУБД - это сравнительно новая концепция в мире баз данных. Документное хранилище? Звучит интересно и удобно."
+                }
+              ]
+            },
+            {
+              "header": { "en": ".NET", "ru": ".NET" },
+              "text": [
+                {
+                  "en": "Where there's C#, there's .NET.",
+                  "ru": "Где C#, там и .NET."
                 }
               ]
             }
@@ -383,7 +428,7 @@
               "text": [
                 {
                   "en": "Although I haven't had direct experience with collaborative development, I am familiar with the basic functionality of Git: creating repositories, fetching, pushing, pulling, syncing, merging, amending commits, and reverting commits in case something went wrong :)",
-                  "ru": "Пусть у меня и не было опыта совместной разработки,я владею базововым функционалом git: созданием репозиториев, что делают <code>fetch, push, pull, sync, merge и amend</code>, и как отменить коммиты, если что-то пошло не по плану :)"
+                  "ru": "Пусть у меня и не было опыта совместной разработки, я владею базовым функционалом git: созданием репозиториев, что делают <code>fetch, push, pull, sync, merge и amend</code>, и как отменить коммиты, если что-то пошло не по плану :)"
                 }
               ]
             }
@@ -397,23 +442,23 @@
           },
           "elements": [
             {
-              "header": { "en": "Visual Studio", "ru": "Visual Studio" },
-              "text": [
-                {
-                  "en": "The main IDE I am using for C# and other compiled languages for its great reflection capabilities.",
-                  "ru": "Основная IDE, которую я использую для C# и других компилируемых языков за её хорошую рефлексию."
-                }
-              ]
-            },
-            {
               "header": {
                 "en": "Visual Studio Code",
                 "ru": "Visual Studio Code"
               },
               "text": [
                 {
-                  "en": "I use it for small projects and web development. For example, this page has been created from scratch using it.",
-                  "ru": "Я использую его для маленьких проектов и веб-разработки, например, эта страница была создана в нём с нуля."
+                  "en": "I use it for web development and small projects. For example, this page has been created from scratch using it.",
+                  "ru": "Я использую его для веб-разработки и небольших проектов. Например, эта страница была создана в нём с нуля."
+                }
+              ]
+            },
+            {
+              "header": { "en": "Visual Studio", "ru": "Visual Studio" },
+              "text": [
+                {
+                  "en": "The main IDE I use for C# and other compiled languages because of its great reflection capabilities. Sad it has no native Linux support.",
+                  "ru": "Основная IDE, которую я использую для C# и других компилируемых языков за её хорошую рефлексию. Жаль, что у неё нет нативной поддержки под Линукс."
                 }
               ]
             }
@@ -443,6 +488,14 @@
                   "ru": "Я использовал его для создания множества низкополигональных и нескольких среднеполигональных моделей."
                 }
               ]
+            },             {
+              "header": { "en": "Linux", "ru": "Linux" },
+              "text": [
+                {
+                  "en": "Welcome a new adept to the Linux club! <code>bash</code> opens up a brand new world of customization and automation.",
+                  "ru": "Поприветствуйте нового адепта Линукс! <code>bash</code> открывает дивный новый мир кастомизации и автоматизации."
+                }
+              ]
             },
             {
               "header": { "en": "FL Studio", "ru": "FL Studio" },
@@ -457,8 +510,12 @@
               "header": { "en": "Microsoft Excel", "ru": "Microsoft Excel" },
               "text": [
                 {
-                  "en": "The Atlas holding the entire economic system on his shoulders. Also, it serves as a good trainer for algorithmic thinking using visual programming. I have gained vast experience in working with it and automation during my last job.",
-                  "ru": "Атлас, что держит всю мировую экономическую систему на плечах своих. А также отличный тренажер алгоритмического мышления с применением визуального программирования. Я получил богатый опыт работы и автоматизации с его использованием на моей последней работе."
+                  "en": "The Atlas holding the entire economic system on his shoulders. Also, it serves as a good trainer for algorithmic thinking using visual programming. ",
+                  "ru": "Атлас, что держит всю мировую экономическую систему на плечах своих. А также отличный тренажер алгоритмического мышления с применением визуального программирования. "
+                },
+                {
+                  "en": "I have gained vast experience in working with it and automation during my last job.",
+                  "ru": "Я получил богатый опыт работы и автоматизации с его использованием на моей последней работе."
                 }
               ]
             }
@@ -574,12 +631,12 @@
           "header": { "en": "Currently on", "ru": "Сейчас занимаюсь" },
           "elements": [
             {
-              "header": { "en": "Git workflows", "ru": "Git workflows" },
-              "text": [{ "en": "", "ru": "" }]
+              "header": { "en": "Next.js", "ru": "Next.js" },
+              "text": [{ "en": "Both client and server support, right out of the box!", "ru": "Поддерживает и клиент, и сервер прямо из коробки!" }]
             },
             {
-              "header": { "en": "ASP.NET", "ru": "ASP.NET" },
-              "text": [{ "en": "", "ru": "" }]
+              "header": { "en": "Tailwind CSS", "ru": "Tailwind CSS" },
+              "text": [{ "en": "A new age of web styling.", "ru": "Новая эра веб-стилизации." }]
             }
           ]
         }
