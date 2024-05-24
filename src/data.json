@@ -221,7 +221,7 @@
               "text": [
                 {
                   "en": "I have mastered time management and algorithmic thinking, as well as heightened my attention to detail.",
-                  "ru": " отточил навыки управления временем и алгоритмического мышления, а также повысил уровень внимательности к деталям."
+                  "ru": "Я отточил навыки управления временем и алгоритмического мышления, а также повысил уровень внимательности к деталям."
                 }
               ]
             },
@@ -265,8 +265,8 @@
               "header": { "en": "JavaScript", "ru": "JavaScript" },
               "text": [
                 {
-                  "en": "The second programming language I learned. No other language has so many <code>this</code> keyword meanings!",
-                  "ru": "Второй язык программирования, который я постиг. Ни в одном другом языке нет столько значений у <code>this</code>!"
+                  "en": "The second programming language I learned. No other language has so many <code>this</code> keyword meanings.",
+                  "ru": "Второй язык программирования, который я постиг. Ни в одном другом языке нет столько значений <code>this</code>."
                 }
               ]
             },
@@ -275,7 +275,7 @@
               "text": [
                 {
                   "en": "What happens if one breeds C# and JavaScript? Here is the answer!",
-                  "ru": "Что случится, если скрестить С№ и JavaScript? Вот ответ!"
+                  "ru": "Что случится, если скрестить С# и JavaScript? Вот ответ!"
                 }
               ]
             }
@@ -364,8 +364,8 @@
               "header": { "en": "React/Redux", "ru": "React/Redux" },
               "text": [
                 {
-                  "en": "Hooks and pulls web applications ahead!",
-                  "ru": "Хукает и вытягивает веб-приложения!"
+                  "en": "Hooks and pulls web applications ahead.",
+                  "ru": "Хукает и вытягивает веб-приложения."
                 }
               ]
             },
@@ -379,7 +379,7 @@
               ]
             },
             {
-              "header": { "en": "SASS", "ru": "SASS" },
+              "header": { "en": "Sass", "ru": "Sass" },
               "text": [
                 {
                   "en": "Makes the beauty calculated.",
@@ -488,7 +488,8 @@
                   "ru": "Я использовал его для создания множества низкополигональных и нескольких среднеполигональных моделей."
                 }
               ]
-            },             {
+            },
+            {
               "header": { "en": "Linux", "ru": "Linux" },
               "text": [
                 {
@@ -584,7 +585,7 @@
               "text": [
                 {
                   "en": "I'm a fan of to-do lists, Kanban boards, and roadmap flowcharts. What can be more pleasant than striking out, removing, or marking another good deed as completed?",
-                  "ru": "Я фанат составления список дел, досок канбан и путевых блок-схем. Что может быть приятнее, чем вычеркнуть, удалить или пометить завершенным ещё одно благое дело?"
+                  "ru": "Я фанат составления списков дел, досок канбан и путевых блок-схем. Что может быть приятнее, чем вычеркнуть, удалить или пометить завершенным ещё одно благое дело?"
                 }
               ]
             },
@@ -632,11 +633,21 @@
           "elements": [
             {
               "header": { "en": "Next.js", "ru": "Next.js" },
-              "text": [{ "en": "Both client and server support, right out of the box!", "ru": "Поддерживает и клиент, и сервер прямо из коробки!" }]
+              "text": [
+                {
+                  "en": "Both React client and server support, right out of the box!",
+                  "ru": "Поддерживает Реактовские клиент и сервер прямо из коробки!"
+                }
+              ]
             },
             {
               "header": { "en": "Tailwind CSS", "ru": "Tailwind CSS" },
-              "text": [{ "en": "A new age of web styling.", "ru": "Новая эра веб-стилизации." }]
+              "text": [
+                {
+                  "en": "A new age of web styling.",
+                  "ru": "Новая эра веб-стилизации."
+                }
+              ]
             }
           ]
         }
@@ -649,10 +660,36 @@
         {
           "type": "resourceGrid",
           "header": {
-            "en": "Programming languages",
-            "ru": "Языки програм\u00ADмирования"
+            "en": "Programming languages, libraries and frameworks",
+            "ru": "Языки програм\u00ADмирования, библиотеки и фреймворки"
           },
           "elements": [
+            {
+              "header": { "en": "W3School", "ru": "W3School" },
+              "text": [
+                {
+                  "en": "Tutorials",
+                  "ru": "Tutorials",
+                  "link": "https://www.w3schools.com/"
+                }
+              ]
+            },
+            {
+              "header": { "en": "Metanit.com", "ru": "Metanit.com" },
+              "text": [
+                { "en": "Tutorials", "ru": "Уроки", "link": "https://metanit.com/" }
+              ]
+            },
+            {
+              "header": { "en": "MDN web docs", "ru": "MDN web docs" },
+              "text": [
+                {
+                  "en": "Guides",
+                  "ru": "Руководства",
+                  "link": "https://developer.mozilla.org/en-US/docs/Learn"
+                }
+              ]
+            },
             {
               "header": { "en": "Microsoft Learn", "ru": "Microsoft Learn" },
               "text": [
@@ -664,18 +701,12 @@
               ]
             },
             {
-              "header": { "en": "Metanit.com", "ru": "Metanit.com" },
+              "header": { "en": "RS School", "ru": "RS School" },
               "text": [
-                { "en": "C#", "ru": "C#", "link": "https://metanit.com/sharp" },
                 {
-                  "en": "JavaScript",
-                  "ru": "JavaScript",
-                  "link": "https://metanit.com/web/javascript/"
-                },
-                {
-                  "en": "TypeScript",
-                  "ru": "TypeScript",
-                  "link": "https://metanit.com/web/typescript/"
+                  "en": "Node.js Course",
+                  "ru": "Курс по Node.js",
+                  "link": "https://rs.school/courses/nodejs"
                 }
               ]
             },
@@ -696,16 +727,6 @@
                   "en": "Guide",
                   "ru": "Интерактивный курс по SQL",
                   "link": "https://sql-academy.org/en/guide"
-                }
-              ]
-            },
-            {
-              "header": { "en": "MDN web docs", "ru": "MDN web docs" },
-              "text": [
-                {
-                  "en": "Guides",
-                  "ru": "Руководства",
-                  "link": "https://developer.mozilla.org/en-US/docs/Learn"
                 }
               ]
             },
@@ -756,7 +777,10 @@
         },
         {
           "type": "resourceGrid",
-          "header": { "en": "Hardware and architecture", "ru": "Аппаратное обеспечение и архитектура" },
+          "header": {
+            "en": "Hardware and architecture",
+            "ru": "Аппаратное обеспечение и архитектура"
+          },
           "elements": [
             {
               "header": { "en": "Charles Petzold", "ru": "Чарльз Петцольд" },
