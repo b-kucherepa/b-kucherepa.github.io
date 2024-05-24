@@ -163,7 +163,7 @@ h1 {
   text-align: start;
   position: relative;
   margin-top: 2em;
-  margin-bottom: 0.75em;
+  margin-bottom: 1.2em;
 }
 
 /* h1 underline: */
@@ -272,8 +272,8 @@ a:active {
 }
 
 .grid-item {
-  padding: 0.75rem 0;
-  margin: 0;
+  padding: 0;
+  margin: 2.5rem 0;
 }
 
 .fa {
@@ -289,20 +289,15 @@ a:active {
 }
 
 @supports (display: flex) {
-  .grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 1.5rem;
-    place-content: center top;
-  }
-
-  .grid-item {
-    flex-grow: 4;
-    flex-basis: 100%;
-  }
-
   @media (min-width: 745px) {
+    .grid-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 1.5rem;
+      place-content: center top;
+    }
+
     .grid-item {
       border-color: var(--color-mid-accent);
       border-style: solid;
@@ -310,6 +305,7 @@ a:active {
       border-radius: var(--rounding);
       padding: 0.75rem 1.5rem;
       flex-basis: 230px;
+      flex-grow: 4;
       min-width: 230px;
     }
   }
