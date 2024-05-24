@@ -699,7 +699,7 @@
         },
         {
           "type": "resourceGrid",
-          "header": { "en": "Hardware and architecture", "ru": "" },
+          "header": { "en": "Hardware and architecture", "ru": "Аппаратное обеспечение и архитектура" },
           "elements": [
             {
               "header": { "en": "Charles Petzold", "ru": "Чарльз Петцольд" },
