@@ -1,10 +1,24 @@
-function Head(props: { data: any; lang: string }) {
+import { useContext } from "react";
+import { GlobalContext } from "./DataPage.js";
+
+function Head(props: { data: any }) {
+  const globals = useContext(GlobalContext);
+
   return (
     <head className="dark">
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>{props.data.title[props.lang]}</title>
-      <meta name="description" content={props.data.description[props.lang]} />
+      <title>
+        {props.data.title[globals.lang] ??
+          props.data.title[globals.defaultLang]}
+      </title>
+      <meta
+        name="description"
+        content={
+          props.data.description[globals.lang] ??
+          props.data.description[globals.defaultLang]
+        }
+      />
       <link rel="stylesheet" type="text/css" href="styles/main.css" />
       <link
         rel="stylesheet"

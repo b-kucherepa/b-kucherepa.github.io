@@ -1,7 +1,11 @@
-import { ReactElement } from "react";
+import { useContext, ReactElement } from "react";
+import { GlobalContext } from "./DataPage.js";
+
 import Element from "./Element.js";
 
-function Segment(props: {data: any, lang: string}): JSX.Element {
+function Segment(props: { data: any }): JSX.Element {
+  const globals = useContext(GlobalContext);
+
   function defineStyleClasses(type: string): {
     element: string;
     header: string;
@@ -28,7 +32,6 @@ function Segment(props: {data: any, lang: string}): JSX.Element {
         <Element
           key={`element-${index}`}
           data={element}
-          lang={props.lang}
           elementClass={classes.element}
           headerClass={classes.header}
           textClass={classes.text}
@@ -45,7 +48,10 @@ function Segment(props: {data: any, lang: string}): JSX.Element {
     case "resourceGrid":
       return (
         <>
-          <h2>{props.data.header[props.lang]}</h2>
+          <h2>
+            {props.data.header[globals.lang] ??
+              props.data.header[globals.defaultLang]}
+          </h2>
           <div className="grid-container">{children}</div>
         </>
       );

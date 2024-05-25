@@ -1,13 +1,14 @@
-import { ReactElement } from "react";
+import { useContext, ReactElement } from "react";
+import { GlobalContext } from "./DataPage.js";
 
 function Element(props: {
-  key: string;
-  data: any;
-  lang: string;
-  elementClass?: string;
-  headerClass?: string;
-  textClass?: string;
+  data: any,
+  elementClass?: string,
+  headerClass?: string,
+  textClass?: string
 }): JSX.Element {
+  const globals = useContext(GlobalContext);
+
   function getLinkIconClass(link: string): string {
     const domain: string = new URL(link).hostname;
 
@@ -21,7 +22,9 @@ function Element(props: {
 
   function parseTextLines() {
     return props.data.text.map((line: any, index: number) => {
-      const innerHtml = { __html: line[props.lang] };
+      const innerHtml = {
+        __html: line[globals.lang] ?? line[globals.defaultLang],
+      };
 
       const a: ReactElement = line.link ? (
         <a href={line.link} target="_blank">
@@ -42,7 +45,10 @@ function Element(props: {
 
   return (
     <div id={props.data.id} className={props.elementClass}>
-      <h3 className={props.headerClass}>{props.data.header?.[props.lang]}</h3>
+      <h3 className={props.headerClass}>
+        {props.data.header?.[globals.lang] ??
+          props.data.header?.[globals.defaultLang]}
+      </h3>
       {parseTextLines()}
     </div>
   );

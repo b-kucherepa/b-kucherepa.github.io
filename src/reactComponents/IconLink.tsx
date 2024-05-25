@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactElement} from "react";
 
 function IconLink(props: {
   id?: string;
@@ -9,7 +9,7 @@ function IconLink(props: {
   alt: string;
   href?: string;
 }): JSX.Element {
-  const image: ReactNode = (
+  const image: ReactElement = (
     <img
       id={props.id}
       className={props.class}

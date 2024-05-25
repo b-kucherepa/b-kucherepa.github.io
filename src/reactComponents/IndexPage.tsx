@@ -1,27 +1,29 @@
 import IconLink from "./IconLink.js";
 
 function IndexPage(props: { data: any }): JSX.Element {
-  function setTitle(): string {
-    let title: string = props.data.langSelect[props.data.langs[0]];
+  const DEFAULT_LANG = props.data.langs[0];
+
+  function buildPageTitle(): string {
+    let title: string = props.data.langSelect[DEFAULT_LANG];
     for (let i = 1; i < props.data.langs.length; i++) {
       title += ` / ${props.data.langSelect[props.data.langs[i]].toLowerCase()}`;
     }
     return title;
   }
 
-  function setLocalization(): string {
+  function buildPageLocalization(): string {
     return props.data.langs.join(" ");
   }
 
   return (
-    <html lang={setLocalization()}>
+    <html lang={buildPageLocalization()}>
       <head className="dark">
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{props.data.langSelect["en"]}</title>
+        <title>{props.data.langSelect[DEFAULT_LANG]}</title>
         <meta
-          name={props.data.head.title["en"]}
-          content={props.data.head.description["en"]}
+          name={props.data.head.title[DEFAULT_LANG]}
+          content={props.data.head.description[DEFAULT_LANG]}
         />
         <link
           rel="shortcut icon"
@@ -48,7 +50,7 @@ function IndexPage(props: { data: any }): JSX.Element {
       <body>
         <noscript>
           <section>
-            <h1 lang={setLocalization()}>{setTitle()}</h1>
+            <h1 lang={buildPageLocalization()}>{buildPageTitle()}</h1>
             <div id="lang-selection">
               {props.data.nav.languages.icons.map(
                 (icon: any, index: number) => (

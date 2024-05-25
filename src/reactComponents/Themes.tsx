@@ -1,12 +1,18 @@
+import { useContext } from "react";
+import { GlobalContext } from "./DataPage.js";
+
 import IconLink from "./IconLink.js";
 
-function Themes(props: { data: any; lang: string; iconHeight: number }): JSX.Element {
+function Themes(props: { data: any; iconHeight: number }): JSX.Element {
+  const globals = useContext(GlobalContext);
+
   const SEL_CLASS: string = "theme-icon";
   const UNSEL_CLASS: string = "theme-icon highlightable";
 
   return (
     <label className="nav-item jsOnly">
-      {props.data.label[props.lang] + " "}
+      {props.data.label[globals.lang] ??
+        props.data.label[globals.defaultLang] + " "}
       <div className="menu-element">
         {props.data.icons.map((icon: any, index: number) => (
           <IconLink
@@ -15,8 +21,8 @@ function Themes(props: { data: any; lang: string; iconHeight: number }): JSX.Ele
             class={icon.selected ? SEL_CLASS : UNSEL_CLASS}
             src={props.data.iconDir + icon.file}
             height={props.iconHeight}
-            title={icon.title[props.lang]}
-            alt={icon.alt[props.lang]}
+            title={icon.title[globals.lang] ?? icon.title[globals.defaultLang]}
+            alt={icon.alt[globals.lang] ?? icon.alt[globals.defaultLang]}
           />
         ))}
       </div>

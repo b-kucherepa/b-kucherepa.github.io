@@ -142,9 +142,7 @@
           "elements": [
             {
               "header": { "en": "Nickname:", "ru": "Никнейм:" },
-              "text": [
-                { "en": "The Morning Firebird", "ru": "The Morning Firebird" }
-              ]
+              "text": [{ "en": "The Morning Firebird" }]
             },
             {
               "id": "my-age",
@@ -253,7 +251,7 @@
           },
           "elements": [
             {
-              "header": { "en": "C#", "ru": "C#" },
+              "header": { "en": "C#" },
               "text": [
                 {
                   "en": "The first (and primary) programming language I learned and use extensively, so I have a decent level of proficiency in it. However, the true magic lies in the APIs, doesn't it?",
@@ -262,7 +260,7 @@
               ]
             },
             {
-              "header": { "en": "JavaScript", "ru": "JavaScript" },
+              "header": { "en": "JavaScript" },
               "text": [
                 {
                   "en": "The second programming language I learned. No other language has so many <code>this</code> keyword meanings.",
@@ -271,7 +269,7 @@
               ]
             },
             {
-              "header": { "en": "TypeScript", "ru": "TypeScript" },
+              "header": { "en": "TypeScript" },
               "text": [
                 {
                   "en": "What happens if one breeds C# and JavaScript? Here is the answer!",
@@ -289,7 +287,7 @@
           },
           "elements": [
             {
-              "header": { "en": "SQL", "ru": "SQL" },
+              "header": { "en": "SQL" },
               "text": [
                 {
                   "en": "Databases are wonderful. The ability to store and provide information in such an effective manner is fascinating.",
@@ -298,7 +296,7 @@
               ]
             },
             {
-              "header": { "en": "HTML5", "ru": "HTML5" },
+              "header": { "en": "HTML5" },
               "text": [
                 {
                   "en": "The bone of every website, and the base of modern net. Thank you, Sir Timothy Berners-Lee!",
@@ -307,7 +305,7 @@
               ]
             },
             {
-              "header": { "en": "CSS3", "ru": "CSS3" },
+              "header": { "en": "CSS3" },
               "text": [
                 {
                   "en": "Who knows if beauty will save the world, but it definitely saves websites.",
@@ -316,7 +314,7 @@
               ]
             },
             {
-              "header": { "en": "SVG", "ru": "SVG" },
+              "header": { "en": "SVG" },
               "text": [
                 {
                   "en": "Mathematically defined indefinitely-scaled graphics can truly blow one's mind. I've been into SVG since my teens.",
@@ -325,7 +323,7 @@
               ]
             },
             {
-              "header": { "en": "XML", "ru": "XML" },
+              "header": { "en": "XML" },
               "text": [
                 {
                   "en": "Tags, tags everywhere!",
@@ -334,7 +332,7 @@
               ]
             },
             {
-              "header": { "en": "JSON (+BSON)", "ru": "JSON (+BSON)" },
+              "header": { "en": "JSON (+BSON)" },
               "text": [
                 {
                   "en": "BSON is for machines, JSON is for meat bags.",
@@ -352,7 +350,7 @@
           },
           "elements": [
             {
-              "header": { "en": "Node.js", "ru": "Node.js" },
+              "header": { "en": "Node.js" },
               "text": [
                 {
                   "en": "It opens the world of servers (and even desktop!) for JavaScript.",
@@ -361,7 +359,7 @@
               ]
             },
             {
-              "header": { "en": "React/Redux", "ru": "React/Redux" },
+              "header": { "en": "React/Redux" },
               "text": [
                 {
                   "en": "Hooks and pulls web applications ahead.",
@@ -370,7 +368,7 @@
               ]
             },
             {
-              "header": { "en": "jQuery", "ru": "jQuery" },
+              "header": { "en": "jQuery" },
               "text": [
                 {
                   "en": "Old, but not obsolete. Still simple and effective (sometimes).",
@@ -379,7 +377,7 @@
               ]
             },
             {
-              "header": { "en": "Sass", "ru": "Sass" },
+              "header": { "en": "Sass" },
               "text": [
                 {
                   "en": "Makes the beauty calculated.",
@@ -388,7 +386,7 @@
               ]
             },
             {
-              "header": { "en": "MySQL", "ru": "MySQL" },
+              "header": { "en": "MySQL" },
               "text": [
                 {
                   "en": "Neat, widely supported, and open-source. Everything you need in a SQL database management system.",
@@ -397,7 +395,7 @@
               ]
             },
             {
-              "header": { "en": "MongoDB", "ru": "MongoDB" },
+              "header": { "en": "MongoDB" },
               "text": [
                 {
                   "en": "Non-relational (NoSQL) databases are a relatively new concept in the database world. A document store? That sounds interesting and convenient",
@@ -406,7 +404,7 @@
               ]
             },
             {
-              "header": { "en": ".NET", "ru": ".NET" },
+              "header": { "en": ".NET" },
               "text": [
                 {
                   "en": "Where there's C#, there's .NET.",
@@ -424,7 +422,7 @@
           },
           "elements": [
             {
-              "header": { "en": "git (GitHub)", "ru": "git (GitHub)" },
+              "header": { "en": "git (GitHub)" },
               "text": [
                 {
                   "en": "Although I haven't had direct experience with collaborative development, I am familiar with the basic functionality of Git: creating repositories, fetching, pushing, pulling, syncing, merging, amending commits, and reverting commits in case something went wrong :)",
@@ -443,8 +441,7 @@
           "elements": [
             {
               "header": {
-                "en": "Visual Studio Code",
-                "ru": "Visual Studio Code"
+                "en": "Visual Studio Code"
               },
               "text": [
                 {
@@ -454,7 +451,7 @@
               ]
             },
             {
-              "header": { "en": "Visual Studio", "ru": "Visual Studio" },
+              "header": { "en": "Visual Studio" },
               "text": [
                 {
                   "en": "The main IDE I use for C# and other compiled languages because of its great reflection capabilities. Sad it has no native Linux support.",
@@ -472,7 +469,7 @@
           },
           "elements": [
             {
-              "header": { "en": "Unity", "ru": "Unity" },
+              "header": { "en": "Unity" },
               "text": [
                 {
                   "en": "I have had experience making video games using the engine.",
@@ -481,7 +478,7 @@
               ]
             },
             {
-              "header": { "en": "Blender", "ru": "Blender" },
+              "header": { "en": "Blender" },
               "text": [
                 {
                   "en": "I used it for designing a number of low-poly and some mid-poly models.",
@@ -490,7 +487,7 @@
               ]
             },
             {
-              "header": { "en": "Linux", "ru": "Linux" },
+              "header": { "en": "Linux" },
               "text": [
                 {
                   "en": "Welcome a new adept to the Linux club! <code>bash</code> opens up a brand new world of customization and automation.",
@@ -499,7 +496,7 @@
               ]
             },
             {
-              "header": { "en": "FL Studio", "ru": "FL Studio" },
+              "header": { "en": "FL Studio" },
               "text": [
                 {
                   "en": "How could one live without some good music? It's a secondary skill, but it can be very handy when creating assets.",
@@ -508,7 +505,7 @@
               ]
             },
             {
-              "header": { "en": "Microsoft Excel", "ru": "Microsoft Excel" },
+              "header": { "en": "Microsoft Excel" },
               "text": [
                 {
                   "en": "The Atlas holding the entire economic system on his shoulders. Also, it serves as a good trainer for algorithmic thinking using visual programming. ",
@@ -632,7 +629,7 @@
           "header": { "en": "Currently on", "ru": "Сейчас занимаюсь" },
           "elements": [
             {
-              "header": { "en": "Next.js", "ru": "Next.js" },
+              "header": { "en": "Next.js"},
               "text": [
                 {
                   "en": "Both React client and server support, right out of the box!",
@@ -641,7 +638,7 @@
               ]
             },
             {
-              "header": { "en": "Tailwind CSS", "ru": "Tailwind CSS" },
+              "header": { "en": "Tailwind CSS" },
               "text": [
                 {
                   "en": "A new age of web styling.",
@@ -665,23 +662,26 @@
           },
           "elements": [
             {
-              "header": { "en": "W3School", "ru": "W3School" },
+              "header": { "en": "W3School" },
               "text": [
                 {
                   "en": "Tutorials",
-                  "ru": "Tutorials",
                   "link": "https://www.w3schools.com/"
                 }
               ]
             },
             {
-              "header": { "en": "Metanit.com", "ru": "Metanit.com" },
+              "header": { "en": "Metanit.com" },
               "text": [
-                { "en": "Tutorials", "ru": "Уроки", "link": "https://metanit.com/" }
+                {
+                  "en": "Tutorials",
+                  "ru": "Уроки",
+                  "link": "https://metanit.com/"
+                }
               ]
             },
             {
-              "header": { "en": "MDN web docs", "ru": "MDN web docs" },
+              "header": { "en": "MDN web docs" },
               "text": [
                 {
                   "en": "Guides",
@@ -691,7 +691,7 @@
               ]
             },
             {
-              "header": { "en": "Microsoft Learn", "ru": "Microsoft Learn" },
+              "header": { "en": "Microsoft Learn"},
               "text": [
                 {
                   "en": "C# documentation",
@@ -701,7 +701,7 @@
               ]
             },
             {
-              "header": { "en": "RS School", "ru": "RS School" },
+              "header": { "en": "RS School" },
               "text": [
                 {
                   "en": "Node.js Course",
@@ -711,17 +711,16 @@
               ]
             },
             {
-              "header": { "en": "edX", "ru": "edX" },
+              "header": { "en": "edX"},
               "text": [
                 {
                   "en": "W3Cx JS.0x - JavaScript Introduction",
-                  "ru": "W3Cx JS.0x - JavaScript Introduction",
                   "link": "https://learning.edx.org/course/course-v1:W3Cx+JS.0x+2T2022/home"
                 }
               ]
             },
             {
-              "header": { "en": "SQL academy", "ru": "SQL academy" },
+              "header": { "en": "SQL academy"},
               "text": [
                 {
                   "en": "Guide",
@@ -741,11 +740,10 @@
               ]
             },
             {
-              "header": { "en": "Codepip", "ru": "Codepip" },
+              "header": { "en": "Codepip"},
               "text": [
                 {
                   "en": "Flexbox Froggy",
-                  "ru": "Flexbox Froggy",
                   "link": "https://flexboxfroggy.com"
                 },
                 {
@@ -793,11 +791,10 @@
               ]
             },
             {
-              "header": { "en": "NandGame", "ru": "NandGame" },
+              "header": { "en": "NandGame" },
               "text": [
                 {
                   "en": "Hardware (relays), hardware (CMOS), software, multitasking levels",
-                  "ru": "Hardware (relays), hardware (CMOS), software, multitasking levels",
                   "link": "https://nandgame.com"
                 },
                 {
@@ -888,7 +885,7 @@
       "segments": [
         {
           "type": "articleGrid",
-          "header": { "en": "C# & .NET", "ru": "C# & .NET" },
+          "header": { "en": "C# & .NET" },
           "elements": [
             {
               "header": { "en": "Testing tasks", "ru": "Тестовые задачи" },
@@ -909,7 +906,7 @@
               ]
             },
             {
-              "header": { "en": "Nightwrap", "ru": "Nightwrap" },
+              "header": { "en": "Nightwrap"},
               "text": [
                 {
                   "en": "A minimalistic Windows desktop service that conceals the screen with a black screensaver at a specified time interval if no input is detected. Designed for users whose PC locks, logs out, or shuts down immediately after the screen switches off.",
@@ -927,7 +924,7 @@
               ]
             },
             {
-              "header": { "en": "ReaderX", "ru": "ReaderX" },
+              "header": { "en": "ReaderX" },
               "text": [
                 {
                   "en": "A Windows desktop app designed to display text over changeable background images dynamically loaded from a specified folder. It combines reader and slideshow functions.",
@@ -948,7 +945,7 @@
         },
         {
           "type": "articleGrid",
-          "header": { "en": "JavaScript & web", "ru": "JavaScript & web" },
+          "header": { "en": "JavaScript & web" },
           "elements": [
             {
               "header": {
