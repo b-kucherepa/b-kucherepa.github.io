@@ -11,8 +11,7 @@ function Themes(props: { data: any; iconHeight: number }): JSX.Element {
 
   return (
     <label className="nav-item jsOnly">
-      {props.data.label[globals.lang] ??
-        props.data.label[globals.defaultLang] + " "}
+      {props.data.label[globals.lang] ?? props.data.label[globals.defaultLang]}
       <div className="menu-element">
         {props.data.icons.map((icon: any, index: number) => (
           <IconLink

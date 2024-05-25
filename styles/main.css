@@ -98,14 +98,14 @@ main {
 /*labelled container which takes its place in the nav bar "grid"*/
 .nav-item {
   display: table-cell;
-  margin: 0.2rem;
+  padding: 0.5rem;
 }
 
 /*interactive content container which composes a single GUI element*/
 .menu-element {
   display: inline-block;
   text-wrap: nowrap;
-  margin-top: 0.2rem;
+  margin: 0 0.5rem;
 }
 
 /*page theme icons*/
@@ -124,10 +124,12 @@ select {
 
   font-family: var(--regular-fonts);
   text-overflow: ellipsis;
+  font-size: 1rem;
 
   width: 100%;
   max-width: fit-content;
   height: 1.5rem;
+  text-align: center;
   vertical-align: -0.05rem;
 }
 

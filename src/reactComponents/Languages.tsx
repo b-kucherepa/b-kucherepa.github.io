@@ -11,7 +11,7 @@ function Languages(props: { data: any; iconHeight: number }): JSX.Element {
 
   return (
     <label className="nav-item">
-      {props.data.label[globals.lang] + " "}
+      {props.data.label[globals.lang] ?? props.data.label[globals.defaultLang]}
       <div className="menu-element">
         {props.data.icons.map((icon: any, index: number) => {
           const isSet: boolean = icon.lang === globals.lang;
@@ -25,7 +25,7 @@ function Languages(props: { data: any; iconHeight: number }): JSX.Element {
               title={isSet ? icon.title.sel : icon.title.unsel}
               alt={icon.alt[globals.lang] ?? icon.alt[globals.defaultLang]}
               href={isSet ? "" : `${globals.pagePrefix}${icon.lang}.html`}
-            />
+            /> 
           );
         })}
       </div>

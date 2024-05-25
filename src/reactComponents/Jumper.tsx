@@ -6,8 +6,7 @@ function Jumper(props: { data: any; sections: any[] }): JSX.Element {
 
   return (
     <label className="nav-item jsOnly">
-      {props.data.label[globals.lang] ??
-        props.data.label[globals.defaultLang] + " "}
+      {props.data.label[globals.lang] ?? props.data.label[globals.defaultLang]}
       <select
         id="section-selector"
         className="menu-element str-outlined highlightable"
