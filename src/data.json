@@ -368,6 +368,24 @@
               ]
             },
             {
+              "header": { "en": "Next.js" },
+              "text": [
+                {
+                  "en": "What happens if you take the best from React and Node.js, and add some handy magic? This. Both React client and server support, right out of the box!",
+                  "ru": "Что будет, если взять лучшее от React и Node.js. и добавить немного полезной магии? Вот что. Поддерживает Реактовские клиент и сервер прямо из коробки!"
+                }
+              ]
+            },
+            {
+              "header": { "en": "Capacitor.js" },
+              "text": [
+                {
+                  "en": "And what if you add native mobile platform support to Next.js? No fuss, no rush: you just get  a shiny new Android or iOS app!",
+                  "ru": "А что, если к Node.js добавить нативную поддержку мобильных платформ? Без шума и пыли получится новенькое и блестящее приложение на Android или iOS!"
+                }
+              ]
+            },
+            {
               "header": { "en": "jQuery" },
               "text": [
                 {
@@ -382,6 +400,15 @@
                 {
                   "en": "Makes the beauty calculated.",
                   "ru": "Делает красоту просчитанной."
+                }
+              ]
+            },
+            {
+              "header": { "en": "Tailwind CSS" },
+              "text": [
+                {
+                  "en": "A new age of web styling, with jumbles of classes as the price. But beauty demands sacrifices, doesn't it?",
+                  "ru": "Новая эра веб-стилизации, за что приходится расплачиваться нагромождениями из классов. о ведь красота требует жертв, не так ли?"
                 }
               ]
             },
@@ -629,20 +656,20 @@
           "header": { "en": "Currently on", "ru": "Сейчас занимаюсь" },
           "elements": [
             {
-              "header": { "en": "Next.js"},
+              "header": { "en": "Jest" },
               "text": [
                 {
-                  "en": "Both React client and server support, right out of the box!",
-                  "ru": "Поддерживает Реактовские клиент и сервер прямо из коробки!"
+                  "en": "It's too dangerous to write code alone! Take the tests!",
+                  "ru": "Слишком опасно писать код в одиночку! Возьми тесты!"
                 }
               ]
             },
             {
-              "header": { "en": "Tailwind CSS" },
+              "header": { "en": "Cypress" },
               "text": [
                 {
-                  "en": "A new age of web styling.",
-                  "ru": "Новая эра веб-стилизации."
+                  "en": "\"I clicked somewhere and it broke?\" No more of that! Well, it might still happen, but at least now we know why.",
+                  "ru": "\"Я куда-то нажал и оно сломалось?\" Больше такого не будет! Ну ладно, такое всё ещё может случиться, но, по крайней мере, теперь будет понятно, почему."
                 }
               ]
             }
@@ -691,7 +718,7 @@
               ]
             },
             {
-              "header": { "en": "Microsoft Learn"},
+              "header": { "en": "Microsoft Learn" },
               "text": [
                 {
                   "en": "C# documentation",
@@ -711,7 +738,7 @@
               ]
             },
             {
-              "header": { "en": "edX"},
+              "header": { "en": "edX" },
               "text": [
                 {
                   "en": "W3Cx JS.0x - JavaScript Introduction",
@@ -720,7 +747,7 @@
               ]
             },
             {
-              "header": { "en": "SQL academy"},
+              "header": { "en": "SQL academy" },
               "text": [
                 {
                   "en": "Guide",
@@ -740,7 +767,7 @@
               ]
             },
             {
-              "header": { "en": "Codepip"},
+              "header": { "en": "Codepip" },
               "text": [
                 {
                   "en": "Flexbox Froggy",
@@ -885,6 +912,60 @@
       "segments": [
         {
           "type": "articleGrid",
+          "header": { "en": "JavaScript & web" },
+          "elements": [
+            {
+              "header": {
+                "en": "Wedjat Reader",
+                "ru": "Wedjat Reader"
+              },
+              "text": [
+                {
+                  "en": "A static application developed with Next.js and Redux, combining a text reader and a slideshow display. It offers basic text formatting options such as color, size, line spacing, font family, and margins, along with background and slideshow customization.",
+                  "ru": "Статическое веб-приложение, разработанное при помощи Next.js и Redux, сочетающее в себе чтение текста и отображение слайдшоу. Предлагает базовые возможности выбора формата текста, такие, как изменение цвета, размера, межстрочного интервала, семейства шрифтов и отступов, и, помимо этого, настройки фонового изображения и слайдшоу."
+                },
+                {
+                  "en": "The application supports both light and dark themes and includes an autosave feature for user preferences.",
+                  "ru": "Приложение поддерживает светлую и тёмную темы, а также включает опцию автосохранения настроек пользователя."
+                },
+                {
+                  "en": "Additionally, a standalone Android .apk version, built with Capacitor, is available.",
+                  "ru": "Помимо этого, доступна отдельная .apk-версия для Android, созданная с помощью Capacitor."
+                },
+                {
+                  "en": "Web application:",
+                  "ru": "Веб-приложение:",
+                  "link": "https://b-kucherepa.github.io/Wedjat-Reader/build/"
+                },
+                {
+                  "en": "GitHub repository:",
+                  "ru": "Репозиторий GitHub:",
+                  "link": "https://github.com/b-kucherepa/Wedjat-Reader"
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "This very page!",
+                "ru": "Эта самая страница!"
+              },
+              "text": [
+                { "en": "Why not? :)", "ru": "А почему бы и нет? :)" },
+                {
+                  "en": "It has made a long way from a single page project written with vanilla HTML, CSS and JavaScript to a React-based JSON-parsing page compilator. See for yourself:",
+                  "ru": "Она проделала долгий путь от одностраничного проекта, написанного на чистых TML, CSS и JavaScript, до написанного на React компилятора страниц, который парсит JSON-файл. Смотрите сами:"
+                },
+                {
+                  "en": "GitHub repository:",
+                  "ru": "Репозиторий GitHub:",
+                  "link": "https://github.com/b-kucherepa/b-kucherepa.github.io"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "articleGrid",
           "header": { "en": "C# & .NET" },
           "elements": [
             {
@@ -906,7 +987,7 @@
               ]
             },
             {
-              "header": { "en": "Nightwrap"},
+              "header": { "en": "Nightwrap" },
               "text": [
                 {
                   "en": "A minimalistic Windows desktop service that conceals the screen with a black screensaver at a specified time interval if no input is detected. Designed for users whose PC locks, logs out, or shuts down immediately after the screen switches off.",
@@ -938,30 +1019,6 @@
                   "en": "GitHub repository:",
                   "ru": "Репозиторий GitHub:",
                   "link": "https://github.com/b-kucherepa/ReaderX"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "articleGrid",
-          "header": { "en": "JavaScript & web" },
-          "elements": [
-            {
-              "header": {
-                "en": "This very page!",
-                "ru": "Эта самая страница!"
-              },
-              "text": [
-                { "en": "Why not? :)", "ru": "А почему бы и нет? :)" },
-                {
-                  "en": "It has made a long way from a single page project written with vanilla HTML, CSS and JavaScript to a React-based JSON-parsing page compilator. See for yourself:",
-                  "ru": "Она проделала долгий путь от одностраничного проекта, написанного на чистых TML, CSS и JavaScript, до написанного на React компилятора страниц, который парсит JSON-файл. Смотрите сами:"
-                },
-                {
-                  "en": "GitHub repository:",
-                  "ru": "Репозиторий GitHub:",
-                  "link": "https://github.com/b-kucherepa/b-kucherepa.github.io"
                 }
               ]
             }
