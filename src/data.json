@@ -953,7 +953,7 @@
                 { "en": "Why not? :)", "ru": "А почему бы и нет? :)" },
                 {
                   "en": "It has made a long way from a single page project written with vanilla HTML, CSS and JavaScript to a React-based JSON-parsing page compilator. See for yourself:",
-                  "ru": "Она проделала долгий путь от одностраничного проекта, написанного на чистых TML, CSS и JavaScript, до написанного на React компилятора страниц, который парсит JSON-файл. Смотрите сами:"
+                  "ru": "Она проделала долгий путь от одностраничного проекта, написанного на чистых HTML, CSS и JavaScript, до написанного на React компилятора страниц, который парсит JSON-файл. Смотрите сами:"
                 },
                 {
                   "en": "GitHub repository:",
