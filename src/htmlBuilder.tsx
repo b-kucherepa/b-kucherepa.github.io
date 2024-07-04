@@ -5,7 +5,15 @@ import IndexPage from "./reactComponents/IndexPage.js";
 
 const DOCTYPE = "<!DOCTYPE html>";
 
-function generateFiles(data: any): void {
+async function generateFiles(): Promise<void> {
+  const data = await readFile("src/data.json")
+  .then((buffer) => buffer.toString())
+  .then((json) => JSON.parse(json));
+
+  const freeCodeCampData = await readFile("src/freeCodeCampData.json")
+  .then((buffer) => buffer.toString())
+  .then((json) => JSON.parse(json));
+
   writeFile(
     "index.html",
     DOCTYPE + renderToString(<IndexPage data={data} />)
@@ -19,7 +27,4 @@ function generateFiles(data: any): void {
   }
 }
 
-readFile("src/data.json")
-  .then((buffer) => buffer.toString())
-  .then((json) => JSON.parse(json))
-  .then((data) => generateFiles(data));
+generateFiles();

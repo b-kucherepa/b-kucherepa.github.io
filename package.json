@@ -1,16 +1,15 @@
 {
   "dependencies": {
-    "@types/react": "^18.3.2",
-    "@types/react-dom": "^18.3.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-scripts": "^3.0.1"
+    "react-dom": "^18.3.1"
   },
   "type": "module",
   "devDependencies": {
-    "@types/node": "^20.12.12"
+    "@types/node": "^20.12.12",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0"
   },
   "scripts": {
-    "build": "node ./build/htmlBuilder.js"
+    "build": "tsc --project tsconfig.json && node ./build/htmlBuilder.js"
   }
 }
