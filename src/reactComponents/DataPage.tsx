@@ -11,29 +11,29 @@ export const GlobalContext = createContext({
   navBarHeight: 0,
 });
 
-function DataPage(props: { data: any; lang: string }): JSX.Element {
+function DataPage(props: { mainData: any, metaData:any, navData: any, lang: string }): JSX.Element {
   return (
     <GlobalContext.Provider
       value={{
         lang: props.lang,
-        defaultLang: props.data.langs[0],
-        pagePrefix: props.data.pagePrefix,
-        navBarHeight: props.data.nav.height,
+        defaultLang: props.metaData.langs[0],
+        pagePrefix: props.metaData.pagePrefix,
+        navBarHeight: props.navData.height,
       }}
     >
       <html lang={props.lang}>
-        <Head data={props.data.head} />
+        <Head data={props.mainData.head} />
         <body>
           <header>
-            <NavBar data={props.data.nav} sections={props.data.sections} />
+            <NavBar data={props.navData} sections={props.mainData.sections} />
           </header>
           <main>
-            {props.data.sections.map((section: any) => (
+            {props.mainData.sections.map((section: any) => (
               <Section key={`section-${section.id}`} data={section} />
             ))}
           </main>
           <footer>
-            <Copyright data={props.data.copyright} />
+            <Copyright data={props.metaData.copyright} />
           </footer>
         </body>
       </html>

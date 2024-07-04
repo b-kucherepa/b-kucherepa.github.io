@@ -1,0 +1,14 @@
+{
+  "pagePrefix": "index",
+  "head": {
+    "title": {
+      "en": "Boris Kucherepa - Personal page",
+      "ru": "Борис Кучерепа - Персональная страница"
+    },
+    "description": {
+      "en": "Boris Kuckerepa's developer personal web page",
+      "ru": "Персональная веб-страница разработчика Бориса Кучерепа"
+    }
+  },
+  "langSelect": { "en": "Select the language", "ru": "Выберите язык" }
+}

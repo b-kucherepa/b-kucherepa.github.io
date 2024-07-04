@@ -1,67 +1,47 @@
+import Head from "./Head.js";
 import IconLink from "./IconLink.js";
 
-function IndexPage(props: { data: any }): JSX.Element {
-  const DEFAULT_LANG = props.data.langs[0];
+function IndexPage(props: { indexData: any, mainData: any, metaData: any, navData: any}): JSX.Element {
+  const DEFAULT_LANG = props.metaData.langs[0];
 
   function buildPageTitle(): string {
-    let title: string = props.data.langSelect[DEFAULT_LANG];
-    for (let i = 1; i < props.data.langs.length; i++) {
-      title += ` / ${props.data.langSelect[props.data.langs[i]].toLowerCase()}`;
+    let title: string = props.metaData.langSelect[DEFAULT_LANG];
+    for (let i = 1; i < props.metaData.langs.length; i++) {
+      title += ` / ${props.indexData.langSelect[props.metaData.langs[i]].toLowerCase()}`;
     }
     return title;
   }
 
   function buildPageLocalization(): string {
-    return props.data.langs.join(" ");
+    return props.metaData.langs.join(" ");
   }
 
   return (
     <html lang={buildPageLocalization()}>
-      <head className="dark">
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{props.data.langSelect[DEFAULT_LANG]}</title>
-        <meta
-          name={props.data.head.title[DEFAULT_LANG]}
-          content={props.data.head.description[DEFAULT_LANG]}
-        />
-        <link
-          rel="shortcut icon"
-          type="image/icon type"
-          href="icons/firebird-logo.svg"
-        />
+      <Head data={props.indexData.head}>
         <link rel="stylesheet" href="styles/main.css" />
         <link rel="stylesheet" href="styles/langselect.css" />
         <script
           type="text/javascript"
           src="build/scripts/langselect.js"
         ></script>
-        <noscript>
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200&display=swap"
-            rel="stylesheet"
-          />
-          <link rel="stylesheet" href="styles/noscript.css" />
-        </noscript>
-      </head>
+      </Head>
 
       <body>
         <noscript>
           <section>
             <h1 lang={buildPageLocalization()}>{buildPageTitle()}</h1>
             <div id="lang-selection">
-              {props.data.nav.languages.icons.map(
+              {props.navData.languages.icons.map(
                 (icon: any, index: number) => (
                   <IconLink
                     key={`${icon.lang}-icon-${index}`}
                     id={`${icon.lang}-icon`}
                     class="no-script-lang-icon highlightable"
-                    src={props.data.nav.languages.iconDir + icon.file}
+                    src={props.navData.languages.iconDir + icon.file}
                     title={icon.title.unsel}
                     alt={icon.alt[icon.lang]}
-                    href={`${props.data.pagePrefix}${icon.lang}.html`}
+                    href={`${props.mainData.pagePrefix}${icon.lang}.html`}
                   />
                 )
               )}

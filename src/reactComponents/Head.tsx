@@ -1,7 +1,7 @@
-import { useContext } from "react";
+import { ReactElement, useContext } from "react";
 import { GlobalContext } from "./DataPage.js";
 
-function Head(props: { data: any }) {
+function Head(props: { data: any, children?: ReactElement[] }) {
   const globals = useContext(GlobalContext);
 
   return (
@@ -49,6 +49,7 @@ function Head(props: { data: any }) {
         href="https://fonts.googleapis.com/css2?family=Jura&display=swap"
         rel="stylesheet"
       />
+      {props.children}
     </head>
   );
 }

@@ -13,17 +13,26 @@ import { readFile, writeFile } from "fs/promises";
 import DataPage from "./reactComponents/DataPage.js";
 import IndexPage from "./reactComponents/IndexPage.js";
 const DOCTYPE = "<!DOCTYPE html>";
+const dataFolder = "src/data/";
 function generateFiles() {
     return __awaiter(this, void 0, void 0, function* () {
-        const data = yield readFile("src/data.json")
+        const metaData = yield readFile(dataFolder + "metaData.json")
             .then((buffer) => buffer.toString())
             .then((json) => JSON.parse(json));
-        const freeCodeCampData = yield readFile("src/freeCodeCampData.json")
+        const navData = yield readFile(dataFolder + "navData.json")
             .then((buffer) => buffer.toString())
             .then((json) => JSON.parse(json));
-        writeFile("index.html", DOCTYPE + renderToString(_jsx(IndexPage, { data: data })));
-        for (let lang of data.langs) {
-            writeFile(`${data.pagePrefix}${lang}.html`, DOCTYPE + renderToString(_jsx(DataPage, { data: data, lang: lang })));
+        const indexData = yield readFile(dataFolder + "indexData.json")
+            .then((buffer) => buffer.toString())
+            .then((json) => JSON.parse(json));
+        const mainData = yield readFile(dataFolder + "mainData.json")
+            .then((buffer) => buffer.toString())
+            .then((json) => JSON.parse(json));
+        writeFile(`${mainData.pagePrefix}.html`, DOCTYPE +
+            renderToString(_jsx(IndexPage, { indexData: indexData, mainData: mainData, metaData: metaData, navData: navData })));
+        for (let lang of metaData.langs) {
+            writeFile(`${mainData.pagePrefix}${lang}.html`, DOCTYPE +
+                renderToString(_jsx(DataPage, { mainData: mainData, metaData: metaData, navData: navData, lang: lang })));
         }
     });
 }
