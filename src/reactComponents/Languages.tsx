@@ -1,9 +1,13 @@
+import { processLink } from "../dev/utils.js";
 import { useContext } from "react";
-import { GlobalContext } from "./DataPage.js";
+import { GlobalContext } from "./GlobalContext.js";
 
 import IconLink from "./IconLink.js";
 
-function Languages(props: { data: any; iconHeight: number }): JSX.Element {
+export default function Languages(props: {
+  data: any;
+  iconHeight: number;
+}): JSX.Element {
   const globals = useContext(GlobalContext);
 
   const SEL_CLASS: string = "lang-icon str-outlined";
@@ -24,13 +28,15 @@ function Languages(props: { data: any; iconHeight: number }): JSX.Element {
               height={props.iconHeight}
               title={isSet ? icon.title.sel : icon.title.unsel}
               alt={icon.alt[globals.lang] ?? icon.alt[globals.defaultLang]}
-              href={isSet ? "" : `${globals.pagePrefix}${icon.lang}.html`}
-            /> 
+              href={
+                isSet
+                  ? ""
+                  : processLink("MAIN_PAGE", globals.pagePrefixes, icon.lang)
+              }
+            />
           );
         })}
       </div>
     </label>
   );
 }
-
-export default Languages;

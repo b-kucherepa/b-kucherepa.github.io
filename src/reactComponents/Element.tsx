@@ -1,34 +1,43 @@
+import { processLink } from "../dev/utils.js";
 import { useContext, ReactElement } from "react";
-import { GlobalContext } from "./DataPage.js";
+import { GlobalContext } from "./GlobalContext.js";
 
-function Element(props: {
-  data: any,
-  elementClass?: string,
-  headerClass?: string,
-  textClass?: string
+export default function Element(props: {
+  data: any;
+  elementClass?: string;
+  headerClass?: string;
+  textClass?: string;
 }): JSX.Element {
   const globals = useContext(GlobalContext);
 
   function getLinkIconClass(link: string): string {
-    const domain: string = new URL(link).hostname;
-
-    switch (domain) {
-      case "github.com":
-        return "fa fa-github";
-      default:
-        return "fa fa-link";
+    try {
+      const domain: string = new URL(link).hostname;
+      switch (domain) {
+        case "github.com":
+          return "fa fa-github";
+        default:
+          return "fa fa-link";
+      }
+    } catch {
+      return "fa fa-link";
     }
   }
 
   function parseTextLines() {
     return props.data.text.map((line: any, index: number) => {
+      const processedLink = processLink(
+        line.link,
+        globals.pagePrefixes,
+        globals.lang
+      );
       const innerHtml = {
         __html: line[globals.lang] ?? line[globals.defaultLang],
       };
 
       const a: ReactElement = line.link ? (
-        <a href={line.link} target="_blank">
-          <i className={getLinkIconClass(line.link)}></i>
+        <a href={processedLink} target="_blank">
+          <i className={getLinkIconClass(processedLink)}></i>
         </a>
       ) : (
         <></>
@@ -53,5 +62,3 @@ function Element(props: {
     </div>
   );
 }
-
-export default Element;

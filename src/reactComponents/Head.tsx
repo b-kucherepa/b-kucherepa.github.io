@@ -1,7 +1,7 @@
 import { ReactElement, useContext } from "react";
-import { GlobalContext } from "./DataPage.js";
+import { GlobalContext } from "./GlobalContext.js";
 
-function Head(props: { data: any, children?: ReactElement[] }) {
+export default function Head(props: { data: any; children?: ReactElement[] }) {
   const globals = useContext(GlobalContext);
 
   return (
@@ -53,5 +53,3 @@ function Head(props: { data: any, children?: ReactElement[] }) {
     </head>
   );
 }
-
-export default Head;

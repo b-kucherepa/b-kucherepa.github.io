@@ -1,9 +1,9 @@
 import { useContext, ReactElement } from "react";
-import { GlobalContext } from "./DataPage.js";
+import { GlobalContext } from "./GlobalContext.js";
 
 import Element from "./Element.js";
 
-function Segment(props: { data: any }): JSX.Element {
+export default function Segment(props: { data: any }): JSX.Element {
   const globals = useContext(GlobalContext);
 
   function defineStyleClasses(type: string): {
@@ -59,5 +59,3 @@ function Segment(props: { data: any }): JSX.Element {
       throw `No such segment type: ${props.data.type}`;
   }
 }
-
-export default Segment;

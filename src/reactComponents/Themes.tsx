@@ -1,9 +1,12 @@
 import { useContext } from "react";
-import { GlobalContext } from "./DataPage.js";
+import { GlobalContext } from "./GlobalContext.js";
 
 import IconLink from "./IconLink.js";
 
-function Themes(props: { data: any; iconHeight: number }): JSX.Element {
+export default function Themes(props: {
+  data: any;
+  iconHeight: number;
+}): JSX.Element {
   const globals = useContext(GlobalContext);
 
   const SEL_CLASS: string = "theme-icon";
@@ -28,5 +31,3 @@ function Themes(props: { data: any; iconHeight: number }): JSX.Element {
     </label>
   );
 }
-
-export default Themes;

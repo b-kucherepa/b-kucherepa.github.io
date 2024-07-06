@@ -1,6 +1,6 @@
-import { ReactElement} from "react";
+import { ReactElement } from "react";
 
-function IconLink(props: {
+export default function IconLink(props: {
   id?: string;
   class?: string;
   src: string;
@@ -21,5 +21,3 @@ function IconLink(props: {
   );
   return props.href ? <a href={props.href}>{image}</a> : <>{image}</>;
 }
-
-export default IconLink;

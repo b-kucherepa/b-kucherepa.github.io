@@ -2,6 +2,11 @@
   "langs": ["en", "ru"],
   "langSelect": { "en": "Select the language", "ru": "Выберите язык" },
   "links": { "gitHub": "https://github.com/b-kucherepa" },
+  "pagePrefixes": {
+    "index": "index",
+    "main": "main",
+    "fccSolutions": "fcc-solutions"
+  },
   "copyright": {
     "en": "Boris Kucherepa / The Morning Firebird",
     "ru": "Борис Кучерепа / The Morning Firebird"

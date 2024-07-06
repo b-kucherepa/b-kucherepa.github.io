@@ -1,5 +1,4 @@
-{  
-  "pagePrefix": "",
+{
   "head": {
     "title": {
       "en": "Boris Kucherepa - Personal page",
@@ -866,6 +865,28 @@
                   "en": "GitHub repository:",
                   "ru": "Репозиторий GitHub:",
                   "link": "https://github.com/b-kucherepa/Wedjat-Reader"
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "freeCodeCamp task solutions",
+                "ru": "Решения freeCodeCamp задач"
+              },
+              "text": [
+                {
+                  "en": "A collection of task implementations from freeCodeCamp, required for obtaining the certificates. This includes various small web apps and pages.",
+                  "ru": "Коллекция реализаций задач с freeCodeCamp, необходимых для получения сертификатов. Включает небольшие веб-приложения и страницы."
+                },
+                {
+                  "en": "List of the solutions:",
+                  "ru": "Список решений:",
+                  "link": "FCC_SOLUTIONS_PAGE"
+                },
+                {
+                  "en": "Collective GitHub repository:",
+                  "ru": "Сборный репозиторий GitHub:",
+                  "link": "https://github.com/b-kucherepa/freeCodeCamp-tasks"
                 }
               ]
             },

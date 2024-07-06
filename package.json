@@ -10,6 +10,6 @@
     "@types/react-dom": "^18.3.0"
   },
   "scripts": {
-    "build": "tsc --project tsconfig.json && node ./build/htmlBuilder.js"
+    "build": "tsc --project tsconfig.json && node ./build/dev/htmlBuilder.js"
   }
 }

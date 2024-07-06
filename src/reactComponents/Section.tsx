@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import { GlobalContext } from "./DataPage.js";
+import { GlobalContext } from "./GlobalContext.js";
 
 import Segment from "./Segment.js";
 
-function Section(props: { data: any }): JSX.Element {
+export default function Section(props: { data: any }): JSX.Element {
   const globals = useContext(GlobalContext);
 
   return (
@@ -18,5 +18,3 @@ function Section(props: { data: any }): JSX.Element {
     </section>
   );
 }
-
-export default Section;

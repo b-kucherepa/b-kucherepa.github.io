@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { GlobalContext } from "./DataPage.js";
+import { GlobalContext } from "./GlobalContext.js";
 
-function Copyright(props: { data: any }): JSX.Element {
+export default function Copyright(props: { data: any }): JSX.Element {
   const globals = useContext(GlobalContext);
 
   return (
@@ -13,5 +13,3 @@ function Copyright(props: { data: any }): JSX.Element {
     </>
   );
 }
-
-export default Copyright;

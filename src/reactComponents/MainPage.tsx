@@ -1,24 +1,22 @@
-import { createContext } from "react";
+import { GlobalContext } from "./GlobalContext.js";
 import Copyright from "./Copyright.js";
 import Head from "./Head.js";
 import NavBar from "./NavBar.js";
 import Section from "./Section.js";
 
-export const GlobalContext = createContext({
-  lang: "en",
-  defaultLang: "en",
-  pagePrefix: "",
-  navBarHeight: 0,
-});
-
-function DataPage(props: { mainData: any, metaData:any, navData: any, lang: string }): JSX.Element {
+export default function MainPage(props: {
+  mainData: any;
+  metaData: any;
+  navData: any;
+  lang: string;
+}): JSX.Element {
   return (
     <GlobalContext.Provider
       value={{
         lang: props.lang,
         defaultLang: props.metaData.langs[0],
-        pagePrefix: props.metaData.pagePrefix,
         navBarHeight: props.navData.height,
+        pagePrefixes: props.metaData.pagePrefixes,
       }}
     >
       <html lang={props.lang}>
@@ -40,5 +38,3 @@ function DataPage(props: { mainData: any, metaData:any, navData: any, lang: stri
     </GlobalContext.Provider>
   );
 }
-
-export default DataPage;

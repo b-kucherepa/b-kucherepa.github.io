@@ -1,7 +1,10 @@
 import { useContext } from "react";
-import { GlobalContext } from "./DataPage.js";
+import { GlobalContext } from "./GlobalContext.js";
 
-function Jumper(props: { data: any; sections: any[] }): JSX.Element {
+export default function Jumper(props: {
+  data: any;
+  sections: any[];
+}): JSX.Element {
   const globals = useContext(GlobalContext);
 
   return (
@@ -25,5 +28,3 @@ function Jumper(props: { data: any; sections: any[] }): JSX.Element {
     </label>
   );
 }
-
-export default Jumper;

@@ -12,6 +12,7 @@ import { renderToString } from "react-dom/server";
 import { readFile, writeFile } from "fs/promises";
 import DataPage from "./reactComponents/DataPage.js";
 import IndexPage from "./reactComponents/IndexPage.js";
+import FreeCodeCampSolutionsPage from "./reactComponents/FreeCodeCampSolutionsPage.js";
 const DOCTYPE = "<!DOCTYPE html>";
 const dataFolder = "src/data/";
 function generateFiles() {
@@ -22,17 +23,24 @@ function generateFiles() {
         const navData = yield readFile(dataFolder + "navData.json")
             .then((buffer) => buffer.toString())
             .then((json) => JSON.parse(json));
-        const indexData = yield readFile(dataFolder + "indexData.json")
+        const indexData = yield readFile(dataFolder + "indexPageData.json")
             .then((buffer) => buffer.toString())
             .then((json) => JSON.parse(json));
-        const mainData = yield readFile(dataFolder + "mainData.json")
+        const mainData = yield readFile(dataFolder + "mainPageData.json")
             .then((buffer) => buffer.toString())
             .then((json) => JSON.parse(json));
-        writeFile(`${mainData.pagePrefix}.html`, DOCTYPE +
+        const fccData = yield readFile(dataFolder + "fccSolutionsData.json")
+            .then((buffer) => buffer.toString())
+            .then((json) => JSON.parse(json));
+        writeFile(`${indexData.pagePrefix}.html`, DOCTYPE +
             renderToString(_jsx(IndexPage, { indexData: indexData, mainData: mainData, metaData: metaData, navData: navData })));
         for (let lang of metaData.langs) {
             writeFile(`${mainData.pagePrefix}${lang}.html`, DOCTYPE +
                 renderToString(_jsx(DataPage, { mainData: mainData, metaData: metaData, navData: navData, lang: lang })));
+        }
+        for (let lang of metaData.langs) {
+            writeFile(`${fccData.pagePrefix}${lang}.html`, DOCTYPE +
+                renderToString(_jsx(FreeCodeCampSolutionsPage, { fccData: fccData, metaData: metaData, lang: lang })));
         }
     });
 }

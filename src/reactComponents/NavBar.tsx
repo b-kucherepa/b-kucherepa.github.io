@@ -2,7 +2,10 @@ import Jumper from "./Jumper.js";
 import Languages from "./Languages.js";
 import Themes from "./Themes.js";
 
-function NavBar(props: { data: any; sections: any[] }): JSX.Element {
+export default function NavBar(props: {
+  data: any;
+  sections: any[];
+}): JSX.Element {
   const ICON_HEIGHT: number = 16;
   return (
     <nav id="nav-bar">
@@ -12,5 +15,3 @@ function NavBar(props: { data: any; sections: any[] }): JSX.Element {
     </nav>
   );
 }
-
-export default NavBar;
