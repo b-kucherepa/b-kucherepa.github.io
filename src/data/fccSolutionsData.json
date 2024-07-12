@@ -85,6 +85,23 @@
                   "link": "https://b-kucherepa.github.io/freeCodeCamp-tasks/25-5-clock/index.html"
                 }
               ]
+            },
+            {
+              "header": {
+                "en": "Survey form",
+                "ru": "Форма-опросник"
+              },
+              "text": [
+                {
+                  "en": "(nothing special, but I really like it somehow)",
+                  "ru": "(ничего особенного, но мне она мне чем-то нравится)"
+                },
+                {
+                  "en": "Link:",
+                  "ru": "Ссылка:",
+                  "link": "https://b-kucherepa.github.io/freeCodeCamp-tasks/survey/index.html"
+                }
+              ]
             }
           ]
         }
