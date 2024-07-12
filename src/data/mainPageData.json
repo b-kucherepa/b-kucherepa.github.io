@@ -862,8 +862,8 @@
                   "link": "https://b-kucherepa.github.io/Wedjat-Reader/build/"
                 },
                 {
-                  "en": "GitHub repository:",
-                  "ru": "Репозиторий GitHub:",
+                  "en": "Repository:",
+                  "ru": "Репозиторий:",
                   "link": "https://github.com/b-kucherepa/Wedjat-Reader"
                 }
               ]
@@ -884,8 +884,8 @@
                   "link": "FCC_SOLUTIONS_PAGE"
                 },
                 {
-                  "en": "Collective GitHub repository:",
-                  "ru": "Сборный репозиторий GitHub:",
+                  "en": "Collective repository:",
+                  "ru": "Сборный репозиторий:",
                   "link": "https://github.com/b-kucherepa/freeCodeCamp-tasks"
                 }
               ]
@@ -902,8 +902,8 @@
                   "ru": "Она проделала долгий путь от одностраничного проекта, написанного на чистых HTML, CSS и JavaScript, до написанного на React компилятора страниц, который парсит JSON-файл. Смотрите сами:"
                 },
                 {
-                  "en": "GitHub repository:",
-                  "ru": "Репозиторий GitHub:",
+                  "en": "Repository:",
+                  "ru": "Репозиторий:",
                   "link": "https://github.com/b-kucherepa/b-kucherepa.github.io"
                 }
               ]
@@ -926,8 +926,8 @@
                   "ru": "Каждая реализация сопровождается простыми, но наглядными интерфейсами тестирования."
                 },
                 {
-                  "en": "GitHub repository:",
-                  "ru": "Репозиторий GitHub:",
+                  "en": "Repository:",
+                  "ru": "Репозиторий:",
                   "link": "https://github.com/b-kucherepa/TestTasks"
                 }
               ]
@@ -944,8 +944,8 @@
                   "ru": "Поддерживает установку интервала, работу в системном трее, и автозагрузку при запуске системы."
                 },
                 {
-                  "en": "GitHub repository:",
-                  "ru": "Репозиторий GitHub:",
+                  "en": "Repository:",
+                  "ru": "Репозиторий:",
                   "link": "https://github.com/b-kucherepa/Nightwrap"
                 }
               ]
@@ -962,8 +962,8 @@
                   "ru": "Также позволяет менять форматирование текста, устанавливать случайный или последовательный порядок слайдшоу с настраиваемым интервалом, выбирать определенный фон из списка, и использовать горячие клавиши."
                 },
                 {
-                  "en": "GitHub repository:",
-                  "ru": "Репозиторий GitHub:",
+                  "en": "Repository:",
+                  "ru": "Репозиторий:",
                   "link": "https://github.com/b-kucherepa/ReaderX"
                 }
               ]

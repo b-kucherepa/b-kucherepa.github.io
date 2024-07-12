@@ -19,6 +19,30 @@ export function processLink(
   }
 }
 
+export function getLinkIconClass(link: string): string {
+  try {
+    const domain: string = new URL(link).hostname;
+    switch (domain) {
+      case "github.com":
+        return "fab fa-github";
+      case "linkedin.com":
+      case "www.linkedin.com":
+        return "fab fa-linkedin";
+      case "t.me":
+        return "fab fa-telegram";
+      case "discord.com":
+        return "fab fa-discord";
+      case "amazon.com":
+      case "www.amazon.com":
+        return "fab fa-amazon";
+      default:
+        return "fa fa-link";
+    }
+  } catch {
+    return "fa fa-link";
+  }
+}
+
 export async function loadJson(filePath: string) {
   return await readFile(filePath)
     .then((buffer) => buffer.toString())

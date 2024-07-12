@@ -1,4 +1,4 @@
-import { processLink } from "../dev/utils.js";
+import { processLink, getLinkIconClass } from "../dev/utils.js";
 import { useContext, ReactElement } from "react";
 import { GlobalContext } from "./GlobalContext.js";
 
@@ -9,20 +9,6 @@ export default function Element(props: {
   textClass?: string;
 }): JSX.Element {
   const globals = useContext(GlobalContext);
-
-  function getLinkIconClass(link: string): string {
-    try {
-      const domain: string = new URL(link).hostname;
-      switch (domain) {
-        case "github.com":
-          return "fa fa-github";
-        default:
-          return "fa fa-link";
-      }
-    } catch {
-      return "fa fa-link";
-    }
-  }
 
   function parseTextLines() {
     return props.data.text.map((line: any, index: number) => {

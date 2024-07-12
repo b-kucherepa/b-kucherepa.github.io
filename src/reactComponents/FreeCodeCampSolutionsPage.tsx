@@ -26,7 +26,10 @@ export default function FreeCodeCampSolutionsPage(props: {
             ))}
           </main>
           <footer>
-            <Copyright data={props.metaData.copyright} />
+            <Copyright
+              data={props.metaData.copyright}
+              links={props.metaData.links}
+            />
           </footer>
         </body>
       </html>

@@ -21,6 +21,30 @@ export function processLink(rawLink, pagePrefixes, lang) {
             return rawLink;
     }
 }
+export function getLinkIconClass(link) {
+    try {
+        const domain = new URL(link).hostname;
+        switch (domain) {
+            case "github.com":
+                return "fab fa-github";
+            case "linkedin.com":
+            case "www.linkedin.com":
+                return "fab fa-linkedin";
+            case "t.me":
+                return "fab fa-telegram";
+            case "discord.com":
+                return "fab fa-discord";
+            case "amazon.com":
+            case "www.amazon.com":
+                return "fab fa-amazon";
+            default:
+                return "fa fa-link";
+        }
+    }
+    catch (_a) {
+        return "fa fa-link";
+    }
+}
 export function loadJson(filePath) {
     return __awaiter(this, void 0, void 0, function* () {
         return yield readFile(filePath)

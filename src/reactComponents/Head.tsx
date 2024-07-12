@@ -19,10 +19,9 @@ export default function Head(props: { data: any; children?: ReactElement[] }) {
           props.data.description[globals.defaultLang]
         }
       />
-      <link rel="stylesheet" type="text/css" href="styles/main.css" />
       <link
         rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
       />
 
       <link
@@ -30,6 +29,9 @@ export default function Head(props: { data: any; children?: ReactElement[] }) {
         type="image/icon type"
         href="icons/firebird-logo.svg"
       />
+
+      <link rel="stylesheet" type="text/css" href="styles/main.css" />
+
       <script type="module" src="build/scripts/main.js"></script>
 
       <noscript>

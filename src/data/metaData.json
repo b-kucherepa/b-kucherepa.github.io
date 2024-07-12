@@ -1,7 +1,6 @@
 {
   "langs": ["en", "ru"],
   "langSelect": { "en": "Select the language", "ru": "Выберите язык" },
-  "links": { "gitHub": "https://github.com/b-kucherepa" },
   "pagePrefixes": {
     "index": "index",
     "main": "main",
@@ -10,5 +9,11 @@
   "copyright": {
     "en": "Boris Kucherepa / The Morning Firebird",
     "ru": "Борис Кучерепа / The Morning Firebird"
-  }
+  },
+  "links": [
+    { "name": "GitHub", "url": "https://github.com/b-kucherepa" },
+    { "name": "Linkedin", "url": "https://www.linkedin.com/in/b-kucherepa/" },
+    { "name": "Telegram", "url": "https://t.me/bkuchr" },
+    { "name": "Discord", "url": "https://discord.com/users/bkuchr" }
+  ]
 }
