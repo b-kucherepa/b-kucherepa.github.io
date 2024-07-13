@@ -1,38 +1,25 @@
-import { GlobalContext } from "./GlobalContext.js";
+import { useContext } from "react";
 import Copyright from "./Copyright.js";
 import Head from "./Head.js";
 import Section from "./Section.js";
+import { PageContext } from "./PageContext.js";
 
-export default function FreeCodeCampSolutionsPage(props: {
-  metaData: any;
-  fccData: any;
-  lang: string;
-}): JSX.Element {
+export default function FreeCodeCampSolutionsPage(): JSX.Element {
+  const data = useContext(PageContext);
+
   return (
-    <GlobalContext.Provider
-      value={{
-        lang: props.lang,
-        defaultLang: props.metaData.langs[0],
-        navBarHeight: 0,
-        pagePrefixes: props.metaData.pagePrefixes,
-      }}
-    >
-      <html lang={props.lang}>
-        <Head data={props.fccData.head} />
-        <body>
-          <main>
-            {props.fccData.sections.map((section: any) => (
-              <Section key={`section-${section.id}`} data={section} />
-            ))}
-          </main>
-          <footer>
-            <Copyright
-              data={props.metaData.copyright}
-              links={props.metaData.links}
-            />
-          </footer>
-        </body>
-      </html>
-    </GlobalContext.Provider>
+    <html lang={data.lang}>
+      <Head />
+      <body>
+        <main>
+          {data.page.sections.map((section: any) => (
+            <Section key={`section-${section.id}`} data={section} />
+          ))}
+        </main>
+        <footer>
+          <Copyright />
+        </footer>
+      </body>
+    </html>
   );
 }

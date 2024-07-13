@@ -14,25 +14,40 @@ import { DATA_FOLDER, loadJson, processLink } from "./utils.js";
 import MainPage from "../reactComponents/MainPage.js";
 import IndexPage from "../reactComponents/IndexPage.js";
 import FreeCodeCampSolutionsPage from "../reactComponents/FreeCodeCampSolutionsPage.js";
+import { PageContext } from "../reactComponents/PageContext.js";
 const DOCTYPE = "<!DOCTYPE html>";
 function generateFiles() {
     return __awaiter(this, void 0, void 0, function* () {
         console.log("Parsing data files...");
         const metaData = yield loadJson(DATA_FOLDER + "metaData.json");
         const navData = yield loadJson(DATA_FOLDER + "navData.json");
-        const indexData = yield loadJson(DATA_FOLDER + "indexPageData.json");
-        const mainData = yield loadJson(DATA_FOLDER + "mainPageData.json");
+        const indexPageData = yield loadJson(DATA_FOLDER + "indexPageData.json");
+        const mainPageData = yield loadJson(DATA_FOLDER + "mainPageData.json");
         const fccData = yield loadJson(DATA_FOLDER + "fccSolutionsData.json");
         console.log("Building index page...");
         writeFile(processLink("INDEX_PAGE", metaData.pagePrefixes), DOCTYPE +
-            renderToString(_jsx(IndexPage, { indexData: indexData, mainData: mainData, metaData: metaData, navData: navData })));
+            renderToString(_jsx(PageContext.Provider, { value: {
+                    lang: metaData.langs[0],
+                    page: indexPageData,
+                    meta: metaData,
+                    nav: navData,
+                }, children: _jsx(IndexPage, {}) })));
         for (let lang of metaData.langs) {
             console.log("Building " + lang + " main page...");
             writeFile(processLink("MAIN_PAGE", metaData.pagePrefixes, lang), DOCTYPE +
-                renderToString(_jsx(MainPage, { mainData: mainData, metaData: metaData, navData: navData, lang: lang })));
+                renderToString(_jsx(PageContext.Provider, { value: {
+                        lang: lang,
+                        page: mainPageData,
+                        meta: metaData,
+                        nav: navData,
+                    }, children: _jsx(MainPage, {}) })));
             console.log("Building " + lang + " freeCodeCamp solutions page...");
             writeFile(processLink("FCC_SOLUTIONS_PAGE", metaData.pagePrefixes, lang), DOCTYPE +
-                renderToString(_jsx(FreeCodeCampSolutionsPage, { fccData: fccData, metaData: metaData, lang: lang })));
+                renderToString(_jsx(PageContext.Provider, { value: {
+                        lang: lang,
+                        page: fccData,
+                        meta: metaData,
+                    }, children: _jsx(FreeCodeCampSolutionsPage, {}) })));
         }
         console.log("Done!");
     });

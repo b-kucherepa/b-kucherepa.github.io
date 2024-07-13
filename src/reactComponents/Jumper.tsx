@@ -1,27 +1,24 @@
 import { useContext } from "react";
-import { GlobalContext } from "./GlobalContext.js";
+import { PageContext } from "./PageContext.js";
 
-export default function Jumper(props: {
-  data: any;
-  sections: any[];
-}): JSX.Element {
-  const globals = useContext(GlobalContext);
+export default function Jumper(): JSX.Element {
+  const data = useContext(PageContext);
 
   return (
     <label className="nav-item jsOnly">
-      {props.data.label[globals.lang] ?? props.data.label[globals.defaultLang]}
+      {data.nav.jumper.label[data.lang] ??
+        data.nav.jumper.label[data.meta.langs[0]]}
       <select
         id="section-selector"
         className="menu-element str-outlined highlightable"
         title={
-          props.data.selectTitle[globals.lang] ??
-          props.data.selectTitle[globals.defaultLang]
+          data.nav.jumper.selectTitle[data.lang] ??
+          data.nav.jumper.selectTitle[data.meta.langs[0]]
         }
       >
-        {props.sections.map((section: any) => (
+        {data.page.sections.map((section: any) => (
           <option key={`option-${section.id}`} value={section.id}>
-            {section.header[globals.lang] ??
-              section.header[globals.defaultLang]}
+            {section.header[data.lang] ?? section.header[data.meta.langs[0]]}
           </option>
         ))}
       </select>

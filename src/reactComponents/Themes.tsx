@@ -1,30 +1,28 @@
 import { useContext } from "react";
-import { GlobalContext } from "./GlobalContext.js";
+import { PageContext } from "./PageContext.js";
 
 import IconLink from "./IconLink.js";
 
-export default function Themes(props: {
-  data: any;
-  iconHeight: number;
-}): JSX.Element {
-  const globals = useContext(GlobalContext);
+export default function Themes(props: { iconHeight: number }): JSX.Element {
+  const data = useContext(PageContext);
 
   const SEL_CLASS: string = "theme-icon";
   const UNSEL_CLASS: string = "theme-icon highlightable";
 
   return (
     <label className="nav-item jsOnly">
-      {props.data.label[globals.lang] ?? props.data.label[globals.defaultLang]}
+      {data.nav.themes.label[data.lang] ??
+        data.nav.themes.label[data.meta.lang[0]]}
       <div className="menu-element">
-        {props.data.icons.map((icon: any, index: number) => (
+        {data.nav.themes.icons.map((icon: any, index: number) => (
           <IconLink
             key={`${icon.lang}-icon-${index}`}
             id={icon.id}
             class={icon.selected ? SEL_CLASS : UNSEL_CLASS}
-            src={props.data.iconDir + icon.file}
+            src={data.nav.themes.iconDir + icon.file}
             height={props.iconHeight}
-            title={icon.title[globals.lang] ?? icon.title[globals.defaultLang]}
-            alt={icon.alt[globals.lang] ?? icon.alt[globals.defaultLang]}
+            title={icon.title[data.lang] ?? icon.title[data.meta.lang[0]]}
+            alt={icon.alt[data.lang] ?? icon.alt[data.meta.lang[0]]}
           />
         ))}
       </div>

@@ -1,6 +1,6 @@
 import { processLink, getLinkIconClass } from "../dev/utils.js";
 import { useContext, ReactElement } from "react";
-import { GlobalContext } from "./GlobalContext.js";
+import { PageContext } from "./PageContext.js";
 
 export default function Element(props: {
   data: any;
@@ -8,17 +8,17 @@ export default function Element(props: {
   headerClass?: string;
   textClass?: string;
 }): JSX.Element {
-  const globals = useContext(GlobalContext);
+  const data = useContext(PageContext);
 
   function parseTextLines() {
     return props.data.text.map((line: any, index: number) => {
       const processedLink = processLink(
         line.link,
-        globals.pagePrefixes,
-        globals.lang
+        data.meta.pagePrefixes,
+        data.lang
       );
       const innerHtml = {
-        __html: line[globals.lang] ?? line[globals.defaultLang],
+        __html: line[data.lang] ?? line[data.meta.langs[0]],
       };
 
       const a: ReactElement = line.link ? (
@@ -41,8 +41,8 @@ export default function Element(props: {
   return (
     <div id={props.data.id} className={props.elementClass}>
       <h3 className={props.headerClass}>
-        {props.data.header?.[globals.lang] ??
-          props.data.header?.[globals.defaultLang]}
+        {props.data.header?.[data.lang] ??
+          props.data.header?.[data.meta.langs[0]]}
       </h3>
       {parseTextLines()}
     </div>

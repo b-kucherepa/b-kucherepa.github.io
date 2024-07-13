@@ -1,22 +1,22 @@
 import { ReactElement, useContext } from "react";
-import { GlobalContext } from "./GlobalContext.js";
+import { PageContext } from "./PageContext.js";
 
-export default function Head(props: { data: any; children?: ReactElement[] }) {
-  const globals = useContext(GlobalContext);
+export default function Head(props: { children?: ReactElement[] }) {
+  const data = useContext(PageContext);
 
   return (
     <head className="dark">
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>
-        {props.data.title[globals.lang] ??
-          props.data.title[globals.defaultLang]}
+        {data.page.head.title[data.lang] ??
+          data.page.head.title[data.meta.lang[0]]}
       </title>
       <meta
         name="description"
         content={
-          props.data.description[globals.lang] ??
-          props.data.description[globals.defaultLang]
+          data.page.head.description[data.lang] ??
+          data.page.head.description[data.meta.lang[0]]
         }
       />
       <link

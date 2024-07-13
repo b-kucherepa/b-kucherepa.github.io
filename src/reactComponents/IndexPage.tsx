@@ -1,32 +1,27 @@
+import { useContext } from "react";
 import { processLink } from "../dev/utils.js";
 import Head from "./Head.js";
 import IconLink from "./IconLink.js";
+import { PageContext } from "./PageContext.js";
 
-export default function IndexPage(props: {
-  indexData: any;
-  mainData: any;
-  metaData: any;
-  navData: any;
-}): JSX.Element {
-  const DEFAULT_LANG = props.metaData.langs[0];
+export default function IndexPage(): JSX.Element {
+  const data = useContext(PageContext);
 
   function buildPageTitle(): string {
-    let title: string = props.metaData.langSelect[DEFAULT_LANG];
-    for (let i = 1; i < props.metaData.langs.length; i++) {
-      title += ` / ${props.indexData.langSelect[
-        props.metaData.langs[i]
-      ].toLowerCase()}`;
+    let title: string = data.page.langSelect[data.meta.langs[0]];
+    for (let i = 1; i < data.meta.langs.length; i++) {
+      title += ` / ${data.page.langSelect[data.meta.langs[i]].toLowerCase()}`;
     }
     return title;
   }
 
   function buildPageLocalization(): string {
-    return props.metaData.langs.join(" ");
+    return data.meta.langs.join(" ");
   }
 
   return (
     <html lang={buildPageLocalization()}>
-      <Head data={props.indexData.head}>
+      <Head>
         <link rel="stylesheet" href="styles/main.css" />
         <link rel="stylesheet" href="styles/langselect.css" />
         <script
@@ -40,17 +35,17 @@ export default function IndexPage(props: {
           <section>
             <h1 lang={buildPageLocalization()}>{buildPageTitle()}</h1>
             <div id="lang-selection">
-              {props.navData.languages.icons.map((icon: any, index: number) => (
+              {data.nav.languages.icons.map((icon: any, index: number) => (
                 <IconLink
                   key={`${icon.lang}-icon-${index}`}
                   id={`${icon.lang}-icon`}
                   class="no-script-lang-icon highlightable"
-                  src={props.navData.languages.iconDir + icon.file}
+                  src={data.nav.languages.iconDir + icon.file}
                   title={icon.title.unsel}
                   alt={icon.alt[icon.lang]}
                   href={processLink(
                     "MAIN_PAGE",
-                    props.metaData.pagePrefixes,
+                    data.meta.pagePrefixes,
                     icon.lang
                   )}
                 />

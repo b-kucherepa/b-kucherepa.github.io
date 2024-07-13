@@ -1,10 +1,10 @@
 import { useContext, ReactElement } from "react";
-import { GlobalContext } from "./GlobalContext.js";
+import { PageContext } from "./PageContext.js";
 
 import Element from "./Element.js";
 
 export default function Segment(props: { data: any }): JSX.Element {
-  const globals = useContext(GlobalContext);
+  const data = useContext(PageContext);
 
   function defineStyleClasses(type: string): {
     element: string;
@@ -49,8 +49,8 @@ export default function Segment(props: { data: any }): JSX.Element {
       return (
         <>
           <h2>
-            {props.data.header[globals.lang] ??
-              props.data.header[globals.defaultLang]}
+            {props.data.header[data.lang] ??
+              props.data.header[data.meta.langs[0]]}
           </h2>
           <div className="grid-container">{children}</div>
         </>

@@ -1,43 +1,28 @@
-import { GlobalContext } from "./GlobalContext.js";
+import { useContext } from "react";
+import { PageContext } from "./PageContext.js";
 import Copyright from "./Copyright.js";
 import Head from "./Head.js";
 import NavBar from "./NavBar.js";
 import Section from "./Section.js";
 
-export default function MainPage(props: {
-  mainData: any;
-  metaData: any;
-  navData: any;
-  lang: string;
-}): JSX.Element {
+export default function MainPage(): JSX.Element {
+  const data = useContext(PageContext);
   return (
-    <GlobalContext.Provider
-      value={{
-        lang: props.lang,
-        defaultLang: props.metaData.langs[0],
-        navBarHeight: props.navData.height,
-        pagePrefixes: props.metaData.pagePrefixes,
-      }}
-    >
-      <html lang={props.lang}>
-        <Head data={props.mainData.head} />
-        <body>
-          <header>
-            <NavBar data={props.navData} sections={props.mainData.sections} />
-          </header>
-          <main>
-            {props.mainData.sections.map((section: any) => (
-              <Section key={`section-${section.id}`} data={section} />
-            ))}
-          </main>
-          <footer>
-            <Copyright
-              data={props.metaData.copyright}
-              links={props.metaData.links}
-            />
-          </footer>
-        </body>
-      </html>
-    </GlobalContext.Provider>
+    <html lang={data.lang}>
+      <Head />
+      <body>
+        <header>
+          <NavBar />
+        </header>
+        <main>
+          {data.page.sections.map((section: any) => (
+            <Section key={`section-${section.id}`} data={section} />
+          ))}
+        </main>
+        <footer>
+          <Copyright />
+        </footer>
+      </body>
+    </html>
   );
 }

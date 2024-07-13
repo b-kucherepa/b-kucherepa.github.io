@@ -1,25 +1,23 @@
 import { processLink, getLinkIconClass } from "../dev/utils.js";
 import { useContext } from "react";
-import { GlobalContext } from "./GlobalContext.js";
+import { PageContext } from "./PageContext.js";
 
-export default function Copyright(props: {
-  data: any;
-  links: any[];
-}): JSX.Element {
-  const globals = useContext(GlobalContext);
+export default function Copyright(): JSX.Element {
+  const data = useContext(PageContext);
 
   return (
     <>
       <hr />
       <div id="copyright">{`${
-        props.data[globals.lang] ?? props.data[globals.defaultLang]
+        data.meta.copyright[data.lang] ??
+        data.meta.copyright[data.meta.langs[0]]
       } (c)`}</div>
       <div id="social-links">
-        {props.links.map((link: any) => {
+        {data.meta.socialLinks.map((link: any) => {
           const processedLink = processLink(
             link.url,
-            globals.pagePrefixes,
-            globals.lang
+            data.meta.pagePrefixes,
+            data.lang
           );
 
           return (
