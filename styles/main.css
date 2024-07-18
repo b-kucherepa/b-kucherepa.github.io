@@ -5,21 +5,23 @@
   --regular-fonts: "Jura", "Tahoma", sans-serif;
   --header-fonts: "Unbounded", "Georgia", sans-serif;
   --var-support-safety: transparent;
-  background-color: var(--var-support-safety);
+  background: var(--var-support-safety);
   color: var(--var-support-safety);
 }
 
 /* theme-specified coloring: */
 :root.light {
-  --bg-gradient-top: #ddeeff;
-  --bg-gradient-bottom: #ffffff;
-  --color-strong-accent: #9900ff;
-  --color-mid-accent: #4488ff;
-  --color-weak-accent: #00ddff;
+  color-scheme: light;
+  --bg-gradient-top: #ffffff;
+  --bg-gradient-bottom: #f0ddff;
+  --color-strong-accent: #0000ff;
+  --color-mid-accent: #ddaaff;
+  --color-weak-accent: #00aaff;
   --color-main-text: #000020;
 }
 
 :root.dark {
+  color-scheme: dark;
   --bg-gradient-top: #000000;
   --bg-gradient-bottom: #00002a;
   --color-strong-accent: #00ddff;
