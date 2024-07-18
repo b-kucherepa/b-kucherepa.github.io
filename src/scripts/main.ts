@@ -147,8 +147,8 @@ function animateH1(): void {
     topmostH1.animate(
       [
         { backgroundSize: "100%" },
-        { backgroundSize: "275%" },
-        { backgroundSize: "150%" },
+        { backgroundSize: "400%" },
+        { backgroundSize: "200%" },
         { backgroundSize: "100%" },
       ],
       {

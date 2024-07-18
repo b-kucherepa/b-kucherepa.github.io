@@ -158,7 +158,7 @@ h1 {
   background-clip: text;
   background-image: linear-gradient(
     1deg,
-    var(--color-strong-accent) 25%,
+    var(--color-strong-accent) 15%,
     var(--color-weak-accent) 50%
   );
   background-size: contain;

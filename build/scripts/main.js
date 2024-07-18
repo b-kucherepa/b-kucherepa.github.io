@@ -114,8 +114,8 @@ function animateH1() {
     if (topmostH1) {
         topmostH1.animate([
             { backgroundSize: "100%" },
-            { backgroundSize: "275%" },
-            { backgroundSize: "150%" },
+            { backgroundSize: "400%" },
+            { backgroundSize: "200%" },
             { backgroundSize: "100%" },
         ], {
             duration: 1200,
