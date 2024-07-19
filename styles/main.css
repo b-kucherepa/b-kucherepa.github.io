@@ -18,6 +18,9 @@
   --color-mid-accent: #ddaaff;
   --color-weak-accent: #00aaff;
   --color-main-text: #000020;
+  --сolor-unvisited-link: #00aaff;
+  --color-visited-link: #9900ff;
+  --color-active-link: #0000ff;
 }
 
 :root.dark {
@@ -28,6 +31,9 @@
   --color-mid-accent: #4488ff;
   --color-weak-accent: #9900ff;
   --color-main-text: #eeeeee;
+  --сolor-unvisited-link: #4488ff;
+  --color-visited-link: #9900ff;
+  --color-active-link: #00ddff;
 }
 
 body {
@@ -282,15 +288,15 @@ a:hover {
 
 /* links: */
 a:link {
-  color: var(--color-mid-accent);
+  color: var(--сolor-unvisited-link);
 }
 
 a:visited {
-  color: var(--color-weak-accent);
+  color: var(--color-visited-link);
 }
 
 a:active {
-  color: var(--color-strong-accent);
+  color: var(--color-active-link);
 }
 
 .grid-item {
