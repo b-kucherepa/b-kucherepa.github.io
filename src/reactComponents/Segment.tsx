@@ -13,7 +13,7 @@ export default function Segment(props: { data: any }): JSX.Element {
   } {
     switch (type) {
       case "text":
-        return { element: "indent", header: "", text: "" };
+        return { element: "indent justified", header: "", text: "" };
       case "snippetGrid":
         return { element: "grid-item", header: "", text: "no-indent" };
       case "articleGrid":

@@ -45,7 +45,6 @@ body {
   font-size: 16px;
   font-weight: lighter;
 
-  text-align: justify;
   padding: 0.5rem;
   margin: 0;
 
@@ -223,6 +222,8 @@ h3 {
 }
 
 p {
+  text-align: justify;
+  word-wrap: normal;
   line-height: 1.5;
   margin: 0.5em 1.5em;
 }
@@ -233,6 +234,10 @@ p ~ p {
 
 .indent {
   text-indent: 1.5em;
+}
+
+.justified {
+  text-align: justify;
 }
 
 .no-indent {
@@ -324,6 +329,10 @@ a:active {
       flex-basis: 230px;
       flex-grow: 4;
       min-width: 230px;
+    }
+
+    p {
+      text-align: left;
     }
   }
 }
