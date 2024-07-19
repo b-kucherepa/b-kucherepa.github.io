@@ -5,7 +5,7 @@
   --regular-fonts: "Jura", "Tahoma", sans-serif;
   --header-fonts: "Unbounded", "Georgia", sans-serif;
   --var-support-safety: transparent;
-  background: var(--var-support-safety);
+  background-color: var(--bg-gradient-bottom);
   color: var(--var-support-safety);
 }
 
