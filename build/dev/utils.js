@@ -37,8 +37,10 @@ export function getLinkIconClass(link) {
             case "amazon.com":
             case "www.amazon.com":
                 return "fab fa-amazon";
-            default:
+            case "":
                 return "fa fa-link";
+            default:
+                return "fa fa-external-link";
         }
     }
     catch (_a) {
