@@ -37,6 +37,7 @@ export function getLinkIconClass(link) {
             case "amazon.com":
             case "www.amazon.com":
                 return "fab fa-amazon";
+            case "b-kucherepa.github.io":
             case "":
                 return "fa fa-link";
             default:
