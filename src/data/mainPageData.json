@@ -338,6 +338,15 @@
               ]
             },
             {
+              "header": { "en": "Jest" },
+              "text": [
+                {
+                  "en": "It's too dangerous to write code alone! Take the tests!",
+                  "ru": "Слишком опасно писать код в одиночку! Возьми тесты!"
+                }
+              ]
+            },
+            {
               "header": { "en": "MySQL" },
               "text": [
                 {
@@ -580,15 +589,6 @@
           "type": "resourceGrid",
           "header": { "en": "Currently on", "ru": "Сейчас занимаюсь" },
           "elements": [
-            {
-              "header": { "en": "Jest" },
-              "text": [
-                {
-                  "en": "It's too dangerous to write code alone! Take the tests!",
-                  "ru": "Слишком опасно писать код в одиночку! Возьми тесты!"
-                }
-              ]
-            },
             {
               "header": { "en": "Cypress" },
               "text": [
