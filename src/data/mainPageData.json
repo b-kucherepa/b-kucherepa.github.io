@@ -287,7 +287,7 @@
               "header": { "en": "React/Redux" },
               "text": [
                 {
-                  "en": "Hooks and pulls web applications ahead.",
+                  "en": "Hooks and pulls Demos ahead.",
                   "ru": "Хукает и вытягивает веб-приложения."
                 }
               ]
@@ -846,7 +846,7 @@
               "text": [
                 {
                   "en": "A static application developed with Next.js and Redux, combining a text reader and a slideshow display. It offers basic text formatting options such as color, size, line spacing, font family, and margins, along with background and slideshow customization.",
-                  "ru": "Статическое веб-приложение, разработанное при помощи Next.js и Redux, сочетающее в себе чтение текста и отображение слайдшоу. Предлагает базовые возможности выбора формата текста, такие, как изменение цвета, размера, межстрочного интервала, семейства шрифтов и отступов, и, помимо этого, настройки фонового изображения и слайдшоу."
+                  "ru": "Статическое Демо, разработанное при помощи Next.js и Redux, сочетающее в себе чтение текста и отображение слайдшоу. Предлагает базовые возможности выбора формата текста, такие, как изменение цвета, размера, межстрочного интервала, семейства шрифтов и отступов, и, помимо этого, настройки фонового изображения и слайдшоу."
                 },
                 {
                   "en": "The application supports both light and dark themes and includes an autosave feature for user preferences.",
@@ -857,8 +857,8 @@
                   "ru": "Помимо этого, доступна отдельная .apk-версия для Android, созданная с помощью Capacitor."
                 },
                 {
-                  "en": "Web application:",
-                  "ru": "Веб-приложение:",
+                  "en": "Demo:",
+                  "ru": "Демо:",
                   "link": "https://b-kucherepa.github.io/Wedjat-Reader/build/"
                 },
                 {
@@ -879,14 +879,40 @@
                   "ru": "Коллекция реализаций задач с freeCodeCamp, необходимых для получения сертификатов. Включает небольшие веб-приложения и страницы."
                 },
                 {
-                  "en": "List of the solutions:",
-                  "ru": "Список решений:",
+                  "en": "List of demos:",
+                  "ru": "Список демо:",
                   "link": "FCC_SOLUTIONS_PAGE"
                 },
                 {
-                  "en": "Collective repository:",
-                  "ru": "Сборный репозиторий:",
+                  "en": "Repository:",
+                  "ru": "Репозиторий:",
                   "link": "https://github.com/b-kucherepa/freeCodeCamp-tasks"
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Canvas Duel",
+                "ru": "Canvas-дуэль"
+              },
+              "text": [
+                {
+                  "en": "This project is a 2D  game featuring two symbolically represented characters who engage in a duel, moving vertically up and down along opposite sides of the screen, similar to paddles in a classic arcade game. The player can use the mouse to  rebounce the characters.",
+                  "ru": "Этот проект представляет собой 2D-игру, в которой два символически представленных персонажа сражаются, перемещаясь вертикально вверх и вниз по противоположным сторонам экрана, подобно битам в классических аркадных играх. Игрок может использовать мышь для отбивания персонажей в другом направлении."
+                },
+                {
+                  "en": "Both characters are customizable: a menu opens on click, allowing the player to change the characters' colors, as well as the colors of their shots, movement speed, shot speed, and firing rate.",
+                  "ru": "Оба персонажа могут быть настроены: при нажатии открывается меню, в котором игрок может изменить цвет персонажей, а также цвета их выстрелов, скорость передвижения, скорость выстрела и темп стрельбы."
+                },
+                {
+                  "en": "Demo:",
+                  "ru": "Демо:",
+                  "link": "https://b-kucherepa.github.io/canvas-duel-next/build/"
+                },
+                {
+                  "en": "Repository:",
+                  "ru": "Репозиторий:",
+                  "link": "https://github.com/b-kucherepa/canvas-duel-next"
                 }
               ]
             },
