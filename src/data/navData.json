@@ -1,0 +1,67 @@
+{
+  "themes": {
+    "label": { "en": "Theme:", "ru": "Тема:" },
+    "iconDir": "icons/themes/",
+    "icons": [
+      {
+        "id": "sel-light-theme-icon",
+        "selected": true,
+        "file": "sun-selected.svg",
+        "title": { "en": "Light theme is set", "ru": "Выбрана светлая тема" },
+        "alt": { "en": "Иконка закрашенного солнца", "ru": "Filled sun icon" }
+      },
+      {
+        "id": "unsel-light-theme-icon",
+        "selected": false,
+        "file": "sun-unselected.svg",
+        "title": { "en": "Set to light theme", "ru": "Выбрать светлую тему" },
+        "alt": {
+          "en": "Unfilled sun icon",
+          "ru": "Иконка незакрашенного солнца"
+        }
+      },
+      {
+        "id": "sel-dark-theme-icon",
+        "selected": true,
+        "file": "moon-selected.svg",
+        "title": { "en": "Dark theme is set", "ru": "Выбрана темная тема" },
+        "alt": {
+          "en": "Filled crescent moon icon",
+          "ru": "Иконка закрашенного полумесяца"
+        }
+      },
+      {
+        "id": "unsel-dark-theme-icon",
+        "selected": false,
+        "file": "moon-unselected.svg",
+        "title": { "en": "Set to dark theme", "ru": "Выбрать темную тему" },
+        "alt": {
+          "en": "Unfilled crescent moon icon",
+          "ru": "Иконка незакрашенного полумесяца"
+        }
+      }
+    ]
+  },
+  "jumper": {
+    "label": { "en": "Navigation:", "ru": "Навигация:" },
+    "selectTitle": { "en": "Section select", "ru": "Выбор раздела" }
+  },
+  "languages": {
+    "label": { "en": "Language:", "ru": "Язык:" },
+    "iconDir": "icons/lang/",
+    "icons": [
+      {
+        "lang": "en",
+        "file": "us-flag.svg",
+        "title": { "sel": "English is set", "unsel": "Set to English" },
+        "alt": { "en": "English icon", "ru": "Значок английского" }
+      },
+      {
+        "lang": "ru",
+        "file": "ru-flag.svg",
+        "title": { "sel": "Выбран русский", "unsel": "Выбрать русский" },
+        "alt": { "en": "Russian icon", "ru": "Значок русского" }
+      }
+    ]
+  }
+}

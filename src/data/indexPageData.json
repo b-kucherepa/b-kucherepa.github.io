@@ -1,0 +1,13 @@
+{
+  "head": {
+    "title": {
+      "en": "Boris Kucherepa - Выбор языка",
+      "ru": "Борис Кучерепа - Language selection"
+    },
+    "description": {
+      "en": "Boris Kuckerepa's personal page language selection",
+      "ru": "Выбор языка на персональной странице Бориса Кучерепа"
+    }
+  },
+  "langSelect": { "en": "Select the language", "ru": "Выберите язык" }
+}

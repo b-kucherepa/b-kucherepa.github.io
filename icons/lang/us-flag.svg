@@ -1,0 +1,134 @@
+<svg width="256" height="176" viewBox="0 0 67.733 46.567" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns="http://www.w3.org/2000/svg">
+  <defs />
+  <defs>
+    <linearGradient id="prefix__a">
+      <stop offset="0" stop-color="#e00" />
+      <stop offset=".5" stop-color="#e00" />
+      <stop offset=".5" stop-color="#fff" />
+      <stop offset="1" stop-color="#fff" />
+    </linearGradient>
+    <linearGradient xlink:href="#prefix__a" id="prefix__b" x1="0" y1="0%" x2="0" y2="15.4%"
+      gradientUnits="userSpaceOnUse" spreadMethod="repeat" />
+  </defs>
+  <rect width="100%" height="100%" ry="5" fill="url(#prefix__b)" />
+  <path d="M0 25.2V4.5 S0 0 4.5 0h22.5l0 25.2" fill="#00e" />
+  <g>
+    <path id="prefix__c"
+      d="M74.398 59.769l.433.878.97.141-.702.684.166.966-.867-.456-.868.456.166-.966-.702-.684.97-.14z"
+      transform="matrix(.75425 0 0 .79306 -53.4 -46.5)" display="inline" fill="#fff" stroke="#fff" stroke-width="0"
+      stroke-linecap="butt" stroke-miterlimit="1.6" />
+    <use x="0" y="0" xlink:href="#prefix__c" id="prefix__d" transform="translate(16.935)" display="inline" />
+    <use x="0" y="0" xlink:href="#prefix__d" id="prefix__e" transform="translate(4.233)" display="inline" />
+    <use x="0" y="0" xlink:href="#prefix__e" id="prefix__f" transform="translate(-17)" display="inline" />
+    <use x="0" y="0" xlink:href="#prefix__c" id="prefix__h" transform="translate(8.5)" display="inline" />
+    <use x="0" y="0" xlink:href="#prefix__d" id="prefix__i" transform="translate(-14.817 2.5)" display="inline" />
+    <use x="0" y="0" xlink:href="#prefix__e" id="prefix__j" transform="translate(-14.817 2.5)" display="inline" />
+    <use x="0" y="0" xlink:href="#prefix__f" id="prefix__g" transform="translate(8.5)" display="inline" />
+    <use x="0" y="0" xlink:href="#prefix__c" id="prefix__k" transform="translate(10.575 2.5)" display="inline" />
+    <use x="0" y="0" xlink:href="#prefix__f" id="prefix__l" transform="translate(10.575 2.5)" display="inline" />
+    <use x="0" y="0" xlink:href="#prefix__g" id="prefix__m" transform="translate(6.35 2.5)" display="inline" />
+    <use xlink:href="#prefix__c" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__d" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__e" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__f" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__h" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__i" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__j" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__g" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__k" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__l" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__m" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__c" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__d" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__e" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__f" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__h" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__i" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__j" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__g" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__k" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__l" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__m" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__c" transform="translate(0 10.575)" />
+    <use xlink:href="#prefix__d" transform="translate(0 10.575)" />
+    <use xlink:href="#prefix__e" transform="translate(0 10.575)" />
+    <use xlink:href="#prefix__f" transform="translate(0 10.575)" />
+    <use xlink:href="#prefix__h" transform="translate(0 10.575)" />
+    <use xlink:href="#prefix__i" transform="translate(0 10.575)" />
+    <use xlink:href="#prefix__j" transform="translate(0 10.575)" />
+    <use xlink:href="#prefix__g" transform="translate(0 10.575)" />
+    <use xlink:href="#prefix__k" transform="translate(0 10.575)" />
+    <use xlink:href="#prefix__l" transform="translate(0 10.575)" />
+    <use xlink:href="#prefix__m" transform="translate(0 10.575)" />
+    <use xlink:href="#prefix__c" transform="translate(0 10.575)" />
+    <use xlink:href="#prefix__d" transform="translate(0 10.575)" />
+    <use xlink:href="#prefix__e" transform="translate(0 10.575)" />
+    <use xlink:href="#prefix__f" transform="translate(0 10.575)" />
+    <use xlink:href="#prefix__h" transform="translate(0 10.575)" />
+    <use xlink:href="#prefix__i" transform="translate(0 10.575)" />
+    <use xlink:href="#prefix__j" transform="translate(0 10.575)" />
+    <use xlink:href="#prefix__g" transform="translate(0 10.575)" />
+    <use xlink:href="#prefix__k" transform="translate(0 10.575)" />
+    <use xlink:href="#prefix__l" transform="translate(0 10.575)" />
+    <use xlink:href="#prefix__m" transform="translate(0 10.575)" />
+    <use x="0" y="0" xlink:href="#prefix__c" id="prefix__n" transform="translate(0 15.875)" />
+    <use x="0" y="0" xlink:href="#prefix__d" id="prefix__o" transform="translate(0 15.875)" />
+    <use x="0" y="0" xlink:href="#prefix__e" id="prefix__p" transform="translate(0 15.875)" />
+    <use x="0" y="0" xlink:href="#prefix__f" id="prefix__q" transform="translate(0 15.875)" />
+    <use x="0" y="0" xlink:href="#prefix__h" id="prefix__r" transform="translate(0 15.875)" />
+    <use xlink:href="#prefix__i" transform="translate(0 15.875)" />
+    <use xlink:href="#prefix__j" transform="translate(0 15.875)" />
+    <use x="0" y="0" xlink:href="#prefix__g" id="prefix__s" transform="translate(0 15.875)" />
+    <use xlink:href="#prefix__k" transform="translate(0 15.875)" />
+    <use xlink:href="#prefix__l" transform="translate(0 15.875)" />
+    <use xlink:href="#prefix__m" transform="translate(0 15.875)" />
+    <use x="0" y="0" xlink:href="#prefix__c" id="prefix__t" transform="translate(0 15.875)" />
+    <use x="0" y="0" xlink:href="#prefix__d" id="prefix__u" transform="translate(0 15.875)" />
+    <use x="0" y="0" xlink:href="#prefix__e" id="prefix__v" transform="translate(0 15.875)" />
+    <use x="0" y="0" xlink:href="#prefix__f" id="prefix__w" transform="translate(0 15.875)" />
+    <use x="0" y="0" xlink:href="#prefix__h" id="prefix__x" transform="translate(0 15.875)" />
+    <use xlink:href="#prefix__i" transform="translate(0 15.875)" />
+    <use xlink:href="#prefix__j" transform="translate(0 15.875)" />
+    <use x="0" y="0" xlink:href="#prefix__g" id="prefix__y" transform="translate(0 15.875)" />
+    <use xlink:href="#prefix__k" transform="translate(0 15.875)" />
+    <use xlink:href="#prefix__l" transform="translate(0 15.875)" />
+    <use xlink:href="#prefix__m" transform="translate(0 15.875)" />
+    <use x="0" y="0" xlink:href="#prefix__c" id="prefix__z" transform="translate(0 15.875)" />
+    <use x="0" y="0" xlink:href="#prefix__d" id="prefix__A" transform="translate(0 15.875)" />
+    <use x="0" y="0" xlink:href="#prefix__e" id="prefix__B" transform="translate(0 15.875)" />
+    <use x="0" y="0" xlink:href="#prefix__f" id="prefix__C" transform="translate(0 15.875)" />
+    <use x="0" y="0" xlink:href="#prefix__h" id="prefix__D" transform="translate(0 15.875)" />
+    <use x="0" y="0" xlink:href="#prefix__g" id="prefix__E" transform="translate(0 15.875)" />
+    <use x="0" y="0" xlink:href="#prefix__c" id="prefix__F" transform="translate(0 15.875)" />
+    <use x="0" y="0" xlink:href="#prefix__d" id="prefix__G" transform="translate(0 15.875)" />
+    <use x="0" y="0" xlink:href="#prefix__e" id="prefix__H" transform="translate(0 15.875)" />
+    <use x="0" y="0" xlink:href="#prefix__f" id="prefix__I" transform="translate(0 15.875)" />
+    <use x="0" y="0" xlink:href="#prefix__h" id="prefix__J" transform="translate(0 15.875)" />
+    <use x="0" y="0" xlink:href="#prefix__g" id="prefix__K" transform="translate(0 15.875)" />
+    <use xlink:href="#prefix__n" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__o" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__p" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__q" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__r" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__s" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__t" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__u" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__v" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__w" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__x" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__y" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__z" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__A" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__B" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__C" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__D" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__E" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__F" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__G" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__H" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__I" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__J" transform="translate(0 5.275)" />
+    <use xlink:href="#prefix__K" transform="translate(0 5.275)" />
+  </g>
+</svg>

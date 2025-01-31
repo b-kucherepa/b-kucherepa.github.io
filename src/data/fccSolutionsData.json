@@ -1,0 +1,111 @@
+{
+  "head": {
+    "title": {
+      "en": "Boris Kucherepa - freeCodeCamp solutions",
+      "ru": "Борис Кучерепа - Решения freeCodeCamp"
+    },
+    "description": {
+      "en": "Boris Kucherepa - solutions for the freeCodeCamp tasks.",
+      "ru": "Борис Кучерепа - решения заданий freeCodeCamp"
+    }
+  },
+  "sections": [
+    {
+      "id": "fcc-solutions",
+      "header": {
+        "en": "freeCodeCamp solutions",
+        "ru": "Решения freeCodeCamp"
+      },
+      "segments": [
+        {
+          "type": "articleGrid",
+          "header": { "en": "" },
+          "elements": [
+            {
+              "header": {
+                "en": "Random quote machine",
+                "ru": "Генератор случайных цитат"
+              },
+              "text": [
+                {
+                  "en": "Link:",
+                  "ru": "Ссылка:",
+                  "link": "https://b-kucherepa.github.io/freeCodeCamp-tasks/random-quote-machine/index.html"
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Markdown previewer",
+                "ru": "Предпросмотр markdown"
+              },
+              "text": [
+                {
+                  "en": "Link:",
+                  "ru": "Ссылка:",
+                  "link": "https://b-kucherepa.github.io/freeCodeCamp-tasks/markdown-preview/index.html"
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Drum machine",
+                "ru": "Драм-машина"
+              },
+              "text": [
+                {
+                  "en": "Link:",
+                  "ru": "Ссылка:",
+                  "link": "https://b-kucherepa.github.io/freeCodeCamp-tasks/drum-machine/index.html"
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Calculator",
+                "ru": "Калькулятор"
+              },
+              "text": [
+                {
+                  "en": "Link:",
+                  "ru": "Ссылка:",
+                  "link": "https://b-kucherepa.github.io/freeCodeCamp-tasks/javascript-calculator/index.html"
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "25+5 Timer (Pomodoro timer)",
+                "ru": "25+5 - таймер (Помодоро-таймер)"
+              },
+              "text": [
+                {
+                  "en": "Link:",
+                  "ru": "Ссылка:",
+                  "link": "https://b-kucherepa.github.io/freeCodeCamp-tasks/25-5-clock/index.html"
+                }
+              ]
+            },
+            {
+              "header": {
+                "en": "Survey form",
+                "ru": "Форма-опросник"
+              },
+              "text": [
+                {
+                  "en": "(nothing special, but I really like it somehow)",
+                  "ru": "(ничего особенного, но мне она мне чем-то нравится)"
+                },
+                {
+                  "en": "Link:",
+                  "ru": "Ссылка:",
+                  "link": "https://b-kucherepa.github.io/freeCodeCamp-tasks/survey/index.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

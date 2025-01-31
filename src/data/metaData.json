@@ -1,0 +1,19 @@
+{
+  "langs": ["en", "ru"],
+  "langSelect": { "en": "Select the language", "ru": "Выберите язык" },
+  "pagePrefixes": {
+    "index": "index",
+    "main": "main",
+    "fccSolutions": "fcc-solutions"
+  },
+  "copyright": {
+    "en": "Boris Kucherepa / The Morning Firebird",
+    "ru": "Борис Кучерепа / The Morning Firebird"
+  },
+  "socialLinks": [
+    { "name": "GitHub", "url": "https://github.com/b-kucherepa" },
+    { "name": "E-mail", "url": "mailto:bkuchr@gmail.com" },
+    { "name": "Telegram", "url": "https://t.me/bkuchr" },
+    { "name": "Discord", "url": "https://discord.com/users/bkuchr" }
+  ]
+}

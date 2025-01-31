@@ -1,0 +1,15 @@
+html, body {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.no-script-lang-icon {
+    display: inline-block;
+    text-align: center;
+    width: 35%;
+    margin: 7%;
+}
+
+#lang-selection {
+    text-align: center;
+}

@@ -1,0 +1,14 @@
+{
+  "include": ["src"],
+  "compileOnSave": true,
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "target": "es2016",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "moduleResolution":"node",
+    "outDir": "./build",
+    }
+}

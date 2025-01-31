@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1000"
+   height="1000"
+   viewBox="0 0 264.58333 264.58334"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="firebird-logo-detailed.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   inkscape:export-filename="firebird-logo-detailed.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title1">firebird-logo-detailed-avatar</title>
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="161.22035"
+     inkscape:cy="536.34049"
+     inkscape:window-width="1920"
+     inkscape:window-height="974"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <defs
+     id="defs1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       id="prefix__a">
+      <stop
+         offset="0"
+         stop-color="#0cf"
+         id="stop1" />
+      <stop
+         offset="1"
+         stop-color="#a800ff"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#prefix__a"
+       id="prefix__d"
+       x1="70.34507"
+       y1="121.34911"
+       x2="73.177002"
+       y2="105.3532"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.9421,0,0,0.9616,1.866,1.119)" />
+    <linearGradient
+       xlink:href="#prefix__a"
+       id="prefix__b"
+       x1="51.860001"
+       y1="150.89999"
+       x2="193.89999"
+       y2="77.480003"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.9421,0,0,0.9616,6.627,1.648)" />
+    <linearGradient
+       xlink:href="#prefix__a"
+       id="prefix__c"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.9421,0,0,0.9616,1.866,1.119)"
+       x1="91.089996"
+       y1="120"
+       x2="116.8"
+       y2="141.60001" />
+  </defs>
+  <g
+     fill="none"
+     stroke-width="6"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-miterlimit="1"
+     stroke-dashoffset="37.789"
+     id="g4"
+     transform="translate(25.40001,49.741692)">
+    <path
+       d="M 149.8,147.3 C 219.9,83.29 157.5,89 142.1,97.21 160.9,67.17 118.3,53.64 80.17,76.68 c -2,-27.47 21.84119,-47.189268 51.89848,-59.710102 -3.70365,23.372317 4.14539,26.600845 0.0315,37.780102 9.86035,0.602721 27.36228,-24.635385 51.14583,-24.967917 -9.9,11.32 -5.43845,20.957606 -13.24583,35.897917 14.98051,0.288483 32.94582,-14.228862 56.5,-6.02 -17.6,4.52 -26.2,17.49 -36,28.13 10.79063,5.418862 23.9875,-4.539167 45.3875,-1.369167 C 217.16901,99.519951 210.97418,112.33874 199.5,115.6 c -2.6,4.1 24.25555,-5.02174 41.8,8.30417 -16.6,2.9 -18.6,13.09583 -46.3,20.59583 16.00738,7.72221 13.66152,13.09013 29.6,24.5 -26.50507,-4.87038 -41.85722,2.28 -53.4,-2 2.6,3.8 8,18.8319 25.8,26.7319 -26.6,0.1 -67.66293,-3.99488 -64.7,-33.0319 6,-35.4 0.2,-62.89 -42.43,-74.66 -15.63,-0.91 -24.28,9.12 -33.17,23.76 -2.19,2.7 -2.03,6 -1.21,9.3 0,0.1 -30.91,46.4 -15.81,53.4 0.95,0.5 8.96,-13 39.22,-13 1.38,-0.2 20.38,0.3 31.7,4.8 M 72.08,141.1 v 0 c 0,0 -4.414447,8.47036 -18.78,11.3 -7.187764,2.2074 -12.56,13 -14.67,16.5"
+       stroke="url(#prefix__b)"
+       transform="translate(-32.08,-29.66)"
+       id="path2"
+       sodipodi:nodetypes="ccccccccccccccccccccccccccc"
+       style="stroke:url(#prefix__b)" />
+    <path
+       d="m 73.97,129.6 c 27.93,1.9 28.33,-17.9 28.53,-18.4 m -6.45,15.1 c 5.95,6.6 11.05,16.2 9.85,25 m -9.58,-25.2 c 7.58,6.5 23.58,2.9 26.58,2.4"
+       stroke="url(#prefix__c)"
+       transform="translate(-32.08,-29.66)"
+       id="path3"
+       style="stroke:url(#prefix__c)" />
+    <path
+       d="M 94.882276,101.58679 C 78.144621,98.716319 70.919022,108.68208 68.468409,118.76855"
+       stroke="url(#prefix__d)"
+       transform="translate(-32.08,-29.66)"
+       id="path4"
+       style="stroke:url(#prefix__d)"
+       sodipodi:nodetypes="cc" />
+  </g>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>firebird-logo-detailed-avatar</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
