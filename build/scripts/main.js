@@ -16,7 +16,7 @@ function initCopyrightYear() {
     const copyright = document.getElementById("copyright");
     if (copyright) {
         copyright.innerHTML +=
-            estYear === curYear ? ` ${estYear}` : ` ${estYear}-${curYear}`;
+            estYear === curYear ? `&nbsp${estYear}` : `&nbsp${estYear}\&#8209;${curYear}`;
     }
 }
 function initAge() {

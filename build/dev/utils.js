@@ -22,33 +22,33 @@ export function processLink(rawLink, pagePrefixes, lang) {
     }
 }
 export function getLinkIconClass(link) {
-    try {
-        const domain = new URL(link).hostname;
-        switch (domain) {
-            case "github.com":
-                return "fab fa-github";
-            case "linkedin.com":
-            case "www.linkedin.com":
-                return "fab fa-linkedin";
-            case "t.me":
-                return "fab fa-telegram";
-            case "discord.com":
-                return "fab fa-discord";
-            case "amazon.com":
-            case "www.amazon.com":
-                return "fab fa-amazon";
-            case "b-kucherepa.github.io":
-            case "":
-                return "fa fa-link";
-            default:
-                return "fa fa-external-link";
-        }
+    if (link.substring(link.length - 9) === "gmail.com") {
+        return "fa fa-envelope";
     }
-    catch (_a) {
-        if (link.substring(-9) === "gmail.com") {
-            return "fab fa-envelope";
+    else {
+        try {
+            const domain = new URL(link).hostname;
+            switch (domain) {
+                case "github.com":
+                    return "fab fa-github";
+                case "linkedin.com":
+                case "www.linkedin.com":
+                    return "fab fa-linkedin";
+                case "t.me":
+                    return "fab fa-telegram";
+                case "discord.com":
+                    return "fab fa-discord";
+                case "amazon.com":
+                case "www.amazon.com":
+                    return "fab fa-amazon";
+                case "b-kucherepa.github.io":
+                case "":
+                    return "fa fa-link";
+                default:
+                    return "fa fa-external-link";
+            }
         }
-        else {
+        catch (_a) {
             return "fa fa-link";
         }
     }

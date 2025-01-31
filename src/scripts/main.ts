@@ -18,7 +18,7 @@ function initCopyrightYear(): void {
 
   if (copyright) {
     copyright.innerHTML +=
-      estYear === curYear ? ` ${estYear}` : ` ${estYear}-${curYear}`;
+      estYear === curYear ? `&nbsp${estYear}` : `&nbsp${estYear}\&#8209;${curYear}`;
   }
 }
 
